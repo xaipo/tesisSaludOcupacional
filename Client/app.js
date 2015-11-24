@@ -5,9 +5,17 @@ var app = angular.module("myApp", ['ngRoute'])
 
     app.config (function($routeProvider ){
    //$locationProvider.html5Mode(true);
-    $routeProvider.when("/indexAdmin",{templateUrl:"/tesisSaludOcupacional/Client/Administrator/indexAdmin.html"});
+    $routeProvider.when("/indexAdmin",{templateUrl:"/tesisSaludOcupacional/Client/Administrator/inicio.html"});
     $routeProvider.when("/newEmpresa",{templateUrl:"/tesisSaludOcupacional/Client/Administrator/newEmpresa.html", controller:'EmpresaController'});
 });
+
+app.controller('EmpresaController', ['$scope', '$http', function ($scope, $http) {
+    $scope.nombre = "asdasd";
+
+
+
+}]);
+
 
     /*app.config(['$routeProvider', function ($routeProvider) {
 
