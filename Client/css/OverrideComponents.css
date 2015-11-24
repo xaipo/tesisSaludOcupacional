@@ -1,0 +1,24 @@
+/*solo componentes bootstrap*/
+
+.jumbotron{
+
+
+}
+
+.navbar{
+    margin-bottom: 15px;
+    /*background: #2a6496;*/
+    color:white;
+}
+.navbar-brand{
+
+    color:white;
+}
+.navbar-nav{
+    /*background: #2a6496;*/
+    color:white;
+}
+.li{
+
+    color: white;
+}
