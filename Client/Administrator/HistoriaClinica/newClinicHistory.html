@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Empresa</title>
+
+
+    <script src="../js/libs/jquery-2.0.2.min.js"></script>
+
+</head>
+<body ng-app="myApp">
+<form class="form" role="form">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Ingreso Historia Clínica Ocupacional </h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+
+                    <h3 class="panel-title">Datos Generales del Exámen </h3>
+                </div>
+                <table class="table">
+                    <div class="panel-body">
+                        <tr><label>Fecha del examen:</label>
+                            <th></th>
+                            <input type="date"></th>
+                            <th><label>Proceso:</label></th>
+
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Puesto
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a >Secretaría</a></li>
+                                        <li><a >Dirección</a></li>
+                                        <li><a >Docente</a></li>
+
+                                    </ul>
+                                </div>
+                            </th>
+                            <th><label>Tipo de Exámen:</label></th>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Tipo de Examen
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <li><a >Preocupacional/Ingreso</a></li>
+                                        <li><a >Reintegro</a></li>
+                                        <li><a >Ingreso</a></li>
+                                        <li><a >Egreso</a></li>
+                                        <li><a >Especial</a></li>
+                                        <li><a >Periódico</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                            <th><label>Empresa:</label></th>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Empresa
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                                        <li><a >UNACH</a></li>
+                                        <li><a >UNCEM</a></li>
+                                        <li><a >IEES</a></li>
+                                        <li><a >TUBASEC</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                            <th><label>Sucursal:</label></th>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Sucursal/Campus
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                        <li><a >UNACH Edison Riera</a></li>
+                                        <li><a >UNACH La Dolorosa</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                        </tr>
+                    </div>
+                </table>
+            </div>
+        </div>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+
+                <h3 class="panel-title">Datos Del Trabajador </h3>
+            </div>
+            <table class="table">
+                <div class="panel-body">
+                    <tr><label>Documento de Identificación:</label>
+                        <th></th>
+                        <input type="text"></th>
+                        <th><label>Nombre:</label></th>
+
+                        <th>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu5"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Nombre
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                                    <li><a >Juan Diaz</a></li>
+                                    <li><a >Pedro Logroño</a></li>
+                                    <li><a >Andrea Peralta</a></li>
+
+                                </ul>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="row">
+                                <div class="col-sm-3">Sexo:</div>
+                                <div class="col-sm-9">
+                                    <div class="btn-group" data-toggle="buttons">
+                                        <label class="btn btn-default">
+                                            <input type="radio" id="q156" name="quality[25]" value="Masculino"/>
+                                            Masculino
+                                        </label>
+                                        <label class="btn btn-default">
+                                            <input type="radio" id="q157" name="quality[25]" value="Femenino"/> Femenino
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </th>
+                        <th><label>Fecha Nacimiento:</label></th>
+                        <th><input type="date"></th>
+                        <th><label>Lugar Nacimiento:</label></th>
+                        <th>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu6"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Lugar Nacimiento
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu6">
+                                    <li><a >Riobamba</a></li>
+                                    <li><a >Quito</a></li>
+                                    <li><a >Guayaquil</a></li>
+                                    <li><a >Cuenca</a></li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th><label>Valor:</label></th>
+                        <th>
+                            <input type="number" name="input"
+                                   min="0" max="99" required>
+
+                        </th>
+                    </tr>
+                </div>
+            </table>
+        </div>
+    </div>
+    </div>
+    </div>
+
+</form>
+
+</body>

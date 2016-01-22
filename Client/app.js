@@ -29,18 +29,22 @@ app.controller('LoginController', ['$scope', '$http', function ($scope, $http) {
         console.log("funciona");
         console.log($scope.usuario);
         console.log($scope.password);
-        /*$http.get('http://localhost:26077/api/SincronizarBases').
-         success(function (data, status, headers, config) {
-         if (data == "ok") {
-         $scope.mensaje = "Sincronizadas correctamente";
-         } else {
-         $scope.mensaje = "Error el servidor por seguridad bloquea peticiones seguidas intente más tarde";
-         }
-         }).
-         error(function (data, status, headers, config) {
-         $scope.mensaje = "no conecta al servidor";
-         });*/
 
+        $http({
+            method: 'GET',
+            url: 'http://localhost:3000/api/usuarios?nombre_usuario='+$scope.usuario,
+            headers: {
+                'Content-Type': 'application/json'
+            }
+
+        }).then(function successCallback(response) {
+            // this callback will be called asynchronously
+            // when the response is available
+            console.log(response);
+        }, function errorCallback(response) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+        });
     };
 
 
