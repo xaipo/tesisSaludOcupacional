@@ -13,7 +13,7 @@ app.controller('LoginController', ['$scope', '$http', function ($scope, $http) {
         console.log("funciona");
         console.log($scope.usuario);
         console.log($scope.password);
-
+        console.log("hola");
         $http({
             method: 'GET',
             url: 'http://localhost:3000/api/usuarios?nombre_usuario='+$scope.usuario,
