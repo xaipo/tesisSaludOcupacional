@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <!-----estilos -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" id="pagesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/OverrideComponents.css" id="pageshee1"/>
+    <!-----angular-->
+
+    <script src="../angular-1.4.6/angular.js"></script>
+    <script src="../angular-1.4.6/angular-route.js"></script>
+    <script src="../app.js"></script>
+    <script src="../controllers/CargasController.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="CargasController">
+
+<script src="../scripts/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="../scripts/bootstrap.min.js"></script>
+
+<!-----menu -->
+<header>
+    <nav class="navbar navbar-inverse navbar-static-top " role="navigation">
+        <div class="container" >
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuPrincipal-fm">
+                    <span class="sr-only"> Desplegar/Ocultar </span>
+                    <span class="icon-bar">  </span>
+                    <span class="icon-bar">  </span>
+                    <span class="icon-bar">  </span>
+                </button>
+                <a href="#/indexAdmin"  class="navbar-brand">HEALTH END POINT Administrador </a>
+            </div>
+            <!-- Iniciar menu-->
+            <div class="collapse navbar-collapse" id="menuPrincipal-fm">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/indexAdmin"  >DashBoard</a> </li>
+                    <li class="dropdown">
+                        <a  class="dropdown-toggle active" data-toggle="dropdown" role="button">Empresas <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li ><a href="#" ng-click="showCargarArchivos('/newEmpresa')">Ingreso Empresa</a> </li>
+                            <li ><a href="#">Modificación Empresa</a> </li>
+                            <li ><a href="#">Lista Empresas</a> </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a  class="dropdown-toggle" data-toggle="dropdown" role="button">Usuarios <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li ><a href="#">Ingreso Paciente</a> </li>
+                            <li ><a href="#">Modificación Paciente</a> </li>
+                            <li ><a href="#">Gestión Accesos</a> </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a  class="dropdown-toggle" data-toggle="dropdown" role="button">Historia Clinica <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li ><a href="#"  ng-click="showCargarArchivos('/newHistory')">Nueva Historia Clínica</a> </li>
+                    <li ><a href="#">Modificación Paciente</a> </li>
+                            <li ><a href="#">Gestión Accesos</a> </li>
+                        </ul>
+                    </li>
+                    <li ><a href="#">Historia Clinica</a> </li>
+                    <li  ><a href="#">Evoluciones</a> </li>
+                    <li ><a href="#">Reportes</a> </li>
+                    <li  ><a href="#">Configuraciones</a> </li>
+                    <li  ><a href="#">Salir</a> </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+<!-----main -->
+<ng-view>
+
+
+
+</ng-view>
+
+
+
+
+
+</body>
+</html>
