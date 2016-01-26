@@ -3,3 +3,9 @@
  */
 
 
+app.controller('EmpresaController', ['$scope', '$http', function ($scope, $http) {
+    $scope.nombre = "asdasd";
+
+
+
+}]);

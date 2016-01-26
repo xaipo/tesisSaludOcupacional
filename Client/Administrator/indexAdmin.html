@@ -13,7 +13,7 @@
     <script src="../angular-1.4.6/angular-route.js"></script>
     <script src="../app.js"></script>
     <script src="../controllers/CargasController.js"></script>
-
+    <script src="../controllers/EmpresaController.js"></script>
 </head>
 <body ng-app="myApp" ng-controller="CargasController">
 
@@ -32,12 +32,12 @@
                     <span class="icon-bar">  </span>
                     <span class="icon-bar">  </span>
                 </button>
-                <a href="#/indexAdmin"  class="navbar-brand">HEALTH END POINT Administrador </a>
+                <a href="#/"  class="navbar-brand">HEALTH END POINT Administrador </a>
             </div>
             <!-- Iniciar menu-->
             <div class="collapse navbar-collapse" id="menuPrincipal-fm">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#/indexAdmin"  >DashBoard</a> </li>
+                    <li class="active"><a href="#/"  >DashBoard</a> </li>
                     <li class="dropdown">
                         <a  class="dropdown-toggle active" data-toggle="dropdown" role="button">Empresas <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -78,11 +78,21 @@
     </nav>
 </header>
 <!-----main -->
-<ng-view>
 
 
 
-</ng-view>
+
+    <section class="jumbotron" ng-view>
+
+        <center><img src="../images/logoendpoint.png"/> <br/></center>
+
+    </section>
+    <footer class="footer">
+        <center><span > <p>TODOS LOS DERECHOS RESERVADOS 2015</p></span></center>
+    </footer>
+
+
+
 
 
 
