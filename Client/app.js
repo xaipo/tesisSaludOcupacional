@@ -7,7 +7,7 @@ var app = angular.module("myApp", ['ngRoute'])
    //$locationProvider.html5Mode(true);
     $routeProvider.when("/",{templateUrl:"/tesisSaludOcupacional/Client/Administrator/inicio.html"});
     $routeProvider.when("/newEmpresa",{templateUrl:"/tesisSaludOcupacional/Client/Administrator/newEmpresa.html", controller:'EmpresaController'});
-   // $routeProvider.when("/login",{templateUrl:"/tesisSaludOcupacional/Client/login.html", controller:'LoginController'});
+    $routeProvider.when("/newHistory",{templateUrl:"/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/newClinicHistory.html", controller:'HistoriaClinicaController'});
 });
 
 

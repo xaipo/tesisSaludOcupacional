@@ -51,6 +51,8 @@ app.controller('LoginController', ['$scope', '$http', '$location',  function ($s
         }, function errorCallback(response) {
             // called asynchronously if an error occurs
             // or server returns response with an error status.
+            Console.log(response);
+            $scope.mesaje=response.mensaje;
         });
     };
 
