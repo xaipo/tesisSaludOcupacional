@@ -6,7 +6,7 @@
 app.controller('EmpresaController', ['$scope', '$http', function ($scope, $http) {
     $scope.mensaje = "";
     $scope.listaEmpresas=[];
-
+    $scope.empresaSelected="";
 
 
 
@@ -26,7 +26,7 @@ app.controller('EmpresaController', ['$scope', '$http', function ($scope, $http)
             for(var i=0; i<n; i++){
                 var aux=response.data[i];
                 console.log(aux);
-                $scope.listaEmpresas.push(aux.nombre_empresa,aux);
+                $scope.listaEmpresas.push(aux);
                 //console.log(response.data[i]);
                 console.log($scope.listaEmpresas);
 
@@ -62,5 +62,14 @@ app.controller('EmpresaController', ['$scope', '$http', function ($scope, $http)
 
         });
 
+
+    $scope.test = function () {
+        $scope.mensaje = "procesando";
+
+        console.log('entro');
+        $scope.empresaSelected=JSON.parse($scope.empresaSelected);
+        console.log($scope.empresaSelected.nombre_empresa);
+
+    };
 
 }]);

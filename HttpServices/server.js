@@ -6,8 +6,18 @@ var cors = require('cors');
 // </editor-fold>
 
 // <editor-fold defaultstate="collapsed" desc="MongoDb">
-mongoose.connect('mongodb://localhost/TesisSaludOcupacional');
+//mongoose.connect('mongodb://localhost/TesisSaludOcupacional');
+//mongoose.connect('xaipo:xaipo14@ds064278.mlab.com:64278/MongoLab-l');
 
+
+
+mongoose.connect('mongodb://localhost/TesisSaludOcupacional', function(error){
+    if(error){
+        throw error;
+    }else{
+        console.log('Conectado a MongoDB');
+    }
+});
 // </editor-fold>
 
 

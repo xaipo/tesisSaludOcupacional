@@ -23,18 +23,14 @@
                     <div class="panel-body">
 
                             <th>
-                                <div class="dropdown">
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        Puesto
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" ng-repeat="product in $scope.listaEmpresas">
-                                        <li><a >{{product.nombre_empresa}}</a></li>
+                                <label for="Empresay"> Single select: </label><br>
+                                <select name="Empresa" ng-model="empresaSelected" >
+                                    <option value={{empresaAux}} ng-repeat="empresaAux in listaEmpresas">{{empresaAux.nombre_empresa}}</option>
+                                </select><br>
 
 
-                                    </ul>
-                                </div>
+
+                                <input class="btn-success" type="submit" ng-click="test()" value="Test" />
                             </th>
 
 
