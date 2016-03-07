@@ -2,12 +2,13 @@
  * Created by xaipo on 9/30/2015.
  */
 
-app.controller('LoginController', ['$scope', '$http', '$location',  function ($scope,$http,$location) {
+app.controller('LoginController', ['$scope', '$http', '$location','$rootScope',  function ($scope,$http,$rootScope,$location) {
 
-    $scope.mensaje = "msj";
+    $scope.mensaje = "";
     $scope.usuario = "";
     $scope.password = "";
     $scope.usuario1;
+    $rootScope.usuarioLogin;
     $scope.login = function () {
         $scope.mensaje = "procesando";
 
@@ -22,17 +23,18 @@ app.controller('LoginController', ['$scope', '$http', '$location',  function ($s
         }).then(function successCallback(response) {
             // this callback will be called asynchronously
             // when the response is available
-            console.log(response.data[0].nombre_usuario);
-            console.log(response.data);
+          //  console.log(response.data[0].nombre_usuario);
+          //  console.log(response.data);
             $scope.usuario1= angular.fromJson(response.data[0]);
-            console.log($scope.usuario1);
-            console.log($scope.usuario1.nombre_usuario);
-            console.log($scope.usuario1.contrasena);
+            //console.log($scope.usuario1);
+           // console.log($scope.usuario1.nombre_usuario);
+           // console.log($scope.usuario1.contrasena);
            // console.log($scope.usuario1);
+            if(response.data.length>0){
             if($scope.usuario1.nombre_usuario==$scope.usuario && $scope.usuario1.contrasena==$scope.password ){
                 console.log($scope.usuario1.contrasena);
                 $scope.mensaje="Bienvenido "+response.data[0].nombre_usuario.toString();
-
+                $rootScope.usuarioLogin=$scope.usuario1;
 
                 window.location ='/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
 
@@ -42,6 +44,12 @@ app.controller('LoginController', ['$scope', '$http', '$location',  function ($s
             }else{
 
                 $scope.mensaje="Revise su usuario y password";
+            }
+
+            }else{
+
+                $scope.mensaje="Revise su usuario y password";
+
             }
             console.log(response);
 

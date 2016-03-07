@@ -9,33 +9,48 @@
 </head>
 <body ng-app="myApp">
 <form class="form" role="form">
+    <p class="span4" data-ng-bind="mensaje"></p>
     <div class="panel panel-primary">
+
         <div class="panel-heading">
             <h3 class="panel-title">Configuración Empresa </h3>
         </div>
+
         <div class="panel-body">
             <div class="panel panel-primary">
                 <div class="panel-heading">
 
                     <h3 class="panel-title">Seleccione la Empresa </h3>
+
                 </div>
-                <table class="table">
-                    <div class="panel-body">
+                <div class="container">
+                    <div class="panel-body"  >
 
-                            <th>
-                                <label for="Empresay"> Single select: </label><br>
-                                <select name="Empresa" ng-model="empresaSelected" >
-                                    <option value={{empresaAux}} ng-repeat="empresaAux in listaEmpresas">{{empresaAux.nombre_empresa}}</option>
+                            <div class=" row">
+                                <div class="col-md-6 col-xs-12">
+                                <label for="Empresa"> Empresa: </label><br>
+                                    Búsqueda <input type="text" ng-model="search" class="form-control">
+                                <select name="Empresa" ng-model="empresaSelected" class="form-control" multiple style="height: 200px;">
+                                    <option value={{empresaAux}} ng-repeat="empresaAux in listaEmpresas | filter:search| orderBy:empresaAux.nombre_empresa">{{empresaAux.nombre_empresa}}</option>
                                 </select><br>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <label for="EmpresaNew"> Nombre Nueva Empresa: </label><br>
+                                    <input name="EmpresaNew" ng-model="nuevaEmpresa" class="form-control" /><br>
+                                        <input class="btn btn-default" type="submit" ng-click="inputEmpresa()" value="Ingresar"/>
+                                    <br>
+
+                                </div>
 
 
+                            
 
-                                <input class="btn-success" type="submit" ng-click="test()" value="Test" />
-                            </th>
+                        <div class="col-md-6 col-xs-2">
 
-
+                        </div>
+                            </div>
                     </div>
-                </table>
+                </div>
             </div>
         </div>
 
