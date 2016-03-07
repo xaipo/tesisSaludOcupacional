@@ -23,7 +23,7 @@ app.controller('LoginController', ['$scope', '$http', '$location',  function ($s
             // this callback will be called asynchronously
             // when the response is available
             console.log(response.data[0].nombre_usuario);
-            console.log(response.data[0].contrasena);
+            console.log(response.data);
             $scope.usuario1= angular.fromJson(response.data[0]);
             console.log($scope.usuario1);
             console.log($scope.usuario1.nombre_usuario);
@@ -35,12 +35,9 @@ app.controller('LoginController', ['$scope', '$http', '$location',  function ($s
 
 
                 window.location ='/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
-                //$location.path("/indexAdmin");
-               //$location.href("/tesisSaludOcupacional/Client/Administrator/inicio.html");
-                $location.replace();
-                //console.log($location.path());
-               // $location.path('/foo');
-                //$location.absUrl() == '/tesisSaludOcupacional/Client/Administrator/inicio.html'
+
+             //   $location.replace();
+
 
             }else{
 
@@ -53,6 +50,7 @@ app.controller('LoginController', ['$scope', '$http', '$location',  function ($s
             // or server returns response with an error status.
             Console.log(response);
             $scope.mesaje=response.mensaje;
+
         });
     };
 

@@ -21,8 +21,13 @@ app.use(cors());// permite angular interactuar
 
 // <editor-fold defaultstate="collapsed" desc="Routes">
 app.use('/api',require('./Routes/apiUsuarios'));
-
-
+app.use('/api',require('./Routes/apiEmpresa'));
+app.use('/api',require('./Routes/apiDependencia'));
+app.use('/api',require('./Routes/apiJornada'));
+app.use('/api',require('./Routes/apiMateriaPrima'));
+app.use('/api',require('./Routes/apiHerramienta'));
+app.use('/api',require('./Routes/apiMaquinaria'));
+app.use('/api',require('./Routes/apiProteccion'));
 // </editor-fold >
 
 // <editor-fold defaultstate="collapsed" desc="Server Run">

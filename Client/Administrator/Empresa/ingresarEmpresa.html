@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Empresa</title>
+
+
+    <script src="../js/libs/jquery-2.0.2.min.js"></script>
+
+</head>
+<body ng-app="myApp">
+<form class="form" role="form">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Configuración Empresa </h3>
+        </div>
+        <div class="panel-body">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+
+                    <h3 class="panel-title">Seleccione la Empresa </h3>
+                </div>
+                <table class="table">
+                    <div class="panel-body">
+
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Puesto
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" ng-repeat="product in $scope.listaEmpresas">
+                                        <li><a >{{product.nombre_empresa}}</a></li>
+
+
+                                    </ul>
+                                </div>
+                            </th>
+
+
+                    </div>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+</form>
+
+</body>
