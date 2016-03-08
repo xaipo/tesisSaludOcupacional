@@ -38,6 +38,7 @@ app.use('/api',require('./Routes/apiMateriaPrima'));
 app.use('/api',require('./Routes/apiHerramienta'));
 app.use('/api',require('./Routes/apiMaquinaria'));
 app.use('/api',require('./Routes/apiProteccion'));
+app.use('/api',require('./Routes/apiProvincia'));
 // </editor-fold >
 
 // <editor-fold defaultstate="collapsed" desc="Server Run">
