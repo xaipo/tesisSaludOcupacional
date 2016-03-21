@@ -37,7 +37,7 @@ app.controller('LoginController', ['$scope', '$http', '$location','$rootScope', 
                 $rootScope.usuarioLogin=$scope.usuario1;
 
                 window.location ='/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
-
+                console.log($rootScope.usuarioLogin);
              //   $location.replace();
 
 
@@ -62,6 +62,6 @@ app.controller('LoginController', ['$scope', '$http', '$location','$rootScope', 
         });
     };
 
-
+    console.log($rootScope.usuarioLogin);
 
 }]);
