@@ -20,7 +20,7 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">
 
-                    <h3 class="panel-title">Seleccione la Empresa </h3>
+                    <h3 class="panel-title">Ingreso y Selección de la Empresa </h3>
 
                 </div>
                 <div class="container">
@@ -29,12 +29,18 @@
                             <div class=" row">
                                 <div class="col-md-6 col-xs-12">
                                 <label for="Empresa"> Empresa: </label><br>
-                                    Búsqueda <input type="text" ng-model="search" class="form-control">
-                                <select name="Empresa" ng-model="empresaSelected" class="form-control" multiple style="height: 200px;">
+                                    Búsqueda <input type="text" ng-model="search" class="form-control"><br>
+                                <select name="Empresa" ng-model="empresaSelected" class="form-control" multiple style="height: 150px;">
                                     <option value={{empresaAux}} ng-repeat="empresaAux in listaEmpresas | filter:search| orderBy:empresaAux.nombre_empresa">{{empresaAux.nombre_empresa}}</option>
                                 </select><br>
+
+                                        <input name="Seleccionar Empresa" class="btn btn-default" type="submit" ng-click="searchDependenciaPorEmpresa()" value="Seleccionar Empresa"/>
+
                                 </div>
+
                                 <div class="col-md-6 col-xs-12">
+                                    <br>
+                                    <br>
                                     <label for="EmpresaNew"> Nombre Nueva Empresa: </label><br>
                                     <input name="EmpresaNew" ng-model="nuevaEmpresa" class="form-control" /><br>
                                         <input class="btn btn-default" type="submit" ng-click="inputEmpresa()" value="Ingresar"/>
@@ -43,13 +49,14 @@
                                 </div>
 
 
-                            
+                            </div>
 
-                        <div class="col-md-6 col-xs-2">
+                        <div class="row">
+
 
                         </div>
                             </div>
-                    </div>
+
                 </div>
             </div>
         </div>

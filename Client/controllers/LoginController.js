@@ -2,20 +2,24 @@
  * Created by xaipo on 9/30/2015.
  */
 
-app.controller('LoginController', ['$scope', '$http', '$location','$rootScope',  function ($scope,$http,$rootScope,$location) {
 
+
+app.controller('LoginController', ['$scope', '$http', '$location','myProvider',  function ($scope,$http,$location,myProvider) {
+
+    console.log(myProvider.getUser());
     $scope.mensaje = "";
     $scope.usuario = "";
     $scope.password = "";
     $scope.usuario1;
-    $rootScope.usuarioLogin;
+    //$rootScope.usuarioLogin;
     $scope.login = function () {
         $scope.mensaje = "procesando";
-
+        var url= myProvider.getUser()+'?nombre_usuario='+$scope.usuario;
+        console.log(url);
 
         $http({
             method: 'GET',
-            url: 'http://localhost:3000/api/usuarios?nombre_usuario='+$scope.usuario,
+            url: url,
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -29,15 +33,15 @@ app.controller('LoginController', ['$scope', '$http', '$location','$rootScope', 
             //console.log($scope.usuario1);
            // console.log($scope.usuario1.nombre_usuario);
            // console.log($scope.usuario1.contrasena);
-           // console.log($scope.usuario1);
+           // console.log($scope.usuario1._id);
             if(response.data.length>0){
             if($scope.usuario1.nombre_usuario==$scope.usuario && $scope.usuario1.contrasena==$scope.password ){
                 console.log($scope.usuario1.contrasena);
                 $scope.mensaje="Bienvenido "+response.data[0].nombre_usuario.toString();
-                $rootScope.usuarioLogin=$scope.usuario1;
+               // $rootScope.usuarioLogin=$scope.usuario1;
 
                 window.location ='/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
-                console.log($rootScope.usuarioLogin);
+              //  console.log($rootScope.usuarioLogin);
              //   $location.replace();
 
 
@@ -49,6 +53,7 @@ app.controller('LoginController', ['$scope', '$http', '$location','$rootScope', 
             }else{
 
                 $scope.mensaje="Revise su usuario y password";
+                alert('Revise su usuario y password');
 
             }
             console.log(response);
@@ -62,6 +67,6 @@ app.controller('LoginController', ['$scope', '$http', '$location','$rootScope', 
         });
     };
 
-    console.log($rootScope.usuarioLogin);
+  //  console.log($rootScope.usuarioLogin);
 
 }]);
