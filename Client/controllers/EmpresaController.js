@@ -9,6 +9,7 @@ app.controller('EmpresaController', ['$scope', '$http', function ($scope, $http)
     $scope.empresaSelected="";
     $scope.nuevaEmpresa="";
     $scope.search;
+    $scope.search1;
     $scope.listaDependencias=[];
 
 // <editor-fold defaultstate="collapsed" desc="Inicializar">

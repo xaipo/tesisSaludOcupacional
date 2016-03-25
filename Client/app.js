@@ -8,6 +8,9 @@ function ApiUrl(){
     this.getUser=function(){
         return 'http://localhost:3000/api/usuarios';
     }
+    this.getEmpresa=function(){
+        return 'http://localhost:3000/api/empresa';
+    }
 }
 
 app.factory("myProvider",function(){
