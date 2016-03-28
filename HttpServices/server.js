@@ -39,6 +39,18 @@ app.use('/api',require('./Routes/apiHerramienta'));
 app.use('/api',require('./Routes/apiMaquinaria'));
 app.use('/api',require('./Routes/apiProteccion'));
 app.use('/api',require('./Routes/apiProvincia'));
+app.use('/api',require('./Routes/apiCiudad'));
+app.use('/api',require('./Routes/apiEstadoCivil'));
+app.use('/api',require('./Routes/apiNivelEstudio'));
+app.use('/api',require('./Routes/apiCargo'));
+app.use('/api',require('./Routes/apitTipoHistoria'));
+app.use('/api',require('./Routes/apiLimitaciones'));
+app.use('/api',require('./Routes/apiRecomendaciones'));
+app.use('/api',require('./Routes/apiTipoActividad'));
+app.use('/api',require('./Routes/apiFactorRiesgo'));
+app.use('/api',require('./Routes/apiCualificacion'));
+app.use('/api',require('./Routes/apiAlimentos'));
+app.use('/api',require('./Routes/apiTipoCie10'));
 // </editor-fold >
 
 // <editor-fold defaultstate="collapsed" desc="Server Run">
