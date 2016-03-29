@@ -6,9 +6,13 @@ var mongoose= restful.mongoose;
 
 var categoriaSchema = new mongoose.Schema({
 
-    descripcion_tipo_CIE10: String,
+
+
+    descripcion_tipo_revision_sistemas: String,
+
+
 
 });
 
 
-module.exports= restful.model('tipo_cie10',categoriaSchema);
+module.exports= restful.model('tipo_revision_sistemas',categoriaSchema);

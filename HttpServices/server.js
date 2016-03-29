@@ -51,6 +51,13 @@ app.use('/api',require('./Routes/apiFactorRiesgo'));
 app.use('/api',require('./Routes/apiCualificacion'));
 app.use('/api',require('./Routes/apiAlimentos'));
 app.use('/api',require('./Routes/apiTipoCie10'));
+app.use('/api',require('./Routes/apiTratamientoCIE10'));
+app.use('/api',require('./Routes/apiParentezco'));
+app.use('/api',require('./Routes/apiTipoPersonales'));
+app.use('/api',require('./Routes/apiTipoRevisionSistemas'));
+app.use('/api',require('./Routes/apiTipoHabitoToxico'));
+app.use('/api',require('./Routes/apiTipoConsumidor'));
+app.use('/api',require('./Routes/apiInterpretacionIMC'));
 // </editor-fold >
 
 // <editor-fold defaultstate="collapsed" desc="Server Run">

@@ -6,9 +6,13 @@ var mongoose= restful.mongoose;
 
 var categoriaSchema = new mongoose.Schema({
 
-    descripcion_tipo_CIE10: String,
+
+
+    descripcion_tipo_habito_toxico: String,
+
+
 
 });
 
 
-module.exports= restful.model('tipo_cie10',categoriaSchema);
+module.exports= restful.model('tipo_habito_toxico',categoriaSchema);
