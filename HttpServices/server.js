@@ -58,6 +58,11 @@ app.use('/api',require('./Routes/apiTipoRevisionSistemas'));
 app.use('/api',require('./Routes/apiTipoHabitoToxico'));
 app.use('/api',require('./Routes/apiTipoConsumidor'));
 app.use('/api',require('./Routes/apiInterpretacionIMC'));
+app.use('/api',require('./Routes/apiVacuna'));
+app.use('/api',require('./Routes/apiTipoOrgano'));
+app.use('/api',require('./Routes/apiExamenLaboratorio'));
+app.use('/api',require('./Routes/apiResultadoParaclinico'));
+app.use('/api',require('./Routes/apiRespuestas'));
 // </editor-fold >
 
 // <editor-fold defaultstate="collapsed" desc="Server Run">
