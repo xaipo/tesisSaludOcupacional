@@ -10,8 +10,8 @@ var cors = require('cors');
 //mongoose.connect('xaipo:xaipo14@ds064278.mlab.com:64278/MongoLab-l');
 
 
-
-mongoose.connect('mongodb://localhost/TesisSaludOcupacional', function(error){
+mongoose.connect('mongodb://40.83.182.235/saludOcupacional', function(error){
+//mongoose.connect('mongodb://localhost/TesisSaludOcupacional', function(error){
     if(error){
         throw error;
     }else{
@@ -63,6 +63,9 @@ app.use('/api',require('./Routes/apiTipoOrgano'));
 app.use('/api',require('./Routes/apiExamenLaboratorio'));
 app.use('/api',require('./Routes/apiResultadoParaclinico'));
 app.use('/api',require('./Routes/apiRespuestas'));
+app.use('/api',require('./Routes/apiPreguntasInterfaz'));
+app.use('/api',require('./Routes/apiProtocolo'));
+app.use('/api',require('./Routes/apiPuestoTrabajo'));
 // </editor-fold >
 
 // <editor-fold defaultstate="collapsed" desc="Server Run">
