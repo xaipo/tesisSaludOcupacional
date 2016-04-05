@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9da37b9f-90ea-4b83-8a73-5ea0a7a78c4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HttpServices/Routes/apiPaciente.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HttpServices/Models/modeloPaciente.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HttpServices/Routes/apiRiesgosOcupacionales.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HttpServices/Models/modeloRiesgosOcupacionales.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/server.js" afterPath="$PROJECT_DIR$/HttpServices/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,27 +26,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HttpServices/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.728">
-              <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#219#275#0" expanded="true" />
-                <element signature="e#2941#3000#0" expanded="true" />
+                <element signature="e#3002#3061#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modeloProtocolo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloProtocolo.js">
+      <file leaf-file-name="modeloRiesgosOcupacionales.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloRiesgosOcupacionales.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="25" />
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
-                <element signature="e#41#82#0" expanded="false" />
+                <element signature="e#0#40#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apiRiesgosOcupacionales.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiRiesgosOcupacionales.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9066667">
+              <caret line="22" column="47" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#40#0" expanded="false" />
+                <element signature="e#41#102#0" expanded="true" />
+                <element signature="e#186#242#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloPuestoTrabajo.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="37" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="37" />
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -90,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiPaciente.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="29" selection-end-column="22" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
                 <element signature="e#41#102#0" expanded="true" />
@@ -167,8 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HttpServices/Routes/apitTipoHistoria.js" />
-        <option value="$PROJECT_DIR$/HttpServices/Models/modeloLimitaciones.js" />
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiLimitaciones.js" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloRecomendaciones.js" />
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiRecomendaciones.js" />
@@ -216,8 +228,10 @@
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiPuestoTrabajo.js" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloPuestoTrabajo.js" />
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiPaciente.js" />
-        <option value="$PROJECT_DIR$/HttpServices/server.js" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloPaciente.js" />
+        <option value="$PROJECT_DIR$/HttpServices/Routes/apiRiesgosOcupacionales.js" />
+        <option value="$PROJECT_DIR$/HttpServices/server.js" />
+        <option value="$PROJECT_DIR$/HttpServices/Models/modeloRiesgosOcupacionales.js" />
       </list>
     </option>
   </component>
@@ -556,7 +570,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459806766867</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="agrego mas modelos y apis paciente">
+      <created>1459807447597</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1459807447597</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -570,7 +590,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
+    <frame x="-7" y="0" width="1378" height="735" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3074627" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -617,7 +637,9 @@
     <MESSAGE value="cambios en el back generacion de apis" />
     <MESSAGE value="agrego mas modelos y api para la creacion de la base" />
     <MESSAGE value="agrego mas modelos y apis" />
-    <option name="LAST_COMMIT_MESSAGE" value="agrego mas modelos y apis" />
+    <MESSAGE value="agrego mas modelos y apis paciente" />
+    <MESSAGE value="agrego mas modelos y apis riegos ocupacionales" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrego mas modelos y apis riegos ocupacionales" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -653,20 +675,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloFactoresRiesgo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloRecomendaciones.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="17" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiFactorRiesgo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1005,29 +1013,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloVacuna.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="17" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloTipoOrgano.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50133336">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloPuestoTrabajo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1052,19 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiPaciente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-            <element signature="e#41#102#0" expanded="true" />
-            <element signature="e#186#242#0" expanded="true" />
-            <element signature="e#316#382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloPaciente.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1075,14 +1052,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiPaciente.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+            <element signature="e#41#102#0" expanded="true" />
+            <element signature="e#186#242#0" expanded="true" />
+            <element signature="e#316#382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloVacuna.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="17" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloPuestoTrabajo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloRiesgosOcupacionales.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.728">
-          <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#219#275#0" expanded="true" />
-            <element signature="e#2941#3000#0" expanded="true" />
+            <element signature="e#3002#3061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiRiesgosOcupacionales.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9066667">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+            <element signature="e#41#102#0" expanded="true" />
+            <element signature="e#186#242#0" expanded="true" />
           </folding>
         </state>
       </provider>

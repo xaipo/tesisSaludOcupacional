@@ -67,6 +67,7 @@ app.use('/api',require('./Routes/apiPreguntasInterfaz'));
 app.use('/api',require('./Routes/apiProtocolo'));
 app.use('/api',require('./Routes/apiPuestoTrabajo'));
 app.use('/api',require('./Routes/apiPaciente'));
+app.use('/api',require('./Routes/apiRiesgosOcupacionales'));
 // </editor-fold >
 
 // <editor-fold defaultstate="collapsed" desc="Server Run">
