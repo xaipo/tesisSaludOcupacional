@@ -68,6 +68,14 @@ app.use('/api',require('./Routes/apiProtocolo'));
 app.use('/api',require('./Routes/apiPuestoTrabajo'));
 app.use('/api',require('./Routes/apiPaciente'));
 app.use('/api',require('./Routes/apiRiesgosOcupacionales'));
+app.use('/api',require('./Routes/apiAccidentesTrabajo'));
+app.use('/api',require('./Routes/apiCie10'));
+app.use('/api',require('./Routes/apiModeloEnfermedadesActualesHistoricas'));
+app.use('/api',require('./Routes/apiAusentismo'));
+app.use('/api',require('./Routes/apiFamiliares'));
+app.use('/api',require('./Routes/apiPersonales'));
+app.use('/api',require('./Routes/apiAntescedentesSalud'));
+app.use('/api',require('./Routes/apiMetodosPlanifiacionFamiliar'));
 // </editor-fold >
 
 // <editor-fold defaultstate="collapsed" desc="Server Run">
