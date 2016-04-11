@@ -8,7 +8,7 @@ var router= express.Router();
 
 // </editor-fold>
 // <editor-fold defaultstate="collapsed" desc="Modelos">
-var Productos = require('../Models/modeloMetodosPlanificacionFamiliar');
+var Productos = require('../Models/modeloRevisionSistemas');
 
 // </editor-fold>
 
@@ -20,7 +20,7 @@ var Productos = require('../Models/modeloMetodosPlanificacionFamiliar');
 
 
 Productos.methods(['get','put','post','delete','search']);
-Productos.register(router,'/metodosPlanificacionFamiliar');
+Productos.register(router,'/revisionSistemas');
 
 
 
