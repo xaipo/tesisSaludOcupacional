@@ -81,6 +81,9 @@ app.use('/api',require('./Routes/apiRevisionSistemas'));
 app.use('/api',require('./Routes/apiInmunizacion'));
 app.use('/api',require('./Routes/apiHabitosToxicos'));
 app.use('/api',require('./Routes/apiExamenFisico'));
+app.use('/api',require('./Routes/apiOrgano'));
+app.use('/api',require('./Routes/apiOrganoSelected'));
+app.use('/api',require('./Routes/apiExamenesPracticados'));
 // </editor-fold >
 
 // <editor-fold defaultstate="collapsed" desc="Server Run">
