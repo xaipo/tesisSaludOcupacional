@@ -61,7 +61,7 @@ app.use('/api',require('./Routes/apiInterpretacionIMC'));
 app.use('/api',require('./Routes/apiVacuna'));
 app.use('/api',require('./Routes/apiTipoOrgano'));
 app.use('/api',require('./Routes/apiExamenLaboratorio'));
-app.use('/api',require('./Routes/apiResultadoParaclinico'));
+app.use('/api',require('./Routes/apiExamenParaclinico'));
 app.use('/api',require('./Routes/apiRespuestas'));
 app.use('/api',require('./Routes/apiPreguntasInterfaz'));
 app.use('/api',require('./Routes/apiProtocolo'));
@@ -84,6 +84,9 @@ app.use('/api',require('./Routes/apiExamenFisico'));
 app.use('/api',require('./Routes/apiOrgano'));
 app.use('/api',require('./Routes/apiOrganoSelected'));
 app.use('/api',require('./Routes/apiExamenesPracticados'));
+app.use('/api',require('./Routes/apiExamenParaclinico'));
+app.use('/api',require('./Routes/apiResultadoParaclinico'));
+app.use('/api',require('./Routes/apiParaclinicoSeleccionado'));
 // </editor-fold >
 
 // <editor-fold defaultstate="collapsed" desc="Server Run">

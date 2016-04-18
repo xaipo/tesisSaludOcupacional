@@ -1,5 +1,5 @@
 /**
- * Created by xaipo on 4/12/2016.
+ * Created by xaipo on 3/29/2016.
  */
 // <editor-fold defaultstate="collapsed" desc="Dependencias">
 var express= require('express');
@@ -8,7 +8,7 @@ var router= express.Router();
 
 // </editor-fold>
 // <editor-fold defaultstate="collapsed" desc="Modelos">
-var Productos = require('../Models/modeloResultadoParaclinico');
+var Productos = require('../Models/modeloExamenParaclinico');
 
 // </editor-fold>
 
@@ -20,7 +20,7 @@ var Productos = require('../Models/modeloResultadoParaclinico');
 
 
 Productos.methods(['get','put','post','delete','search']);
-Productos.register(router,'/resultadoParaclinico');
+Productos.register(router,'/examenParaclinico');
 
 
 
