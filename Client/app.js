@@ -5,12 +5,23 @@ var app = angular.module("myApp", ['ngStorage','ngRoute'])
 
 
 function ApiUrl(){
+
     this.getUser=function(){
         return 'http://localhost:3000/api/usuarios';
     }
     this.getEmpresa=function(){
         return 'http://localhost:3000/api/empresa';
     }
+    this.getHistoriaClinica=function(){
+        return 'http://localhost:3000/api/historiaClinica';
+    }
+    this.getPaciente=function(){
+        return 'http://localhost:3000/api/pacientes';
+    }
+    this.getPuestoTrabajo=function(){
+        return 'http://localhost:3000/api/puestoTrabajo';
+    }
+
 }
 
 app.factory("myProvider",function(){
@@ -24,6 +35,8 @@ app.factory("myProvider",function(){
     $routeProvider.when("/",{templateUrl:"/tesisSaludOcupacional/Client/Administrator/inicio.html", controller:'LoginController'});
     $routeProvider.when("/newEmpresa",{templateUrl:"/tesisSaludOcupacional/Client/Administrator/Empresa/ingresarEmpresa.html", controller:'EmpresaController'});
     $routeProvider.when("/newHistory",{templateUrl:"/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/newClinicHistory.html", controller:'HistoriaClinicaController'});
+    $routeProvider.when("/first",{templateUrl:"/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/first.html", controller:'HistoriaClinicaController'});
+    $routeProvider.when("/second",{templateUrl:"/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/second.html", controller:'HistoriaClinicaController'});
 
         /*$provide.factory("ApiUrl", function () {
             return {

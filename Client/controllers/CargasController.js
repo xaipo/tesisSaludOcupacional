@@ -42,4 +42,5 @@ app.controller('CargasController', function ($timeout, $rootScope, $scope, $loca
        window.location = '/tesisSaludOcupacional/Client/login.html';
     };
 
+
 });
