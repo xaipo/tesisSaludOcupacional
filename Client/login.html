@@ -11,6 +11,7 @@
 
     <script src="angular-1.4.6/angular.js"></script>
     <script src="angular-1.4.6/angular-route.js"></script>
+    <script src="angular-1.4.6/ngStorage.min.js"></script>
     <script src="app.js"></script>
     <script src="controllers/LoginController.js"></script>
 
@@ -54,10 +55,10 @@
         <center><img src="images/logoendpoint.png"/> <br/></center>
        <center> <div class="navbar-form">
             <form name="miFormulario" ng-controller="LoginController">
-                <h5>INGRESO AL SISTEMA</h5>
+                <h2>INGRESO AL SISTEMA</h2>
                 <p data-ng-bind="mensaje"></p>
-                Nombre de usuario:<br/><input type="text" ng-model="usuario" name="nombre" required ><br/><br/>
-                Password:<br/><input type="password" ng-model="password" name="password" required ><br/><br/>
+               <h3>Nombre de usuario:</h3> <input class="form-control" type="text" ng-model="usuario" name="nombre" required ><br/>
+                <h3> Password:</h3> <input class="form-control" type="password" ng-model="password" name="password" required ><br/><br/>
                 <input class="btn-success" type="submit" ng-click="login()" value="Ingresar" />
                 <input class="btn-info" type="Submit" ng-click="" value="Cancelar" />
                 <p></p>

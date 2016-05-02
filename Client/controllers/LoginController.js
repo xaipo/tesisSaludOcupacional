@@ -4,7 +4,7 @@
 
 
 
-app.controller('LoginController', ['$scope', '$http', '$location','myProvider',  function ($scope,$http,$location,myProvider) {
+app.controller('LoginController', ['$scope', '$http', '$location','myProvider','$localStorage',  function ($scope,$http,$location,myProvider,$localStorage) {
 
     console.log(myProvider.getUser());
     $scope.mensaje = "";
@@ -39,7 +39,8 @@ app.controller('LoginController', ['$scope', '$http', '$location','myProvider', 
                 console.log($scope.usuario1.contrasena);
                 $scope.mensaje="Bienvenido "+response.data[0].nombre_usuario.toString();
                // $rootScope.usuarioLogin=$scope.usuario1;
-
+                //$localStorage.usr=$scope.usuario1;
+               window.localStorage.setItem("usuario", JSON.stringify($scope.usuario1));
                 window.location ='/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
               //  console.log($rootScope.usuarioLogin);
              //   $location.replace();
