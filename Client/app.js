@@ -21,11 +21,34 @@ function ApiUrl(){
     this.getPuestoTrabajo=function(){
         return 'http://localhost:3000/api/puestoTrabajo';
     }
-
+    this.getDependencia=function(){
+        return 'http://localhost:3000/api/dependencia';
+    }
+    this.getEmpresa=function(){
+        return 'http://localhost:3000/api/empresa';
+    }
+    this.getTipoHistoria1=function(){
+        return 'http://localhost:3000/api/tipoHistoria';
+    }
+    this.getEstadoCivil=function(){
+        return 'http://localhost:3000/api/estadoCivil';
+    }
+    this.getCiudad=function(){
+        return 'http://localhost:3000/api/ciudad';
+    }
+    this.getNivelEstudio=function(){
+        return 'http://localhost:3000/api/nivelEstudio';
+    }
+    this.getHerramientas=function(){
+        return 'http://localhost:3000/api/herramienta';
+    }
+    this.getMateriaPrima=function(){
+        return 'http://localhost:3000/api/materiaPrima';
+    }
 }
 
 app.factory("myProvider",function(){
-    console.log("factory function");
+   // console.log("factory function");
     return new ApiUrl();
 
 });
