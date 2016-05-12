@@ -13,6 +13,11 @@ app.controller('HistoriaClinicaController', ['$scope', '$http', '$location','myP
     $scope.tipoHistoria=[];
     $scope.tipoHistoriaSelected="";
 
+
+
+
+
+
     $scope.historiaClinica=  {
 
         paciente:"",
@@ -539,4 +544,16 @@ app.controller('HistoriaClinicaController', ['$scope', '$http', '$location','myP
         window.location =url;
     }
 
+
+    $scope.load=function(){
+
+        data = JSON.parse(localStorage.getItem("usuario"));
+        if(data==null){
+            window.location = '/tesisSaludOcupacional/Client/login.html';
+        }else{
+        $scope.usuarioLog=data;
+
+            }
+
+    }
 }]);

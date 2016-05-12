@@ -17,8 +17,7 @@
     <script src="/tesisSaludOcupacional/Client/app.js"></script>
 
     <script src="/tesisSaludOcupacional/Client/controllers/CargasController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/EmpresaController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/HistoriaClinicaController.js"></script>
+
 
     <script src="/tesisSaludOcupacional/Client/controllers/LoginController.js"></script>
     <script src="/tesisSaludOcupacional/Client/angular-1.4.6/angular-local-storage.min.js"></script>
@@ -87,15 +86,15 @@
                             <a  class="dropdown-toggle" data-toggle="dropdown" role="button">Historia Clinica <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li ><a href="/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/newClinicHistory.html" >Nueva Historia Clínica</a> </li>
-                        <li ><a href="#">Modificación Paciente</a> </li>
-                                <li ><a href="#">Gestión Accesos</a> </li>
+                        <li ><a href="/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificarHistoriaClinica.html">Modificación Historia Clinica</a> </li>
+                                <li ><a href="/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/reporteHistoriaClinica.html">Reporte Historia Clinica</a> </li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a  class="dropdown-toggle" data-toggle="dropdown" role="button">Pacientes <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li ><a href="#">Ingreso Paciente</a> </li>
-                                <li ><a href="#">Modificación Paciente</a> </li>
+                                <li ><a href="/tesisSaludOcupacional/Client/Administrator/Paciente/ingresoPaciente.html">Ingreso Paciente</a> </li>
+                                <li ><a href="/tesisSaludOcupacional/Client/Administrator/Paciente/modificarPaciente.html">Modificación Paciente</a> </li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -137,7 +136,10 @@
 
     <section class="jumbotron" >
         <section class="jumbotron" >
-            <center><h2>Welcome</h2> <div ng-model="usuarioLogin.nombre_usuario"/></center>
+            <form ng-init="load()">
+
+            </form>
+            <center><h2>Bienvenido {{usuarioLog.nombre_usuario}}</h2> </center>
             <center><img src="../images/logoendpoint.png"/> <br/></center>
 
         </section>

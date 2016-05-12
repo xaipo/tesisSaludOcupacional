@@ -11,11 +11,12 @@ app.controller('CargasController', function ($timeout, $rootScope, $scope, $loca
     data = JSON.parse(localStorage.getItem("usuario"));
     $scope.usuarioLog=data;
     //console.log(data);
-    console.log($scope.usuarioLog.nombre_usuario);
+    //console.log($scope.usuarioLog.nombre_usuario);
    // $scope.usuarioLog= JSON.parse ($scope.usuarioLog);
    // console.log($scope.usuarioLog+" entro");
 
     $scope.showCargarArchivos = function (pathurl) {
+
         data = JSON.parse(localStorage.getItem("usuario"));
         $scope.usuarioLog=data;
 
@@ -37,10 +38,22 @@ app.controller('CargasController', function ($timeout, $rootScope, $scope, $loca
 
 
     $scope.logout= function() {
-        $localStorage.removeAll;
-       //localStorage.removeItem('usuario');
+       // $localStorage.removeAll();
+       localStorage.removeItem('usuario');
        window.location = '/tesisSaludOcupacional/Client/login.html';
     };
 
 
+
+    $scope.load=function(){
+
+        data = JSON.parse(localStorage.getItem("usuario"));
+        if(data==null){
+            window.location = '/tesisSaludOcupacional/Client/login.html';
+        }else{
+            $scope.usuarioLog=data;
+
+        }
+
+    }
 });

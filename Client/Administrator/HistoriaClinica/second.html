@@ -5,6 +5,98 @@
     <title></title>
 </head>
 <body>
+<!-----menu -->
+<header>
+    <nav class="navbar navbar-inverse navbar-static-top " role="navigation">
+        <div class="container" >
+            <div class="row">
+                <br>
+                <div class="col-md-1 col-lg-1">
+                    <a href="/tesisSaludOcupacional/Client/Administrator/indexAdmin.html" ><img src="/tesisSaludOcupacional/Client/images/icono.png"/></a>
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <a href="/tesisSaludOcupacional/Client/Administrator/indexAdmin.html"  class="navbar-brand"> HEALTH END POINT  </a>
+                </div>
+
+                <div class="col-md-12 col-lg-12 col-xl-12">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuPrincipal-fm">
+                            <span class="sr-only"> Desplegar/Ocultar </span>
+                            <span class="icon-bar">  </span>
+                            <span class="icon-bar">  </span>
+                            <span class="icon-bar">  </span>
+                        </button>
+
+
+
+
+                    </div><br>
+                    <!-- Iniciar menu-->
+                    <div class="collapse navbar-collapse" id="menuPrincipal-fm">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/tesisSaludOcupacional/Client/Administrator/indexAdmin.html"  >DashBoard</a> </li>
+                            <li class="dropdown">
+                                <a  class="dropdown-toggle active" data-toggle="dropdown" role="button">Empresas <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li ><a href="#" ng-click="showCargarArchivos('/newEmpresa')">Ingreso Empresa</a> </li>
+                                    <li ><a href="#">Modificación Empresa</a> </li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a  class="dropdown-toggle" data-toggle="dropdown" role="button">Usuarios <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li ><a href="#">Ingreso Usuario</a> </li>
+                                    <li ><a href="#">Modificación Usuario</a> </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a  class="dropdown-toggle" data-toggle="dropdown" role="button">Historia Clinica <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/newClinicHistory.html" >Nueva Historia Clínica</a> </li>
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificarHistoriaClinica.html">Modificación Historia Clinica</a> </li>
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/reporteHistoriaClinica.html">Reporte Historia Clinica</a> </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a  class="dropdown-toggle" data-toggle="dropdown" role="button">Pacientes <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Paciente/ingresoPaciente.html">Ingreso Paciente</a> </li>
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Paciente/modificarPaciente.html">Modificación Paciente</a> </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a  class="dropdown-toggle" data-toggle="dropdown" role="button">Evoluciones <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li ><a href="#">Ingreso Evoluciones</a> </li>
+                                    <li ><a href="#">Modificación Evoluciones</a> </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a  class="dropdown-toggle" data-toggle="dropdown" role="button"> Configuracion CIE 10 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li ><a href="#">Ingreso</a> </li>
+                                    <li ><a href="#">Modificación</a> </li>
+                                </ul>
+                            </li>
+                            <li ><a href="#">Reportes</a> </li>
+
+                            <li class="dropdown">
+                                <a  class="dropdown-toggle" data-toggle="dropdown" role="button"> {{usuarioLog.nombre_usuario}} <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li ><a href="#" >Perfil</a> </li>
+                                    <li ><a href="#" ng-click="logout()">Salir</a> </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 SECOND
 </body>
 </html>
