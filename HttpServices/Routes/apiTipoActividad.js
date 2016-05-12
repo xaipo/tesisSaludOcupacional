@@ -16,6 +16,7 @@ var Productos = require('../Models/modeloTipoActividad');
 /*router.get('/productos',function(req,res){
 
  res.send("ingresa api");
+
  });*/
 
 

@@ -23,6 +23,8 @@ app.controller('HistoriaClinicaController', ['$scope', '$http', '$location','myP
 
     //realizar el control si tiene una historia clinica vigente
 
+
+
     // <editor-fold defaultstate="collapsed" desc="Tipo Historia CLinica">
 
 
@@ -66,10 +68,52 @@ app.controller('HistoriaClinicaController', ['$scope', '$http', '$location','myP
         });
 
 
+    $http({
+
+        method: 'GET',
+        url: myProvider.getTipoHistoria1(),
+
+        headers: {
+            'Content-Type': 'application/json'
+        }
+
+    }).then(function successCallback(response) {
+        //console.log('entra url');
+        //console.log(url);
+
+        var n = response.data.length;
+        // console.log(n);
+
+        if(n==0){
+
+            alert('no se encontro el paciente');
+
+        }else {
+            $scope.tipoHistoria=[];
+            for(var i=0;i<n;i++){
+
+                $scope.tipoHistoria.push(response.data[i]);
+
+            }
+
+
+        }
+
+
+    }, function errorCallback(response) {
+        console.log('entra');
+        //  Console.log(response);
+        $scope.mesaje = response.mensaje;
+
+    });
+
+
+
+
+
+
 
     // </editor-fold>
-
-
     // <editor-fold defaultstate="collapsed" desc="Busqueda Materia Prima">
 
     function  getMateriaPrima(array) {
@@ -115,11 +159,6 @@ app.controller('HistoriaClinicaController', ['$scope', '$http', '$location','myP
     }
 
     // </editor-fold>
-
-
-
-
-
     // <editor-fold defaultstate="collapsed" desc="Busqueda Herramientas">
 
     function  getHerramientas(array) {
@@ -353,8 +392,6 @@ app.controller('HistoriaClinicaController', ['$scope', '$http', '$location','myP
 
     }
              // </editor-fold>
-
-
     // <editor-fold defaultstate="collapsed" desc=" busqueda Dependencia">
     function  getDependencia(id){
         //console.log('entra dependencia');
@@ -452,37 +489,54 @@ app.controller('HistoriaClinicaController', ['$scope', '$http', '$location','myP
     };
 
 // </editor-fold >
-
-
-
-  //  window.localStorage.setItem("usuario", JSON.stringify($scope.usuario1));
-
+    // <editor-fold defaultstate="collapsed" desc="Cargar el encabezado de historia clinica">
 
 
     $scope.next1= function(){
+        //console.log(document.getElementById('datepicker').value);
+      //  console.log(angular.element('#datepicker').val());
 
-
+        $scope.historiaClinica.fecha_examen=document.getElementById('datepicker').value;
+       // console.log($scope.historiaClinica.fecha_examen);
         if($scope.historiaClinica.tipo_examen!="" && $scope.pacienteEncontrado!=""&&$scope.historiaClinica.fecha_examen!="") {
-            alert("entra");
-            var dd=$scope.historiaClinica.fecha_examen;
 
-            console.log(dd);
+
+           // var dd=$scope.historiaClinica.fecha_examen;
+
+            //console.log(dd);
 
             //$scope.historiaClinica.fecha_examen=vec[0];
-            $scope.historiaClinica.paciente = $scope.pacienteEncontrado.id;
-            window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
+            var a=confirm("Esta seguro que los datos estan correctos presione si para continuar");
+            //console.log(a);
+            if(a){
 
+                    $scope.historiaClinica.paciente = $scope.pacienteEncontrado.id;
+
+                    window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
+                window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/first.html';
+                }
         }else{
 
             alert("para continuar ingreseel paciente y  el tipo de historia clinica a elaborar");
         }
     }
 
+    // </editor-fold>
 
-    function transformDate(month){
+         var inicializar = function(){
+
+
+            data = JSON.parse(localStorage.getItem("hc"));
+            console.log(data);
+
+        }
 
 
 
+
+    $scope.redirect1=function(url){
+    console.log(url);
+        window.location =url;
     }
 
 }]);
