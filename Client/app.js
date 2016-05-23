@@ -9,9 +9,6 @@ function ApiUrl(){
     this.getUser=function(){
         return 'http://localhost:3000/api/usuarios';
     }
-    this.getEmpresa=function(){
-        return 'http://localhost:3000/api/empresa';
-    }
     this.getHistoriaClinica=function(){
         return 'http://localhost:3000/api/historiaClinica';
     }
@@ -42,9 +39,16 @@ function ApiUrl(){
     this.getHerramientas=function(){
         return 'http://localhost:3000/api/herramienta';
     }
-    this.getMateriaPrima=function(){
-        return 'http://localhost:3000/api/materiaPrima';
+
+    this.getProvincia=function(){
+        return 'http://localhost:3000/api/provincia';
     }
+
+    this.getCiudades=function(){
+        return 'http://localhost:3000/api/ciudad';
+    }
+
+
 }
 
 app.factory("myProvider",function(){

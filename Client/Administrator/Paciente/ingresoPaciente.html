@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paciente</title>
+    <title>Historia Clinica</title>
     <!-----estilos -->
     <link rel="stylesheet" type="text/css" href="/tesisSaludOcupacional/Client/css/bootstrap.css" id="pagesheet"/>
     <link rel="stylesheet" type="text/css" href="/tesisSaludOcupacional/Client/css/OverrideComponents.css" id="pageshee1"/>
@@ -17,8 +17,9 @@
     <script src="/tesisSaludOcupacional/Client/app.js"></script>
 
     <script src="/tesisSaludOcupacional/Client/controllers/CargasController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/EmpresaController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/HistoriaClinicaController.js"></script>
+
+
+    <script src="/tesisSaludOcupacional/Client/controllers/PacienteController.js"></script>
 
     <script src="/tesisSaludOcupacional/Client/controllers/LoginController.js"></script>
     <script src="/tesisSaludOcupacional/Client/angular-1.4.6/angular-local-storage.min.js"></script>
@@ -32,11 +33,49 @@
 <script src="/tesisSaludOcupacional/Client/scripts/bootstrap-datepicker.js"></script>
 
 
-<script>
+<<script>
+
+
     $(function(){
+
+
         $('.datepicker').datepicker();
+
+
+        $('#date').change(function(){
+
+            $scope.historiaClinica.fecha_examen = $("#date").val();
+        });
+      //  console.log('entra');
+
     });
+
+    /*$("#datepicker").change("dp.change", function() {
+     console.log('entra1');
+     $scope.historiaClinica.fecha_examen = $("datepicker").val();
+     alert("selected date is " + $scope.historiaClinica.fecha_examen);
+
+     });*/
+
+
 </script>
+
+
+<!--<script>
+    $(function() {
+        $(".datepicker").datepicker(
+                {
+                    dateFormat: "dd/mm/yy",
+                    dayNames: [ "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" ],
+                    dayNamesMin: [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
+                    firstDay: 1,
+                    gotoCurrent: true,
+                    monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Deciembre" ]
+                }
+        );
+    });
+</script>-->
+
 <!-----menu -->
 <header>
     <nav class="navbar navbar-inverse navbar-static-top " role="navigation">
@@ -129,14 +168,142 @@
         </div>
     </nav>
 </header>
-<body ng-app="myApp">
+
+<form class="form" role="form" ng-controller="PacienteController" ng-init="load()">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+
+            <h3 class="panel-title">Ingreso Paciente </h3>
+
+        </div>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-3 col-xs-12" >
+                    <br>
+                    <label > Cédula:</label>
+                    <input type="text" class="form-control" placeholder="999999999-9" ng-model="paciente.ci" />
+                    <label > Primer Nombre:</label>
+                    <input type="text" class="form-control" placeholder="Primer Nombre" ng-model="paciente.primer_nombre"/>
+                    <label > Segundo Nombre:</label>
+                    <input type="text" class="form-control" placeholder="Segundo Nombre" ng-model="paciente.segundo_nombre"/>
+
+                </div>
+                <div class="col-md-3 col-xs-12" >
+                    <br>
+                    <label > Primer Apellido:</label>
+                    <input type="text" class="form-control" placeholder="Primer Apellido:" ng-model="paciente.primer_apellido" />
+                    <label > Segundo Apellido:</label>
+                    <input type="text" class="form-control" placeholder="Segundo Apellido" ng-model="paciente.segundo_apellido"/>
+                    <label > Fecha Nacimiento: </label><br>
+                    <input class="datepicker" type="text" id="datepicker1" name="date" ng-model="paciente.fecha_nacimiento"/><br>
+
+                </div>
+                <div class="col-md-3 col-xs-12" >
+                    <br>
+                    <label> Sexo: </label>
+                    <select class="form-control" name="singleSelect" ng-model="paciente.sexo" >
+                        <option value="H" >Hombre</option>
+                        <option value="M" >Mujer</option>
+
+                    </select>
+                    <label> Provincia: </label>
+                    <select name="Provimcia" ng-model="provinciaSeleccionada" class="form-control" single
+                             ng-click="buscarCiudadPorProvincia1()">
+                        <option id="valor" value={{empresaAux._id}}
+                                ng-repeat="empresaAux in provincias">
+                            {{empresaAux.nombre_provincia}}
+                        </option>
+                    </select>
+                    <label> Ciudad: </label>
+
+                    <select class="form-control" name="singleSelect" ng-model="paciente.ciudad">
+                        <option  ng-repeat="ci in ciudades" value="{{ci}}">{{ci.nombre_ciudad}}</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-md-3 col-xs-12" >
+                      <br>
+                    <label > Edad:</label>
+                    <input type="number" class="form-control" placeholder="1" min="1" />
+
+                    <label> Estado Civil: </label>
+
+                    <select class="form-control" name="singleSelect">
+                    <option ng-repeat="ec in estado_civil" value="{{ec}}">{{ec.descripcion_estado_civil}}</option>
+
+                </select>
+                    <label> Nivle Estudio: </label>
+
+                    <select class="form-control" name="singleSelect1">
+                        <option ng-repeat="nivel in nivel_estudio" value="{{nivel}}">{{nivel.descripcion_nivel_estudio}}</option>
+
+                    </select>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="panel-heading">
+
+                    <h3 class="panel-title" style="font-weight:bold">Ingreso Puesto Trabajo </h3>
+
+                </div>
+                <div class="container" style="border: medium !important;">
 
 
-<div>
+                    <div class="row">
 
 
-</div>
+                        <div class="col-md-3 col-xs-12">
+                            <br>
+                            <label>Descripcion Puesto:</label>
+                            <input type="text" class="form-control" placeholder="Descripción Puesto"/>
+                            <label> Provincia: </label>
+                            <select name="Provimcia" ng-model="empresaSeleccionada" class="form-control" single
+                                    ng-click="buscarDependenciaPorEmpresa()">
+                                <option id="valor1" value={{empresaAux1._id}}
+                                        ng-repeat="empresaAux1 in empresas">
+                                    {{empresaAux1.nombre_empresa}}
+                                </option>
+                            </select>
+                            <label> Ciudad: </label>
 
+                            <select class="form-control" name="singleSelect">
+                                <option  ng-repeat="ci in dependencia" value="{{ci}}">{{ci.nombre_dependencia}}</option>
+
+                            </select>
+
+                        </div>
+
+
+
+
+                </div><!--div fin contaniner-->
+            </div><!--div fin contaniner-->
+        </div>
+            <div class="row">
+
+
+                <div class="col-md-3 col-xs-12">
+                    <br>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</form>
 
 </body>
 </html>
