@@ -260,7 +260,7 @@
 
 
                         <div class="col-md-3 col-xs-12">
-                            <br>
+                            <br><br>
                             <label>Descripcion Puesto:</label>
                             <input type="text" class="form-control" placeholder="Descripción Puesto"/>
                             <label> Provincia: </label>
@@ -278,12 +278,93 @@
 
                             </select>
 
+
                         </div>
 
 
 
+                        <div class="col-md-3 col-xs-12">
+                            <br><br>
+                            <label> Cargo: </label>
+                            <select class="form-control" name="singleSelect">
+                                <option  ng-repeat="ca in cargo" value="{{ca}}">{{ca.nombre_cargo}}</option>
 
-                </div><!--div fin contaniner-->
+                            </select>
+                            <label > Fecha Cargo: </label><br>
+                            <input class="datepicker" type="text" id="datepicker2" name="date" /><br>
+                            <label>Descripcion Funciones:</label>
+                            <input type="text" class="form-control" placeholder="Descripción Funciones"/>
+
+
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <br>
+
+                            <label for="Maquinaria"> Maquinaria: </label><br>
+                            Búsqueda <input type="text" ng-model="search1" class="form-control" placeholder="Busqueda"><br>
+                            <select name="Maquinaria" ng-model="selectedMaquinaria" class="form-control" multiple
+                                    style="height: 150px;" ng-click="selectedMaq()">
+                                <option value={{empresaAux3}}
+                                        ng-repeat="empresaAux3 in maquinaria | filter:search1| orderBy:empresaAux3.nombre_maquinaria">
+                                    {{empresaAux3.nombre_maquinaria}}
+                                </option>
+                            </select><br>
+
+
+
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <br>
+                            <label for="Maquinaria1"> Maquinaria Seleccionada: </label><br>
+                            Búsqueda <input type="text" ng-model="search2" class="form-control" placeholder="Busqueda"><br>
+                            <select name="Maquinaria" ng-model="selectedMaquinaria" class="form-control" multiple
+                                    style="height: 150px;" ng-click="selectedMaq1()">
+                                <option value={{empresaAux4}}
+                                        ng-repeat="empresaAux4 in listaSeleccionMaquinaria | filter:search2| orderBy:empresaAux4.nombre_maquinaria">
+                                    {{empresaAux4.nombre_maquinaria}}
+                                </option>
+                            </select><br>
+
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-3 col-xs-12">
+                                <br>
+
+                                <label for="Herramientas"> Herramientas: </label><br>
+                                Búsqueda <input type="text" ng-model="search3" class="form-control" placeholder="Busqueda"><br>
+                                <select name="Herramientas" ng-model="selectedHerramientas" class="form-control" multiple
+                                        style="height: 150px;" ng-click="selectedHerra()">
+                                    <option value={{empresaAux4}}
+                                            ng-repeat="empresaAux4 in herramientas | filter:search3| orderBy:empresaAux4.nombre_maquinaria">
+                                        {{empresaAux4.nombre_herramienta}}
+                                    </option>
+                                </select><br>
+
+
+
+                            </div>
+                            <div class="col-md-3 col-xs-12">
+                                <br>
+                                <label for="Herramientas2"> Herramientas Seleccionada: </label><br>
+                                Búsqueda <input type="text" ng-model="search4" class="form-control" placeholder="Busqueda"><br>
+                                <select name="Herramientas2" ng-model="selectedHerramientas" class="form-control" multiple
+                                        style="height: 150px;" ng-click="selectedHerra1()">
+                                    <option value={{empresaAux5}}
+                                            ng-repeat="empresaAux5 in listaSeleccionHerramientas | filter:search4| orderBy:empresaAux5.nombre_herramienta">
+                                        {{empresaAux5.nombre_herramienta}}
+                                    </option>
+                                </select><br>
+
+
+                            </div>
+
+
+                        </div>
+                    </div><!--div fin contaniner-->
+
             </div><!--div fin contaniner-->
         </div>
             <div class="row">

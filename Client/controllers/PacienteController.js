@@ -41,6 +41,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     }
 
+    // <editor-fold defaultstate="collapsed" desc="atributos interfaz">
     $scope.nivel_estudio=[];
     $scope.estado_civil=[];
     $scope.ciudades=[];
@@ -53,14 +54,22 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     $scope.cargo;
     $scope.jornada;
     $scope.maquinaria;
-    $scope.herramientas;
+    $scope.herramientas=[];
     $scope.proteccion;
     $scope.protocolos;
+    $scope.search3;
+    $scope.search1;
+    $scope.search2;
+    $scope.search4;
+    $scope.search5;
+    $scope.search6;
+    $scope.selectedMaquinaria="";
+    $scope.listaSeleccionMaquinaria=[];
+    $scope.selectedHerramientas="";
+    $scope.listaSeleccionHerramientas=[];
 
-
-
-
-
+    // </editor-fold>
+    // <editor-fold defaultstate="collapsed" desc="Cargar provincia">
     $http({
 
         method: 'GET',
@@ -101,10 +110,8 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
         $scope.mesaje = response.mensaje;
 
     });
-
-
-
-
+    // </editor-fold>
+    // <editor-fold defaultstate="collapsed" desc="Cargar Estado Civil">
 
         $http({
 
@@ -145,9 +152,8 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
         });
 
-
-
-
+    // </editor-fold>
+    // <editor-fold defaultstate="collapsed" desc="Nivel Estudio load">
         $http({
 
             method: 'GET',
@@ -187,8 +193,8 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
         });
 
-
-
+    // </editor-fold>
+    // <editor-fold defaultstate="collapsed" desc="Cargar empresa">
         $http({
 
             method: 'GET',
@@ -233,20 +239,146 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
         });
 
+    // </editor-fold >
+    // <editor-fold defaultstate="collapsed" desc="Cargar cargo">
+    $http({
+
+        method: 'GET',
+        url: myProvider.getCargo(),
+
+        headers: {
+            'Content-Type': 'application/json'
+        }
+
+    }).then(function successCallback(response) {
+        //console.log('entra url');
+        //console.log(url);
+
+        var n = response.data.length;
+        // console.log(n);
+
+        if(n==0){
+
+            alert('no se encontro provincias');
+
+        }else {
+            $scope.cargo=[];
+
+            for(var i=0;i<n;i++){
+
+                $scope.cargo.push(response.data[i]);
+
+                // console.log($scope.empresas);
+            }
+         //   $scope.empresaSeleccionada=$scope.empresas[0]._id;
+            //console.log($scope.empresaSeleccionada);
+            // console.log($scope.empresas);
+          //  $scope.buscarDependenciaPorEmpresa();
+
+        }
 
 
+    }, function errorCallback(response) {
+        console.log('entra');
+        //  Console.log(response);
+        $scope.mesaje = response.mensaje;
+
+    });
+    // </editor-fold>
+
+    // <editor-fold defaultstate="collapsed" desc="Maquinaria">
+    $http({
+
+        method: 'GET',
+        url: myProvider.getMaquinaria(),
+
+        headers: {
+            'Content-Type': 'application/json'
+        }
+
+    }).then(function successCallback(response) {
+        //console.log('entra url');
+        //console.log(url);
+
+        var n = response.data.length;
+        // console.log(n);
+
+        if(n==0){
+
+            alert('no se encontro provincias');
+
+        }else {
+            $scope.maquinaria=[];
+
+            for(var i=0;i<n;i++){
+
+                $scope.maquinaria.push(response.data[i]);
+
+                // console.log($scope.empresas);
+            }
+            //   $scope.empresaSeleccionada=$scope.empresas[0]._id;
+            //console.log($scope.empresaSeleccionada);
+            // console.log($scope.empresas);
+            //  $scope.buscarDependenciaPorEmpresa();
+
+        }
 
 
+    }, function errorCallback(response) {
+        console.log('entra');
+        //  Console.log(response);
+        $scope.mesaje = response.mensaje;
 
-    $scope.load = function() {
+    });
+    // </editor-fold>
 
 
-    }
+    // <editor-fold defaultstate="collapsed" desc="Herramientas">
+    $http({
+
+        method: 'GET',
+        url: myProvider.getHerramientas(),
+
+        headers: {
+            'Content-Type': 'application/json'
+        }
+
+    }).then(function successCallback(response) {
+        //console.log('entra url');
+        //console.log(url);
+
+        var n = response.data.length;
+        // console.log(n);
+
+        if(n==0){
+
+            alert('no se encontro provincias');
+
+        }else {
+            $scope.herramientas=[];
+
+            for(var i=0;i<n;i++){
+
+                $scope.herramientas.push(response.data[i]);
+
+                // console.log($scope.empresas);
+            }
+            //   $scope.empresaSeleccionada=$scope.empresas[0]._id;
+            //console.log($scope.empresaSeleccionada);
+            // console.log($scope.empresas);
+            //  $scope.buscarDependenciaPorEmpresa();
+
+        }
 
 
+    }, function errorCallback(response) {
+        console.log('entra');
+        //  Console.log(response);
+        $scope.mesaje = response.mensaje;
 
-
-
+    });
+    // </editor-fold>
+    // <editor-fold defaultstate="collapsed" desc="Busqueda dependencia por Empresa">
     $scope.buscarDependenciaPorEmpresa = function(){
 
 
@@ -294,8 +426,8 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     }
 
-
-
+    // </editor-fold >
+    // <editor-fold defaultstate="collapsed" desc="busqueda Ciudad por provincia">
    $scope.buscarCiudadPorProvincia1 = function(){
 
       // $scope.provinciaSeleccionada=JSON.parse(document.getElementById('valor').value);
@@ -344,4 +476,40 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     }
 
+    // </editor-fold>
+
+
+    $scope.selectedMaq=function(){
+
+        $scope.selectedMaquinaria=JSON.parse($scope.selectedMaquinaria);
+        $scope.listaSeleccionMaquinaria.push($scope.selectedMaquinaria);
+        $scope.maquinaria.pop($scope.selectedMaquinaria);
+
+    }
+    $scope.selectedMaq1=function(){
+
+        $scope.selectedMaquinaria=JSON.parse($scope.selectedMaquinaria);
+        $scope.maquinaria.push($scope.selectedMaquinaria);
+        $scope.listaSeleccionMaquinaria.pop($scope.selectedMaquinaria);
+
+
+    }
+
+
+
+    $scope.selectedHerra=function(){
+
+        $scope.selectedHerramientas=JSON.parse($scope.selectedHerramientas);
+        $scope.listaSeleccionHerramientas.push($scope.selectedHerramientas);
+        $scope.herramientas.pop($scope.selectedHerramientas);
+
+    }
+
+    $scope.selectedHerra1=function(){
+
+        $scope.selectedHerramientas=JSON.parse($scope.selectedHerramientas);
+        $scope.herramientas.push($scope.selectedHerramientas);
+        $scope.listaSeleccionHerramientas.pop($scope.selectedHerramientas);
+
+    }
 }]);

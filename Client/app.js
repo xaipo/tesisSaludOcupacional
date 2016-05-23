@@ -47,7 +47,12 @@ function ApiUrl(){
     this.getCiudades=function(){
         return 'http://localhost:3000/api/ciudad';
     }
-
+    this.getCargo=function(){
+        return 'http://localhost:3000/api/cargo';
+    }
+    this.getMaquinaria=function(){
+        return 'http://localhost:3000/api/maquinaria';
+    }
 
 }
 
