@@ -360,6 +360,41 @@
 
 
                             </div>
+                            <div class="col-md-3 col-xs-12">
+                                <br>
+
+                                <label for="MatPri"> Materia Prima: </label><br>
+                                Búsqueda <input type="text" ng-model="search5" class="form-control" placeholder="Busqueda"><br>
+                                <select name="MatPri" ng-model="selectedMateriaPrima" class="form-control" multiple
+                                        style="height: 150px;" ng-click="selectedMateriaPr()">
+                                    <option value={{empresaAux5}}
+                                            ng-repeat="empresaAux5 in materiaPrima | filter:search5| orderBy:empresaAux5.descripcion_materia_prima">
+                                        {{empresaAux5.descripcion_materia_prima}}
+                                    </option>
+                                </select><br>
+
+
+
+
+                            </div>
+
+                            <div class="col-md-3 col-xs-12">
+                                <br>
+
+                                <label for="MatPriSe"> Materia Prima Seleccionada: </label><br>
+                                Búsqueda <input type="text" ng-model="search6" class="form-control" placeholder="Busqueda"><br>
+                                <select name="MatPriSe" ng-model="selectedMateriaPrima" class="form-control" multiple
+                                        style="height: 150px;" ng-click="selectedMateriaPr1()">
+                                    <option value={{empresaAux6}}
+                                            ng-repeat="empresaAux6 in listaSeleccionMateriaPrima | filter:search6| orderBy:empresaAux6.descripcion_materia_prima">
+                                        {{empresaAux6.descripcion_materia_prima}}
+                                    </option>
+                                </select><br>
+
+
+
+
+                            </div>
 
 
                         </div>

@@ -53,6 +53,9 @@ function ApiUrl(){
     this.getMaquinaria=function(){
         return 'http://localhost:3000/api/maquinaria';
     }
+    this.getMateriaPrima=function(){
+        return 'http://localhost:3000/api/materiaPrima';
+    }
 
 }
 

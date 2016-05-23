@@ -54,6 +54,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     $scope.cargo;
     $scope.jornada;
     $scope.maquinaria;
+    $scope.materiaPrima="";
     $scope.herramientas=[];
     $scope.proteccion;
     $scope.protocolos;
@@ -63,10 +64,14 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     $scope.search4;
     $scope.search5;
     $scope.search6;
+    $scope.search7;
+    $scope.search8;
     $scope.selectedMaquinaria="";
     $scope.listaSeleccionMaquinaria=[];
     $scope.selectedHerramientas="";
     $scope.listaSeleccionHerramientas=[];
+    $scope.selectedMateriaPrima="";
+    $scope.listaSeleccionMateriaPrima=[];
 
     // </editor-fold>
     // <editor-fold defaultstate="collapsed" desc="Cargar provincia">
@@ -378,6 +383,51 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     });
     // </editor-fold>
+    // <editor-fold defaultstate="collapsed" desc="Materia Prima">
+    $http({
+
+        method: 'GET',
+        url: myProvider.getMateriaPrima(),
+
+        headers: {
+            'Content-Type': 'application/json'
+        }
+
+    }).then(function successCallback(response) {
+        //console.log('entra url');
+        //console.log(url);
+
+        var n = response.data.length;
+        // console.log(n);
+
+        if(n==0){
+
+            alert('no se encontro provincias');
+
+        }else {
+            $scope.materiaPrima=[];
+
+            for(var i=0;i<n;i++){
+
+                $scope.materiaPrima.push(response.data[i]);
+
+                // console.log($scope.empresas);
+            }
+            //   $scope.empresaSeleccionada=$scope.empresas[0]._id;
+            //console.log($scope.empresaSeleccionada);
+            // console.log($scope.empresas);
+            //  $scope.buscarDependenciaPorEmpresa();
+
+        }
+
+
+    }, function errorCallback(response) {
+        console.log('entra');
+        //  Console.log(response);
+        $scope.mesaje = response.mensaje;
+
+    });
+    // </editor-fold>
     // <editor-fold defaultstate="collapsed" desc="Busqueda dependencia por Empresa">
     $scope.buscarDependenciaPorEmpresa = function(){
 
@@ -479,6 +529,8 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     // </editor-fold>
 
 
+
+
     $scope.selectedMaq=function(){
 
         $scope.selectedMaquinaria=JSON.parse($scope.selectedMaquinaria);
@@ -512,4 +564,23 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
         $scope.listaSeleccionHerramientas.pop($scope.selectedHerramientas);
 
     }
+
+
+
+    $scope.selectedMateriaPr=function(){
+
+        $scope.selectedMateriaPrima=JSON.parse($scope.selectedMateriaPrima);
+        $scope.listaSeleccionMateriaPrima.push($scope.selectedMateriaPrima);
+        $scope.materiaPrima.pop($scope.selectedMateriaPrima);
+
+    }
+
+    $scope.selectedMateriaPr1=function(){
+
+        $scope.selectedMateriaPrima=JSON.parse($scope.selectedMateriaPrima);
+        $scope.materiaPrima.push($scope.selectedMateriaPrima);
+        $scope.listaSeleccionMateriaPrima.pop($scope.selectedMateriaPrima);
+
+    }
+
 }]);
