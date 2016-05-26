@@ -51,12 +51,12 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     $scope.empresas=[];
     $scope.dependencia=[];
     $scope.empresaSeleccionada="";
-    $scope.cargo;
-    $scope.jornada;
-    $scope.maquinaria;
-    $scope.materiaPrima="";
+    $scope.cargo=[];
+    $scope.jornada=[];
+    $scope.maquinaria=[];
+    $scope.materiaPrima=[];
     $scope.herramientas=[];
-    $scope.proteccion;
+    $scope.proteccion=[];
     $scope.protocolos;
     $scope.search3;
     $scope.search1;
@@ -72,8 +72,12 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     $scope.listaSeleccionHerramientas=[];
     $scope.selectedMateriaPrima="";
     $scope.listaSeleccionMateriaPrima=[];
+    $scope.selectedProteccion="";
+    $scope.listaSeleccionProteccion=[];
+
 
     // </editor-fold>
+
     // <editor-fold defaultstate="collapsed" desc="Cargar provincia">
     $http({
 
@@ -290,7 +294,6 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     });
     // </editor-fold>
-
     // <editor-fold defaultstate="collapsed" desc="Maquinaria">
     $http({
 
@@ -336,8 +339,6 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     });
     // </editor-fold>
-
-
     // <editor-fold defaultstate="collapsed" desc="Herramientas">
     $http({
 
@@ -410,6 +411,51 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
             for(var i=0;i<n;i++){
 
                 $scope.materiaPrima.push(response.data[i]);
+
+                // console.log($scope.empresas);
+            }
+            //   $scope.empresaSeleccionada=$scope.empresas[0]._id;
+            //console.log($scope.empresaSeleccionada);
+            // console.log($scope.empresas);
+            //  $scope.buscarDependenciaPorEmpresa();
+
+        }
+
+
+    }, function errorCallback(response) {
+        console.log('entra');
+        //  Console.log(response);
+        $scope.mesaje = response.mensaje;
+
+    });
+    // </editor-fold>
+    // <editor-fold defaultstate="collapsed" desc="Proteccion">
+    $http({
+
+        method: 'GET',
+        url: myProvider.getProteccion(),
+
+        headers: {
+            'Content-Type': 'application/json'
+        }
+
+    }).then(function successCallback(response) {
+        //console.log('entra url');
+        //console.log(url);
+
+        var n = response.data.length;
+        // console.log(n);
+
+        if(n==0){
+
+            alert('no se encontro provincias');
+
+        }else {
+            $scope.proteccion=[];
+
+            for(var i=0;i<n;i++){
+
+                $scope.proteccion.push(response.data[i]);
 
                 // console.log($scope.empresas);
             }
@@ -533,17 +579,52 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     $scope.selectedMaq=function(){
 
-        $scope.selectedMaquinaria=JSON.parse($scope.selectedMaquinaria);
-        $scope.listaSeleccionMaquinaria.push($scope.selectedMaquinaria);
-        $scope.maquinaria.pop($scope.selectedMaquinaria);
+
+        if($scope.selectedMaquinaria!=undefined) {
+            $scope.selectedMaquinaria=JSON.parse($scope.selectedMaquinaria);
+            $scope.listaSeleccionMaquinaria.push($scope.selectedMaquinaria);
+
+            var n = $scope.maquinaria.length;
+            var pos = "";
+            for (var i = 0; i < n; i++) {
+
+                if ($scope.maquinaria[i]._id == $scope.selectedMaquinaria._id) {
+                    pos = i;
+                    break;
+                }
+            }
+            console.log(pos);
+            $scope.maquinaria.splice(pos, 1);
+            //$scope.maquinaria.cleanData(undefined);
+            console.log($scope.listaSeleccionMaquinaria);
+            console.log($scope.maquinaria);
+            //$scope.maquinaria.removeItem($scope.selectedMaquinaria);
+        }
 
     }
     $scope.selectedMaq1=function(){
 
-        $scope.selectedMaquinaria=JSON.parse($scope.selectedMaquinaria);
-        $scope.maquinaria.push($scope.selectedMaquinaria);
-        $scope.listaSeleccionMaquinaria.pop($scope.selectedMaquinaria);
 
+        if( $scope.selectedMaquinaria!=undefined) {
+            $scope.selectedMaquinaria=JSON.parse($scope.selectedMaquinaria);
+            $scope.maquinaria.push($scope.selectedMaquinaria);
+            // $scope.listaSeleccionMaquinaria.removeItem($scope.selectedMaquinaria._id);
+
+            var n = $scope.listaSeleccionMaquinaria.length;
+            var pos = "";
+            for (var i = 0; i < n; i++) {
+
+                if ($scope.listaSeleccionMaquinaria[i]._id == $scope.selectedMaquinaria._id) {
+                    pos = i;
+                    break;
+                }
+            }
+            console.log(pos);
+            $scope.listaSeleccionMaquinaria.splice(pos, 1);
+            // $scope.listaSeleccionMaquinaria.cleanData(undefined);
+        //    console.log($scope.maquinaria);
+           // console.log($scope.listaSeleccionMaquinaria);
+        }
 
     }
 
@@ -551,17 +632,63 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     $scope.selectedHerra=function(){
 
-        $scope.selectedHerramientas=JSON.parse($scope.selectedHerramientas);
+      /*  $scope.selectedHerramientas=JSON.parse($scope.selectedHerramientas);
         $scope.listaSeleccionHerramientas.push($scope.selectedHerramientas);
-        $scope.herramientas.pop($scope.selectedHerramientas);
+        $scope.selectedHerramientas.pop($scope.selectedHerramientas);*/
+
+        if($scope.selectedHerramientas!=undefined) {
+            $scope.selectedHerramientas=JSON.parse($scope.selectedHerramientas);
+            $scope.listaSeleccionHerramientas.push($scope.selectedHerramientas);
+
+            var n = $scope.herramientas.length;
+            var pos = "";
+            for (var i = 0; i < n; i++) {
+
+                if ($scope.herramientas[i]._id == $scope.selectedHerramientas._id) {
+                    pos = i;
+                    break;
+                }
+            }
+            console.log(pos);
+            $scope.herramientas.splice(pos, 1);
+            //$scope.maquinaria.cleanData(undefined);
+            //console.log($scope.listaSeleccionMaquinaria);
+           // console.log($scope.maquinaria);
+            //$scope.maquinaria.removeItem($scope.selectedMaquinaria);
+        }
+
+       // $scope.herramientas[aux].remove();
+
 
     }
 
     $scope.selectedHerra1=function(){
 
-        $scope.selectedHerramientas=JSON.parse($scope.selectedHerramientas);
+       /* $scope.selectedHerramientas=JSON.parse($scope.selectedHerramientas);
         $scope.herramientas.push($scope.selectedHerramientas);
-        $scope.listaSeleccionHerramientas.pop($scope.selectedHerramientas);
+        $scope.listaSeleccionHerramientas.pop($scope.selectedHerramientas);*/
+
+        if($scope.selectedHerramientas!=undefined) {
+            $scope.selectedHerramientas=JSON.parse($scope.selectedHerramientas);
+            $scope.herramientas.push($scope.selectedHerramientas);
+
+            var n = $scope.herramientas.length;
+            var pos = "";
+            for (var i = 0; i < n; i++) {
+
+                if ($scope.listaSeleccionHerramientas[i]._id == $scope.selectedHerramientas._id) {
+                    pos = i;
+                    break;
+                }
+            }
+            console.log(pos);
+            $scope.listaSeleccionHerramientas.splice(pos, 1);
+            //$scope.maquinaria.cleanData(undefined);
+            //console.log($scope.listaSeleccionMaquinaria);
+            // console.log($scope.maquinaria);
+            //$scope.maquinaria.removeItem($scope.selectedMaquinaria);
+        }
+
 
     }
 
@@ -569,18 +696,93 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     $scope.selectedMateriaPr=function(){
 
-        $scope.selectedMateriaPrima=JSON.parse($scope.selectedMateriaPrima);
-        $scope.listaSeleccionMateriaPrima.push($scope.selectedMateriaPrima);
-        $scope.materiaPrima.pop($scope.selectedMateriaPrima);
+
+        if($scope.selectedMateriaPrima!=undefined) {
+            $scope.selectedMateriaPrima = JSON.parse($scope.selectedMateriaPrima);
+            $scope.listaSeleccionMateriaPrima.push($scope.selectedMateriaPrima);
+
+            var n = $scope.materiaPrima.length;
+            var pos = "";
+            for (var i = 0; i < n; i++) {
+
+                if ($scope.materiaPrima[i]._id == $scope.selectedMateriaPrima._id) {
+                    pos = i;
+                    break;
+                }
+            }
+            console.log(pos);
+            $scope.materiaPrima.splice(pos, 1);
+        }
+
 
     }
 
-    $scope.selectedMateriaPr1=function(){
+    $scope.selectedMateriaPr1=function() {
 
-        $scope.selectedMateriaPrima=JSON.parse($scope.selectedMateriaPrima);
-        $scope.materiaPrima.push($scope.selectedMateriaPrima);
-        $scope.listaSeleccionMateriaPrima.pop($scope.selectedMateriaPrima);
+
+        if ($scope.selectedMateriaPrima != undefined) {
+            $scope.selectedMateriaPrima = JSON.parse($scope.selectedMateriaPrima);
+            $scope.materiaPrima.push($scope.selectedMateriaPrima);
+
+            var n = $scope.listaSeleccionMateriaPrima.length;
+            var pos = "";
+            for (var i = 0; i < n; i++) {
+
+                if ($scope.listaSeleccionMateriaPrima[i]._id == $scope.selectedMateriaPrima._id) {
+                    pos = i;
+                    break;
+                }
+            }
+            console.log(pos);
+            $scope.listaSeleccionMateriaPrima.splice(pos, 1);
+
+        }
 
     }
 
+    $scope.selectedProteccionF=function(){
+
+
+        if ($scope.selectedProteccion != undefined) {
+            $scope.selectedProteccion = JSON.parse($scope.selectedProteccion);
+            $scope.listaSeleccionProteccion.push($scope.selectedProteccion);
+
+            var n = $scope.proteccion.length;
+            var pos = "";
+            for (var i = 0; i < n; i++) {
+
+                if ($scope.proteccion[i]._id == $scope.selectedProteccion._id) {
+                    pos = i;
+                    break;
+                }
+            }
+            console.log(pos);
+            $scope.proteccion.splice(pos, 1);
+
+        }
+
+    }
+
+    $scope.selectedProteccionF1=function(){
+
+
+        if ($scope.selectedProteccion != undefined) {
+            $scope.selectedProteccion = JSON.parse($scope.selectedProteccion);
+            $scope.proteccion.push($scope.selectedProteccion);
+
+            var n = $scope.listaSeleccionProteccion.length;
+            var pos = "";
+            for (var i = 0; i < n; i++) {
+
+                if ($scope.listaSeleccionProteccion[i]._id == $scope.selectedProteccion._id) {
+                    pos = i;
+                    break;
+                }
+            }
+            console.log(pos);
+            $scope.listaSeleccionProteccion.splice(pos, 1);
+
+        }
+
+    }
 }]);

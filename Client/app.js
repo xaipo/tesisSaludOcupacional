@@ -56,6 +56,9 @@ function ApiUrl(){
     this.getMateriaPrima=function(){
         return 'http://localhost:3000/api/materiaPrima';
     }
+    this.getProteccion=function(){
+        return 'http://localhost:3000/api/proteccion';
+    }
 
 }
 

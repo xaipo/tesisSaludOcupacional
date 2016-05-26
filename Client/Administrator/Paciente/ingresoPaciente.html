@@ -391,10 +391,51 @@
                                     </option>
                                 </select><br>
 
+                            </div>
 
 
+                        </div>
+
+
+
+
+                        <div class="row">
+
+
+
+
+                                <div class="col-md-3 col-xs-12">
+                                    <br>
+
+                                    <label for="Proteccion"> Protección: </label><br>
+                                    Búsqueda <input type="text" ng-model="search7" class="form-control" placeholder="Busqueda"><br>
+                                    <select name="Proteccion" ng-model="selectedProteccion" class="form-control" multiple
+                                            style="height: 150px;" ng-click="selectedProteccionF()">
+                                        <option value={{empresaAux7}}
+                                                ng-repeat="empresaAux7 in proteccion | filter:search7| orderBy:empresaAux7.nombre_proteccion">
+                                            {{empresaAux7.nombre_proteccion}}
+                                        </option>
+                                    </select><br>
+
+                                </div>
+
+
+
+                            <div class="col-md-3 col-xs-12">
+                                <br>
+
+                                <label for="Proteccion1"> Protección Seleccionada: </label><br>
+                                Búsqueda <input type="text" ng-model="search8" class="form-control" placeholder="Busqueda"><br>
+                                <select name="Proteccion1" ng-model="selectedProteccion" class="form-control" multiple
+                                        style="height: 150px;" ng-click="selectedProteccionF1()">
+                                    <option value={{empresaAux8}}
+                                            ng-repeat="empresaAux8 in listaSeleccionProteccion | filter:search8| orderBy:empresaAux8.nombre_proteccion">
+                                        {{empresaAux8.nombre_proteccion}}
+                                    </option>
+                                </select><br>
 
                             </div>
+
 
 
                         </div>
