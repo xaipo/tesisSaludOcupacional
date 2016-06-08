@@ -14,7 +14,7 @@ var categoriaSchema = new mongoose.Schema({
     tratamientos:  Array,
     tipo_cie10:   mongoose.Schema.ObjectId,
     sintoma: String,
-
+    estado: String,
 
 });
 

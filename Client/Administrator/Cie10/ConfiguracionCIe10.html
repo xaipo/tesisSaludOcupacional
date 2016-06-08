@@ -9,6 +9,13 @@
     <link rel="stylesheet" type="text/css" href="/tesisSaludOcupacional/Client/css/OverrideComponents.css" id="pageshee1"/>
     <link rel="stylesheet" type="text/css" href="/tesisSaludOcupacional/Client/css/datepicker.css" id="pageshee3"/>
 
+    <style>
+        .selected {
+            background-color:#bbbbbb;
+            color:black;
+            font-weight:bold;
+        }
+    </style>
     <!-----angular-->
 
     <script src="/tesisSaludOcupacional/Client/angular-1.4.6/angular.js"></script>
@@ -17,12 +24,12 @@
     <script src="/tesisSaludOcupacional/Client/app.js"></script>
 
     <script src="/tesisSaludOcupacional/Client/controllers/CargasController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/EmpresaController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/HistoriaClinicaController.js"></script>
+
+
+    <script src="/tesisSaludOcupacional/Client/controllers/ControllerCie10.js"></script>
 
     <script src="/tesisSaludOcupacional/Client/controllers/LoginController.js"></script>
     <script src="/tesisSaludOcupacional/Client/angular-1.4.6/angular-local-storage.min.js"></script>
-
 </head>
 <body ng-app="myApp" ng-controller="CargasController as controlador" >
 
@@ -37,7 +44,7 @@
 
     $(function(){
 
-        
+
         $('.datepicker').datepicker();
 
 
@@ -45,16 +52,16 @@
 
             $scope.historiaClinica.fecha_examen = $("#date").val();
         });
-        console.log('entra');
+        //  console.log('entra');
 
     });
 
     /*$("#datepicker").change("dp.change", function() {
-        console.log('entra1');
-        $scope.historiaClinica.fecha_examen = $("datepicker").val();
-        alert("selected date is " + $scope.historiaClinica.fecha_examen);
+     console.log('entra1');
+     $scope.historiaClinica.fecha_examen = $("datepicker").val();
+     alert("selected date is " + $scope.historiaClinica.fecha_examen);
 
-    });*/
+     });*/
 
 
 </script>
@@ -167,99 +174,86 @@
         </div>
     </nav>
 </header>
-<!-----main -->
 
-    <form class="form" role="form" ng-controller="HistoriaClinicaController as hcController" ng-init="load()">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
+<form class="form" role="form" ng-controller="ControllerCie10" >
+    <div class="panel panel-primary">
+        <div class="panel-heading">
 
-                <h3 class="panel-title">Historia Clínica </h3>
+            <h3 class="panel-title">Administración Cie10 </h3>
 
-            </div>
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-md-3 col-xs-12" >
-                        <br>
-                        <label > Ingrese la Cedula del Paciente: </label><br><br>
-                        <input name="Paciente" ng-model="pacienteBusqueda" class="form-control"/><br>
-                        <input class="btn btn-default" type="submit" ng-click="searchPaciente()"
-                                   value="Buscar Paciente"/><br>
-                        <br>
-                        <input class="btn btn-default" type="submit" ng-click="redirect1('/tesisSaludOcupacional/Client/Administrator/Paciente/ingresoPaciente.html')"
-                               value="Nuevo Paciente"/><br>
-                        <br>
-                    </div>
-                    <div class="col-md-3 col-xs-12" >
-                        <br>
-                        <label > Datos Paciente: </label><br>
-                        <label > Primer Nombre: {{pacienteEncontrado.primer_nombre}} </label>
-                        <label > Segundo Nombre: {{pacienteEncontrado.segundo_nombre}} </label>
-                        <label > Primer Apellido: {{pacienteEncontrado.primer_apellido}} </label>
-                        <label > Segundo Apellido: {{pacienteEncontrado.segundo_apellido}} </label><br>
-                        <label > Edad: {{pacienteEncontrado.edad}} </label><br>
-                        <label > Lugar Nacimiento: {{pacienteEncontrado.ciudad.nombre_ciudad}} </label><br>
-                        <label > Herramientas:  </label><br>
-                        <select name="Herramienta"  class="form-control" multiple   style="height: 150px;" >
-                            <option value={{herramienta}}
-                                    ng-repeat="herramienta in pacienteEncontrado.puesto_trabajo.herramienta ">
-                                {{herramienta.nombre_herramienta}}
-                            </option>
-                        </select><br>
-
-                    </div>
-                    <div class="col-md-3 col-xs-12" >
-                        <br>
-                        <label > Puesto Trabajo:{{pacienteEncontrado.puesto_trabajo.nombre_puesto}} </label><br>
-                        <label > Dependencia: {{pacienteEncontrado.puesto_trabajo.dependencia.nombre_dependencia}} </label><br>
-                        <label >Empresa: {{pacienteEncontrado.puesto_trabajo.dependencia.empresa.nombre_empresa}} </label><br>
-                        <label >Genero: {{pacienteEncontrado.sexo}} </label><br>
-                        <label >Estado Civil: {{pacienteEncontrado.estado_civil.descripcion_estado_civil}} </label><br>
-                        <label >Nivel Estudio: {{pacienteEncontrado.nivel_estudio.descripcion_nivel_estudio}} </label><br>
-                        <label >Telefono: {{pacienteEncontrado.telefono}} </label><br>
-                        <label> Materia Prima:  </label><br>
-                         <select class="form-control" name="multipleSelect" multiple>
-                            <option  ng-repeat="mp in pacienteEncontrado.puesto_trabajo.materia_prima" value="{{mp}}">{{mp.descripcion_materia_prima}}</option>
-
-                        </select><br>
-                    </div>
-
-                    <div class="col-md-3 col-xs-12" >
-                        <br>
-                        <label > Fecha Examen </label><br>
-                        <input class="datepicker" type="text" id="datepicker" name="date" value="{{ historiaClinica.fecha_examen}}"/><br>
-
-                        <label > Tipo Examen </label><br>
-
-
-                        <select class="form-control" name="singleSelect" ng-model="historiaClinica.tipo_examen">
-                            <option value="option-1" ng-repeat="th in tipoHistoria" value="{{th}}">{{th.descripcion_tipo_historia}}</option>
-
-                        </select><br>
-
-                    </div>
-
-                </div>
+        </div>
+        <div class="container">
 
             <div class="row">
 
 
-                <div class="col-md-3 col-xs-12" >
+                <div class="col-md-12 col-xs-12" >
+                    <br>
+                    <label for="TipoCie"> Tipo CIE 10: </label><br>
+                    Búsqueda <input type="text" ng-model="search1" class="form-control" placeholder="Busqueda"><br>
+                    <select name="TipoCie" ng-model="cie10Selected" class="form-control" multiple
+                            style="height: 150px;" ng-click="busquedaCie10Tipo()">
+                        <option value={{aux}}
+                                ng-repeat="aux in tipoCie10 | filter:search1| orderBy:aux.descripcion_tipo_CIE10">
+                            {{aux.descripcion_tipo_CIE10}}
+                        </option>
+                    </select><br>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12" >
+
+                    <br>
+                    <label>Código CIE 10:</label>
+                    <input type="text" class="form-control" placeholder="Código CIE 10"/>
+                    <br>
+                    <label>Descripcion CIE 10:</label>
+                    <input type="text" class="form-control" placeholder="Nueva Descrpcion CIE 10"/>
                     <br>
 
                     <input class="btn btn-info" type="submit" ng-click="next1()"
-                           value="Siguiente"/><br><br>
+                           value="Guardar Cie 10"/><br><br>
+
 
                 </div>
 
 
             </div>
-        </div>
-        </div>
-        </div><!--div fin contaniner-->
+            <div class="row">
+                <div class="col-md-12 col-xs-12" >
+                    <br>
+                    <label for="Cie10">CIE 10: </label><br>
+                    Búsqueda <input type="text" ng-model="search2" class="form-control" placeholder="Busqueda"><br>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Descripcion</th>
+                            <th>Estado</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                    <tr ng-repeat="item in cie10  | filter:search2| orderBy:item.sintoma" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)" >
+                        <td>{{$index}}</td>
+                        <td>{{ item.sintoma }}</td>
+                        <td>{{ item.estado }}</td>
+                    </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-    </form>
 
+
+            </div>
+            <br>
+
+
+    </div>
+</div>
+
+</form>
 
 </body>
+</html>

@@ -59,7 +59,12 @@ function ApiUrl(){
     this.getProteccion=function(){
         return 'http://localhost:3000/api/proteccion';
     }
-
+    this.getTipoCie10=function(){
+        return 'http://localhost:3000/api/tipoCie10';
+    }
+    this.getCie10=function(){
+        return 'http://localhost:3000/api/cie10';
+    }
 }
 
 app.factory("myProvider",function(){

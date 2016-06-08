@@ -13,13 +13,11 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
         sexo:"",
         fecha_nacimiento:"",
         ciudad:"",
-        provincia:"",
         edad:"",
-        telefono:"",
         estado_civil:"",
         nivel_estudios:"",
-        puesto_trabajo:""
-
+        puesto_trabajo:"",
+        telefono:"",
 
     };
 
@@ -77,7 +75,6 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
 
     // </editor-fold>
-
     // <editor-fold defaultstate="collapsed" desc="Cargar provincia">
     $http({
 
@@ -573,10 +570,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     }
 
     // </editor-fold>
-
-
-
-
+    // <editor-fold defaultstate="collapsed" desc="Iteradores de seleccion para cambios en listas">
     $scope.selectedMaq=function(){
 
 
@@ -785,4 +779,68 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
         }
 
     }
+    // </editor-fold>
+    $scope.savePaciente= function(){
+        $scope.paciente.fecha_nacimiento=document.getElementById('datepicker1').value;
+        console.log("emtra");
+        console.log($scope.paciente);
+
+
+
+    }
+
+   // $scope.i=0;
+
+    $scope.test=function(i){
+
+        console.log('entro');
+      // for(var i=0;i<1000000;i++)
+       // {
+        //    $scope.mensaje = "procesando";
+
+                $http({
+                    method: 'POST',
+                    url: 'http://localhost:3000/api/pacientes',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    data: {"cedula":"060400938-1",
+                        "puesto_trabajo":"5702e1a356b5bc6c1bd4026f",
+                        "primer_nombre":"jairo",
+                        "segundo_nombre":"andres",
+                        "primer_apellido":"gonzalez",
+                        "segundo_apellido":"naranjo",
+                        "sexo":"M","fecha_nacimiento":
+                            "09/03/1992",
+                        "ciudad":"56f9521bc6dd88cc004a2015",
+                        "edad":24,
+                        "telefono":"2944848",
+                        "estado_civil":"56f953360e89c85415d74c68",
+                        "nivel_estudio":"56f95520738f09f8145668b1"}
+
+
+                }).then(function successCallback(response) {
+                    if(i==10000000){
+                        alert('prueba finalizada');
+                        return;
+
+                    }else {
+                        $scope.test(i++);
+                    }
+
+                }, function errorCallback(response) {
+                    // called asynchronously if an error occurs
+                    // or server returns response with an error status.
+                   // console.log(response);
+                    //$scope.mesaje = response.mensaje;
+
+                });
+
+                //$scope.mensaje = "Para ingresar debe llenar el nombre de la empresa";
+
+         //  }
+
+
+
+    };
 }]);

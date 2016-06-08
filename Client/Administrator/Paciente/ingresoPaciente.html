@@ -146,8 +146,8 @@
                             <li class="dropdown">
                                 <a  class="dropdown-toggle" data-toggle="dropdown" role="button"> Configuracion CIE 10 <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li ><a href="#">Ingreso</a> </li>
-                                    <li ><a href="#">Modificación</a> </li>
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Cie10/ConfiguracionCIe10.html">Administrar</a> </li>
+
                                 </ul>
                             </li>
                             <li ><a href="#">Reportes</a> </li>
@@ -188,7 +188,8 @@
                     <input type="text" class="form-control" placeholder="Primer Nombre" ng-model="paciente.primer_nombre"/>
                     <label > Segundo Nombre:</label>
                     <input type="text" class="form-control" placeholder="Segundo Nombre" ng-model="paciente.segundo_nombre"/>
-
+                    <label > Teléfono:</label>
+                    <input type="text" class="form-control" placeholder="Telefono" ng-model="paciente.telefono"/>
                 </div>
                 <div class="col-md-3 col-xs-12" >
                     <br>
@@ -228,17 +229,17 @@
                 <div class="col-md-3 col-xs-12" >
                       <br>
                     <label > Edad:</label>
-                    <input type="number" class="form-control" placeholder="1" min="1" />
+                    <input type="number" class="form-control" placeholder="1" min="1" ng-model="paciente.edad"/>
 
                     <label> Estado Civil: </label>
 
-                    <select class="form-control" name="singleSelect">
+                    <select class="form-control" name="singleSelect" ng-model="paciente.estado_civil">
                     <option ng-repeat="ec in estado_civil" value="{{ec}}">{{ec.descripcion_estado_civil}}</option>
 
                 </select>
                     <label> Nivle Estudio: </label>
 
-                    <select class="form-control" name="singleSelect1">
+                    <select class="form-control" name="singleSelect1" ng-model="paciente.nivel_estudios">
                         <option ng-repeat="nivel in nivel_estudio" value="{{nivel}}">{{nivel.descripcion_nivel_estudio}}</option>
 
                     </select>
@@ -262,7 +263,7 @@
                         <div class="col-md-3 col-xs-12">
                             <br><br>
                             <label>Descripcion Puesto:</label>
-                            <input type="text" class="form-control" placeholder="Descripción Puesto"/>
+                            <input type="text" class="form-control" placeholder="Descripción Puesto" ng-model="puesto_trabajo.nombre_puesto"/>
                             <label> Provincia: </label>
                             <select name="Provimcia" ng-model="empresaSeleccionada" class="form-control" single
                                     ng-click="buscarDependenciaPorEmpresa()">
@@ -437,6 +438,24 @@
                             </div>
 
 
+                                <div class="col-md-3 col-xs-12">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+
+
+                                    <input class="btn btn-info" type="submit" ng-click="test(1)"
+                                           value="Guardar Paciente"/><br><br>
+
+                                </div>
 
                         </div>
                     </div><!--div fin contaniner-->
@@ -446,12 +465,7 @@
             <div class="row">
 
 
-                <div class="col-md-3 col-xs-12">
-                    <br>
 
-
-
-                </div>
 
 
             </div>

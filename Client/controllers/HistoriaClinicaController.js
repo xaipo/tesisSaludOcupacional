@@ -30,7 +30,7 @@ app.controller('HistoriaClinicaController', ['$scope', '$http', '$location','myP
 
 
 
-    // <editor-fold defaultstate="collapsed" desc="Tipo Historia CLinica">
+    // <editor-fold defaultstate="collapsed" desc="PreLoad">
 
 
         $http({

@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9da37b9f-90ea-4b83-8a73-5ea0a7a78c4d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/controllers/ControllerCie10.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js" afterPath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/css/OverrideComponents.css" afterPath="$PROJECT_DIR$/Client/css/OverrideComponents.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/PacienteController.js" afterPath="$PROJECT_DIR$/Client/controllers/PacienteController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/app.js" afterPath="$PROJECT_DIR$/Client/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/indexAdmin.html" afterPath="$PROJECT_DIR$/Client/Administrator/indexAdmin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" afterPath="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Models/modeloCie10.js" afterPath="$PROJECT_DIR$/HttpServices/Models/modeloCie10.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tesisSaludOcupacional.iws" />
@@ -26,37 +33,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ingresoPaciente.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html">
+      <file leaf-file-name="ConfiguracionCIe10.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0">
-              <caret line="429" column="84" selection-start-line="429" selection-start-column="84" selection-end-line="429" selection-end-column="84" />
+            <state vertical-scroll-proportion="-3.2">
+              <caret line="219" column="22" selection-start-line="219" selection-start-column="22" selection-end-line="219" selection-end-column="22" />
               <folding>
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#4;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#1;n#div#4;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#2;n#div#4;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#3;n#div#4;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#5;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#1;n#div#5;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PacienteController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newClinicHistory.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-60.846153">
+              <caret line="251" column="54" selection-start-line="250" selection-start-column="19" selection-end-line="251" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OverrideComponents.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/css/OverrideComponents.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerCie10.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/controllers/ControllerCie10.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7526042">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#40#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modeloCie10.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloCie10.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PacienteController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/controllers/PacienteController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15726496">
-              <caret line="764" column="0" selection-start-line="764" selection-start-column="0" selection-end-line="764" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="787" column="0" selection-start-line="787" selection-start-column="0" selection-end-line="787" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
-                <element signature="e#225#562#0" expanded="false" />
-                <element signature="e#883#950#0" expanded="true" />
-                <element signature="e#7052#7111#0" expanded="true" />
+                <element signature="e#861#928#0" expanded="true" />
+                <element signature="e#12649#12727#0" expanded="true" />
+                <element signature="e#13983#14078#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,10 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HttpServices/Models/modeloAntescedentesSalud.js" />
-        <option value="$PROJECT_DIR$/HttpServices/Routes/apiPlanifiacionFamiliar.js" />
-        <option value="$PROJECT_DIR$/HttpServices/Models/modeloMetodosPlanificacionFamiliar.js" />
-        <option value="$PROJECT_DIR$/HttpServices/Routes/apiGinecologiaObstetra.js" />
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiMetodosPlanifiacionFamiliar.js" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloGinecologiaObstetra.js" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloRevisionSistemas.js" />
@@ -126,19 +174,23 @@
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/reporteHistoriaClinica.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/second.html" />
         <option value="$PROJECT_DIR$/Client/login.html" />
-        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js" />
         <option value="$PROJECT_DIR$/Client/controllers/CargasController.js" />
-        <option value="$PROJECT_DIR$/Client/Administrator/indexAdmin.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/first.html" />
         <option value="$PROJECT_DIR$/HttpServices/package.json" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloPaciente.js" />
         <option value="$PROJECT_DIR$/HttpServices/server.js" />
-        <option value="$PROJECT_DIR$/Client/css/OverrideComponents.css" />
         <option value="$PROJECT_DIR$/Client/Administrator/Empresa/ingresarEmpresa.html" />
-        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html" />
-        <option value="$PROJECT_DIR$/Client/app.js" />
-        <option value="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" />
+        <option value="$PROJECT_DIR$/HttpServices/Routes/apiUsuarios.js" />
         <option value="$PROJECT_DIR$/Client/controllers/PacienteController.js" />
+        <option value="$PROJECT_DIR$/Client/Administrator/indexAdmin.html" />
+        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html" />
+        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js" />
+        <option value="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" />
+        <option value="$PROJECT_DIR$/Client/css/OverrideComponents.css" />
+        <option value="$PROJECT_DIR$/Client/app.js" />
+        <option value="$PROJECT_DIR$/HttpServices/Models/modeloCie10.js" />
+        <option value="$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html" />
+        <option value="$PROJECT_DIR$/Client/controllers/ControllerCie10.js" />
       </list>
     </option>
   </component>
@@ -178,6 +230,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,6 +279,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesisSaludOcupacional" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesisSaludOcupacional" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HttpServices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,10 +434,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesisSaludOcupacional" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesisSaludOcupacional" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Administrator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cie10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,7 +488,7 @@
       <recent name="C:\tesis\tesisSaludOcupacional\Client\Administrator" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.ingresoPaciente.html">
+  <component name="RunManager" selected="JavaScript Debug.indexAdmin.html">
     <configuration default="false" name="server.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/HttpServices">
       <method />
     </configuration>
@@ -409,7 +501,7 @@
     <configuration default="false" name="PacienteController.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="PacienteController.js" working-dir="$PROJECT_DIR$/Client/controllers">
       <method />
     </configuration>
-    <configuration default="false" name="ingresarEmpresa.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/Empresa/ingresarEmpresa.html">
+    <configuration default="false" name="ConfiguracionCIe10.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/Cie10/ConfiguracionCIe10.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -455,15 +547,15 @@
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.indexAdmin.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ingresoPaciente.html" />
       <item index="3" class="java.lang.String" itemvalue="Node.js.PacienteController.js" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.ingresarEmpresa.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.ConfiguracionCIe10.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.ingresoPaciente.html" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.server.js (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.PacienteController.js" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.ingresarEmpresa.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.indexAdmin.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.indexAdmin.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.ConfiguracionCIe10.html" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.server.js (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.ingresoPaciente.html" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.PacienteController.js" />
       </list>
     </recent_temporary>
   </component>
@@ -646,7 +738,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464042570168</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="previo al ingresar paciente">
+      <created>1464262194079</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1464262194079</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -660,21 +758,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29910713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29910713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3267974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34330708" sideWeight="0.50293684" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2903752" sideWeight="0.49706313" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27124184" sideWeight="0.49706313" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.034944236" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39379084" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -682,26 +780,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34330708" sideWeight="0.50293684" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2903752" sideWeight="0.49706313" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29910713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.034944236" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39379084" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -715,7 +793,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="estructura agregada" />
     <MESSAGE value="login interfaz sin boostrap" />
     <MESSAGE value="agrego bootstrap" />
     <MESSAGE value="api estructurada" />
@@ -739,7 +816,9 @@
     <MESSAGE value="agrego ingresar paciente puesto de tabajo 2 listas" />
     <MESSAGE value="agrego ingresar paciente puesto de tabajo 1 listas" />
     <MESSAGE value="previo al ingresar paciente" />
-    <option name="LAST_COMMIT_MESSAGE" value="previo al ingresar paciente" />
+    <MESSAGE value="antes confuguracion CIE10" />
+    <MESSAGE value="antes guardar cie10" />
+    <option name="LAST_COMMIT_MESSAGE" value="antes guardar cie10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -765,13 +844,8 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js</url>
-          <line>35</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Client/controllers/PacienteController.js</url>
-          <line>26</line>
+          <line>24</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -780,41 +854,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloHabitosToxicos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="19" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiOrgano.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiOrganoSelected.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiExamenesPracticados.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloOrgano.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloOrganoSelected.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1013,13 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/indexAdmin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloEstadoCivil.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1048,59 +1080,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/css/OverrideComponents.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8253425">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60394263">
-          <caret line="222" column="64" selection-start-line="222" selection-start-column="64" selection-end-line="222" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34931508">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="8" column="28" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloUsuario.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40753424">
           <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiUsuarios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55308217">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0085616">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/Empresa/ingresarEmpresa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51735014">
-          <caret line="36" column="70" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -1111,27 +1094,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/EmpresaController.js">
+    <entry file="file://$PROJECT_DIR$/HttpServices/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.113703">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="63" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
+          <folding>
+            <element signature="e#219#275#0" expanded="false" />
+            <element signature="e#4083#4142#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js">
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/indexAdmin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4285715">
-          <caret line="464" column="28" selection-start-line="464" selection-start-column="28" selection-end-line="464" selection-end-column="28" />
+        <state vertical-scroll-proportion="-17.26923">
+          <caret line="112" column="29" selection-start-line="106" selection-start-column="24" selection-end-line="112" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/Empresa/newEmpresa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiUsuarios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
-            <element signature="e#11438#11527#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#144#200#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apitTipoHistoria.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/EmpresaController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20884521">
+          <caret line="5" column="82" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="429" column="84" selection-start-line="429" selection-start-column="84" selection-end-line="429" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.044270832">
+          <caret line="286" column="44" selection-start-line="286" selection-start-column="44" selection-end-line="286" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1147,15 +1167,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/Empresa/ingresarEmpresa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8239796">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30357143">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.9497607">
+          <caret line="534" column="30" selection-start-line="534" selection-start-column="30" selection-end-line="534" selection-end-column="30" />
+          <folding>
+            <element signature="e#579#635#0" expanded="true" />
+            <element signature="e#3493#4402#0" expanded="false" />
+            <element signature="e#6771#7388#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/css/OverrideComponents.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Client/controllers/PacienteController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15726496">
-          <caret line="764" column="0" selection-start-line="764" selection-start-column="0" selection-end-line="764" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="787" column="0" selection-start-line="787" selection-start-column="0" selection-end-line="787" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
-            <element signature="e#225#562#0" expanded="false" />
-            <element signature="e#883#950#0" expanded="true" />
-            <element signature="e#7052#7111#0" expanded="true" />
+            <element signature="e#861#928#0" expanded="true" />
+            <element signature="e#12649#12727#0" expanded="true" />
+            <element signature="e#13983#14078#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloCie10.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2">
+          <caret line="219" column="22" selection-start-line="219" selection-start-column="22" selection-end-line="219" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-60.846153">
+          <caret line="251" column="54" selection-start-line="250" selection-start-column="19" selection-end-line="251" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/ControllerCie10.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7526042">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>
