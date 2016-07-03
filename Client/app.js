@@ -65,6 +65,9 @@ function ApiUrl(){
     this.getCie10=function(){
         return 'http://localhost:3000/api/cie10';
     }
+    this.puestroTrabajo=function(){
+        return 'http://localhost:3000/api/puestoTrabajo';
+    }
 }
 
 app.factory("myProvider",function(){

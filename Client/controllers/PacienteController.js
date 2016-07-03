@@ -791,7 +791,10 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
    // $scope.i=0;
 
-    $scope.test=function(i){
+
+
+
+    $scope.test=function(){
 
         console.log('entro');
       // for(var i=0;i<1000000;i++)
@@ -800,45 +803,130 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
                 $http({
                     method: 'POST',
-                    url: 'http://localhost:3000/api/pacientes',
+                    url: myProvider.getPuestoTrabajo(),
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    data: {"cedula":"060400938-1",
-                        "puesto_trabajo":"5702e1a356b5bc6c1bd4026f",
-                        "primer_nombre":"jairo",
-                        "segundo_nombre":"andres",
-                        "primer_apellido":"gonzalez",
-                        "segundo_apellido":"naranjo",
-                        "sexo":"M","fecha_nacimiento":
-                            "09/03/1992",
-                        "ciudad":"56f9521bc6dd88cc004a2015",
-                        "edad":24,
-                        "telefono":"2944848",
-                        "estado_civil":"56f953360e89c85415d74c68",
-                        "nivel_estudio":"56f95520738f09f8145668b1"}
+                    data: {nombre_puesto:$scope.puestoTrabajo.nombre_puesto,
+                        dependencia:$scope.puestoTrabajo.dependencia,
+                        cargo:$scope.puestoTrabajo.cargo,
+                        fecha:$scope.puestoTrabajo.fecha,
+                        estado:"1",
+                        jornada:$scope.puestoTrabajo.jornada,
+                        descripcion_funciones:$scope.puestoTrabajo.descripcion_funciones,
+                        maquinaria:$scope.puestoTrabajo.maquinaria,
+                        herramientas:$scope.puestoTrabajo.herramientas,
+                        materiaPrima:$scope.puestoTrabajo.materiaPrima,
+                        proteccion:$scope.puestoTrabajo.proteccion,
+                        protocolos:[]
+                    }
 
 
                 }).then(function successCallback(response) {
-                    if(i==10000000){
-                        alert('prueba finalizada');
-                        return;
 
-                    }else {
-                        $scope.test(i++);
-                    }
+                                $http({
+                                    method: 'POST',
+                                    url: myProvider.getPaciente(),
+                                    headers: {
+                                        'Content-Type': 'application/json'
+                                    },
+                                    data: {
+                                        ci:$scope.paciente.ci,
+                                        primer_nombre:$scope.paciente.primer_nombre,
+                                        segundo_nombre:$scope.paciente.segundo_nombre,
+                                        primer_apellido:$scope.paciente.primer_apellido,
+                                        segundo_apellido:$scope.paciente.segundo_apellido,
+                                        sexo:$scope.paciente.sexo,
+                                        fecha_nacimiento:$scope.paciente.fecha_nacimiento,
+                                        ciudad:$scope.paciente.ciudad,
+                                        edad:$scope.paciente.edad,
+                                        estado_civil:$scope.paciente.estado_civil,
+                                        nivel_estudios:$scope.paciente.nivel_estudios,
+                                        puesto_trabajo:$scope.paciente.puesto_trabajo,
+                                        telefono:$scope.paciente.telefono,
+                                    }
 
-                }, function errorCallback(response) {
-                    // called asynchronously if an error occurs
-                    // or server returns response with an error status.
-                   // console.log(response);
-                    //$scope.mesaje = response.mensaje;
 
-                });
+                                }).then(function successCallback(response) {
+
+
+
+
+                                }, function errorCallback(response) {
+                                    // called asynchronously if an error occurs
+                                    // or server returns response with an error status.
+                                    // console.log(response);
+                                    //$scope.mesaje = response.mensaje;
+
+                                });
+
+
+                    }, function errorCallback(response) {
+                        // called asynchronously if an error occurs
+                        // or server returns response with an error status.
+                       // console.log(response);
+                        //$scope.mesaje = response.mensaje;
+
+                    });
 
                 //$scope.mensaje = "Para ingresar debe llenar el nombre de la empresa";
 
          //  }
+
+
+
+    };
+
+
+
+    $scope.save=function(){
+
+        console.log('entro');
+        // for(var i=0;i<1000000;i++)
+        // {
+        //    $scope.mensaje = "procesando";
+
+        $http({
+            method: 'POST',
+            url: myProvider.getPuestoTrabajo(),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: {"cedula":"060400938-1",
+                "puesto_trabajo":"5702e1a356b5bc6c1bd4026f",
+                "primer_nombre":"jairo",
+                "segundo_nombre":"andres",
+                "primer_apellido":"gonzalez",
+                "segundo_apellido":"naranjo",
+                "sexo":"M","fecha_nacimiento":
+                    "09/03/1992",
+                "ciudad":"56f9521bc6dd88cc004a2015",
+                "edad":24,
+                "telefono":"2944848",
+                "estado_civil":"56f953360e89c85415d74c68",
+                "nivel_estudio":"56f95520738f09f8145668b1"}
+
+
+        }).then(function successCallback(response) {
+            if(i==10000000){
+                alert('prueba finalizada');
+                return;
+
+            }else {
+                $scope.test(i++);
+            }
+
+        }, function errorCallback(response) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+            // console.log(response);
+            //$scope.mesaje = response.mensaje;
+
+        });
+
+        //$scope.mensaje = "Para ingresar debe llenar el nombre de la empresa";
+
+        //  }
 
 
 

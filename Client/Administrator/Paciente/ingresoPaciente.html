@@ -220,7 +220,7 @@
                     <label> Ciudad: </label>
 
                     <select class="form-control" name="singleSelect" ng-model="paciente.ciudad">
-                        <option  ng-repeat="ci in ciudades" value="{{ci}}">{{ci.nombre_ciudad}}</option>
+                        <option  ng-repeat="ci in ciudades" value="{{ci._id}}">{{ci.nombre_ciudad}}</option>
 
                     </select>
 
@@ -234,13 +234,13 @@
                     <label> Estado Civil: </label>
 
                     <select class="form-control" name="singleSelect" ng-model="paciente.estado_civil">
-                    <option ng-repeat="ec in estado_civil" value="{{ec}}">{{ec.descripcion_estado_civil}}</option>
+                    <option ng-repeat="ec in estado_civil" value="{{ec._id}}">{{ec.descripcion_estado_civil}}</option>
 
                 </select>
                     <label> Nivle Estudio: </label>
 
                     <select class="form-control" name="singleSelect1" ng-model="paciente.nivel_estudios">
-                        <option ng-repeat="nivel in nivel_estudio" value="{{nivel}}">{{nivel.descripcion_nivel_estudio}}</option>
+                        <option ng-repeat="nivel in nivel_estudio" value="{{nive._id}}">{{nivel.descripcion_nivel_estudio}}</option>
 
                     </select>
                 </div>
@@ -264,7 +264,7 @@
                             <br><br>
                             <label>Descripcion Puesto:</label>
                             <input type="text" class="form-control" placeholder="Descripción Puesto" ng-model="puesto_trabajo.nombre_puesto"/>
-                            <label> Provincia: </label>
+                            <label> Empresa: </label>
                             <select name="Provimcia" ng-model="empresaSeleccionada" class="form-control" single
                                     ng-click="buscarDependenciaPorEmpresa()">
                                 <option id="valor1" value={{empresaAux1._id}}
@@ -272,7 +272,7 @@
                                     {{empresaAux1.nombre_empresa}}
                                 </option>
                             </select>
-                            <label> Ciudad: </label>
+                            <label> Dependencia: </label>
 
                             <select class="form-control" name="singleSelect">
                                 <option  ng-repeat="ci in dependencia" value="{{ci}}">{{ci.nombre_dependencia}}</option>
@@ -452,7 +452,7 @@
                                     <br>
 
 
-                                    <input class="btn btn-info" type="submit" ng-click="test(1)"
+                                    <input class="btn btn-info" type="submit" ng-click="test()"
                                            value="Guardar Paciente"/><br><br>
 
                                 </div>
