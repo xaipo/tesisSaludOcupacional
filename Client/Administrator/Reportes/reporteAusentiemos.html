@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia Clinica</title>
+    <title>Reportes</title>
     <!-----estilos -->
     <link rel="stylesheet" type="text/css" href="/tesisSaludOcupacional/Client/css/bootstrap.css" id="pagesheet"/>
     <link rel="stylesheet" type="text/css" href="/tesisSaludOcupacional/Client/css/OverrideComponents.css" id="pageshee1"/>
@@ -17,8 +17,7 @@
     <script src="/tesisSaludOcupacional/Client/app.js"></script>
 
     <script src="/tesisSaludOcupacional/Client/controllers/CargasController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/EmpresaController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/HistoriaClinicaController.js"></script>
+
 
     <script src="/tesisSaludOcupacional/Client/controllers/LoginController.js"></script>
     <script src="/tesisSaludOcupacional/Client/angular-1.4.6/angular-local-storage.min.js"></script>
@@ -32,48 +31,11 @@
 <script src="/tesisSaludOcupacional/Client/scripts/bootstrap-datepicker.js"></script>
 
 
-<<script>
-
-
+<script>
     $(function(){
-
-        
         $('.datepicker').datepicker();
-
-
-        $('#date').change(function(){
-
-            $scope.historiaClinica.fecha_examen = $("#date").val();
-        });
-        console.log('entra');
-
     });
-
-    /*$("#datepicker").change("dp.change", function() {
-        console.log('entra1');
-        $scope.historiaClinica.fecha_examen = $("datepicker").val();
-        alert("selected date is " + $scope.historiaClinica.fecha_examen);
-
-    });*/
-
-
 </script>
-
-
-<!--<script>
-    $(function() {
-        $(".datepicker").datepicker(
-                {
-                    dateFormat: "dd/mm/yy",
-                    dayNames: [ "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" ],
-                    dayNamesMin: [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
-                    firstDay: 1,
-                    gotoCurrent: true,
-                    monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Deciembre" ]
-                }
-        );
-    });
-</script>-->
 
 <!-----menu -->
 <header>
@@ -178,97 +140,112 @@
 </header>
 <!-----main -->
 
-    <form class="form" role="form" ng-controller="HistoriaClinicaController as hcController" ng-init="load()">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-
-                <h3 class="panel-title">Historia Clínica </h3>
-
-            </div>
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-md-3 col-xs-12" >
-                        <br>
-                        <label > Ingrese la Cedula del Paciente: </label><br><br>
-                        <input name="Paciente" ng-model="pacienteBusqueda" class="form-control"/><br>
-                        <input class="btn btn-default" type="submit" ng-click="searchPaciente()"
-                                   value="Buscar Paciente"/><br>
-                        <br>
-                        <input class="btn btn-default" type="submit" ng-click="redirect1('/tesisSaludOcupacional/Client/Administrator/Paciente/ingresoPaciente.html')"
-                               value="Nuevo Paciente"/><br>
-                        <br>
-                    </div>
-                    <div class="col-md-3 col-xs-12" >
-                        <br>
-                        <label > Datos Paciente: </label><br>
-                        <label > Primer Nombre: {{pacienteEncontrado.primer_nombre}} </label>
-                        <label > Segundo Nombre: {{pacienteEncontrado.segundo_nombre}} </label>
-                        <label > Primer Apellido: {{pacienteEncontrado.primer_apellido}} </label>
-                        <label > Segundo Apellido: {{pacienteEncontrado.segundo_apellido}} </label><br>
-                        <label > Edad: {{pacienteEncontrado.edad}} </label><br>
-                        <label > Lugar Nacimiento: {{pacienteEncontrado.ciudad.nombre_ciudad}} </label><br>
-                        <label > Herramientas:  </label><br>
-                        <select name="Herramienta"  class="form-control" multiple   style="height: 150px;" >
-                            <option value={{herramienta}}
-                                    ng-repeat="herramienta in pacienteEncontrado.puesto_trabajo.herramienta ">
-                                {{herramienta.nombre_herramienta}}
-                            </option>
-                        </select><br>
-
-                    </div>
-                    <div class="col-md-3 col-xs-12" >
-                        <br>
-                        <label > Puesto Trabajo:{{pacienteEncontrado.puesto_trabajo.nombre_puesto}} </label><br>
-                        <label > Dependencia: {{pacienteEncontrado.puesto_trabajo.dependencia.nombre_dependencia}} </label><br>
-                        <label >Empresa: {{pacienteEncontrado.puesto_trabajo.dependencia.empresa.nombre_empresa}} </label><br>
-                        <label >Genero: {{pacienteEncontrado.sexo}} </label><br>
-                        <label >Estado Civil: {{pacienteEncontrado.estado_civil.descripcion_estado_civil}} </label><br>
-                        <label >Nivel Estudio: {{pacienteEncontrado.nivel_estudio.descripcion_nivel_estudio}} </label><br>
-                        <label >Telefono: {{pacienteEncontrado.telefono}} </label><br>
-                        <label> Materia Prima:  </label><br>
-                         <select class="form-control" name="multipleSelect" multiple>
-                            <option  ng-repeat="mp in pacienteEncontrado.puesto_trabajo.materia_prima" value="{{mp}}">{{mp.descripcion_materia_prima}}</option>
-
-                        </select><br>
-                    </div>
-
-                    <div class="col-md-3 col-xs-12" >
-                        <br>
-                        <label > Fecha Examen </label><br>
-                        <input class="datepicker" type="text" id="datepicker" name="date" value="{{ historiaClinica.fecha_examen}}"/><br>
-
-                        <label > Tipo Examen </label><br>
 
 
-                        <select class="form-control" name="singleSelect" ng-model="historiaClinica.tipo_examen">
-                            <option value="option-1" ng-repeat="th in tipoHistoria" value="{{th}}">{{th.descripcion_tipo_historia}}</option>
 
-                        </select><br>
+<form class="form" role="form" >
+    <div class="panel panel-primary">
+        <div class="panel-heading">
 
-                    </div>
+            <h3 class="panel-title">Reporte Ausentismo </h3>
 
-                </div>
+        </div>
+        <div class="container">
 
             <div class="row">
-
 
                 <div class="col-md-3 col-xs-12" >
                     <br>
 
-                    <input class="btn btn-info" type="submit" ng-click="next1()"
-                           value="Siguiente"/><br><br>
+                    <label > Fecha Incio Reporte </label><br>
+                    <input class="datepicker" type="text" id="datepicker" name="date" /><br>
+                </div>
+                <div class="col-md-3 col-xs-12" >
+                    <br>
+
+
+                </div>
+                <div class="col-md-3 col-xs-12" >
+                    <br>
+                    <label > Fecha Final Reporte </label><br>
+                    <input class="datepicker" type="text" id="datepicker1" name="date" /><br>
 
                 </div>
 
+                <div class="col-md-3 col-xs-12" >
+                    <br>
+                    <br>
+                    <input class="btn btn-info" type="submit"
+                           value="Generar Rerporte"/><br><br>
+                </div>
 
             </div>
-        </div>
-        </div>
-        </div><!--div fin contaniner-->
 
-    </form>
+
+            <div class="row">
+
+                <div class="col-md-12 col-xs-12" >
+                    <br>
+
+                    <label for="Cie10">Filtro Busqueda Reporte: </label><br>
+                    Búsqueda <input type="text" ng-model="search2" class="form-control" placeholder="Busqueda"><br>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Puesto</th>
+                            <th>Cie 10</th>
+                            <th>Tipo Patología</th>
+                            <th>Laboral</th>
+                            <th>No Laboral</th>
+                            <th>Desde</th>
+                            <th>Hasta</th>
+                            <th>Días</th>
+                            <th>Horas</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-1 col-xs-12" >
+                    <br>
+                    <input class="btn btn-info" type="submit"
+                           value="Imprimir"/><br><br>
+                </div>
+                    <div class="col-md-1 col-xs-12" >
+                        <br>
+                        <input class="btn btn-info" type="submit"
+                               value="Descargar Excel"/><br><br>
+
+
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div><!--div fin contaniner-->
+
+</form>
+<footer class="footer">
+    <center><span style="color: #ececf0"> <p>TODOS LOS DERECHOS RESERVADOS 2016</p></span></center>
+</footer>
+
+
+
+
+
+
 
 
 </body>
+</html>

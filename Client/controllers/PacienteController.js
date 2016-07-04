@@ -104,8 +104,50 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
             }
             $scope.provinciaSeleccionada=$scope.provincias[0]._id;
-           // console.log($scope.provinciaSeleccionada);
+            // console.log($scope.provinciaSeleccionada);
             $scope.buscarCiudadPorProvincia1();
+
+        }
+
+
+    }, function errorCallback(response) {
+        console.log('entra');
+        //  Console.log(response);
+        $scope.mesaje = response.mensaje;
+
+    });
+    // </editor-fold>
+    // <editor-fold defaultstate="collapsed" desc="Jornada">
+    $http({
+
+        method: 'GET',
+        url: myProvider.getJornada(),
+
+        headers: {
+            'Content-Type': 'application/json'
+        }
+
+    }).then(function successCallback(response) {
+        //console.log('entra url');
+        //console.log(url);
+
+        var n = response.data.length;
+        // console.log(n);
+
+        if(n==0){
+
+            alert('no se encontro provincias');
+
+        }else {
+            $scope.jornada=[];
+            for(var i=0;i<n;i++){
+
+                $scope.jornada.push(response.data[i]);
+
+            }
+            //$scope.jornada=$scope.provincias[0]._id;
+            // console.log($scope.provinciaSeleccionada);
+           //$scope.buscarCiudadPorProvincia1();
 
         }
 
@@ -793,21 +835,35 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
 
 
+    $scope.previo= function(){
+
+        $scope.puestoTrabajo.fecha=document.getElementById('datepicker2').value;
+        $scope.paciente.fecha_nacimiento=document.getElementById('datepicker1').value;
+
+    }
+
 
     $scope.test=function(){
 
         console.log('entro');
+
+
+        $scope.previo();
+        console.log($scope.puestoTrabajo.fecha);
+        console.log($scope.paciente.fecha_nacimiento);
+
       // for(var i=0;i<1000000;i++)
        // {
         //    $scope.mensaje = "procesando";
-
+        console.log( myProvider.getPuestoTrabajo());
                 $http({
                     method: 'POST',
                     url: myProvider.getPuestoTrabajo(),
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    data: {nombre_puesto:$scope.puestoTrabajo.nombre_puesto,
+                    data: {
+                        nombre_puesto:$scope.puestoTrabajo.nombre_puesto,
                         dependencia:$scope.puestoTrabajo.dependencia,
                         cargo:$scope.puestoTrabajo.cargo,
                         fecha:$scope.puestoTrabajo.fecha,
@@ -818,12 +874,13 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
                         herramientas:$scope.puestoTrabajo.herramientas,
                         materiaPrima:$scope.puestoTrabajo.materiaPrima,
                         proteccion:$scope.puestoTrabajo.proteccion,
-                        protocolos:[]
+                        protocolos:[""]
                     }
 
 
                 }).then(function successCallback(response) {
 
+                    console.log(data);
                                 $http({
                                     method: 'POST',
                                     url: myProvider.getPaciente(),

@@ -15,7 +15,7 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
         tipo_cie10:"",
         sintoma:"",
         tratamientos:[],
-        estado:""
+        estado:"1"
     }
 
     $http({
@@ -130,6 +130,8 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
 
 
     $scope.guardarCie10=function(){
+
+        //$scope.newCie10.tipo_cie10=$scope.selec._id
 
 
 

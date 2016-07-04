@@ -150,7 +150,16 @@
 
                                 </ul>
                             </li>
-                            <li ><a href="#">Reportes</a> </li>
+                            <li class="dropdown" >
+                                <a  class="dropdown-toggle" data-toggle="dropdown" role="button">Reportes <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Reportes/reporteMorbilidad.html">Morbilidad</a> </li>
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Reportes/reporteAusentiemos.html">Ausentismo</a> </li>
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Reportes/reporteDiagnosticos.html">Diagnosticos</a> </li>
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Reportes/reporteEvoluciones.html">Evoluciones</a> </li>
+
+                                </ul>
+                            </li>
 
                             <li class="dropdown">
                                 <a  class="dropdown-toggle" data-toggle="dropdown" role="button"> {{usuarioLog.nombre_usuario}} <span class="caret"></span></a>
@@ -274,11 +283,17 @@
                             </select>
                             <label> Dependencia: </label>
 
-                            <select class="form-control" name="singleSelect">
-                                <option  ng-repeat="ci in dependencia" value="{{ci}}">{{ci.nombre_dependencia}}</option>
+                            <select class="form-control" name="singleSelect" ng-model="puestoTrabajo.dependencia">
+                                <option  ng-repeat="ci in dependencia" value="{{ci._id}}">{{ci.nombre_dependencia}}</option>
 
                             </select>
 
+                            <label> Jornada: </label>
+
+                            <select class="form-control" name="singleSelect" ng-model="puestoTrabajo.jornada">
+                                <option  ng-repeat="jo in jornada" value="{{jo._id}}">{{jo.nombre_jornada}}</option>
+
+                            </select>
 
                         </div>
 
@@ -287,8 +302,8 @@
                         <div class="col-md-3 col-xs-12">
                             <br><br>
                             <label> Cargo: </label>
-                            <select class="form-control" name="singleSelect">
-                                <option  ng-repeat="ca in cargo" value="{{ca}}">{{ca.nombre_cargo}}</option>
+                            <select class="form-control" name="singleSelect" ng-model="puestoTrabajo.cargo">
+                                <option  ng-repeat="ca in cargo" value="{{ca._id}}">{{ca.nombre_cargo}}</option>
 
                             </select>
                             <label > Fecha Cargo: </label><br>

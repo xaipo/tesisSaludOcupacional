@@ -156,7 +156,16 @@
 
                                 </ul>
                             </li>
-                            <li ><a href="#">Reportes</a> </li>
+                            <li class="dropdown" >
+                                <a  class="dropdown-toggle" data-toggle="dropdown" role="button">Reportes <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Reportes/reporteMorbilidad.html">Morbilidad</a> </li>
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Reportes/reporteAusentiemos.html">Ausentismo</a> </li>
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Reportes/reporteDiagnosticos.html">Diagnosticos</a> </li>
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Reportes/reporteEvoluciones.html">Evoluciones</a> </li>
+
+                                </ul>
+                            </li>
 
                             <li class="dropdown">
                                 <a  class="dropdown-toggle" data-toggle="dropdown" role="button"> {{usuarioLog.nombre_usuario}} <span class="caret"></span></a>
@@ -207,13 +216,13 @@
 
                     <br>
                     <label>Código CIE 10:</label>
-                    <input type="text" class="form-control" placeholder="Código CIE 10"/>
+                    <input type="text" class="form-control" placeholder="Código CIE 10" ng-model=""/>
                     <br>
                     <label>Descripcion CIE 10:</label>
-                    <input type="text" class="form-control" placeholder="Nueva Descrpcion CIE 10"/>
+                    <input type="text" class="form-control" placeholder="Nueva Descrpcion CIE 10" ng-model="newCie10.sintoma"/>
                     <br>
 
-                    <input class="btn btn-info" type="submit" ng-click="next1()"
+                    <input class="btn btn-info" type="submit" ng-click="guardarCie10()"
                            value="Guardar Cie 10"/><br><br>
 
 
