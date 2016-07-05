@@ -131,6 +131,104 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
 
     $scope.guardarCie10=function(){
 
+        console.log($scope.newCie10.codigo_cie10);
+        console.log($scope.cie10Selected._id);
+        console.log($scope.newCie10.sintoma);
+
+
+
+        $http({
+            method: 'POST',
+            url: myProvider.getCie10(),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: {
+
+                codigo_cie10:$scope.newCie10.codigo_cie10,
+                tratamientos:[""],
+                tipo_cie10:$scope.cie10Selected._id,
+                sintoma:$scope.newCie10.sintoma,
+                estado:"1"
+
+            }
+
+
+        }).then(function successCallback(response) {
+
+            //console.log(response);
+            //console.log($scope.tipoCie10)
+            //$scope.cie10Selected._id=response.data.tipo_cie10.toString();
+
+
+
+
+            //
+            $http({
+
+                method: 'GET',
+                url: myProvider.getCie10() + "?tipo_cie10=" + $scope.cie10Selected._id,
+
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+
+            }).then(function successCallback(response) {
+                //console.log('entra url');
+                //console.log(url);
+
+                var n = response.data.length;
+                // console.log(n);
+
+                if (n == 0) {
+
+                    alert('no se encontro el paciente');
+
+                } else {
+                    $scope.cie10 = [];
+                    for (var i = 0; i < n; i++) {
+
+
+                        $scope.cie10.push(response.data[i]);
+                        if($scope.cie10[i].estado==1){
+                            $scope.cie10[i].estado="activado";
+                        }else{
+
+                            $scope.cie10[i].estado="desactivado";
+                        }
+                        //  console.log($scope.tipoCie10);
+
+                    }
+
+
+                }
+
+
+            }, function errorCallback(response) {
+                console.log('entra');
+                //  Console.log(response);
+                $scope.mesaje = response.mensaje;
+
+            });
+
+            //
+
+
+            console.log($scope.cie10Selected);
+            //$scope.busquedaCie10Tipo();
+
+
+        }, function errorCallback(response) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+            // console.log(response);
+
+
+            console.log(response);
+            //$scope.mesaje = response.mensaje;
+
+        });
+
         //$scope.newCie10.tipo_cie10=$scope.selec._id
 
 
