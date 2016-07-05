@@ -616,7 +616,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     $scope.selectedMaq=function(){
 
 
-        if($scope.selectedMaquinaria!=undefined) {
+        if($scope.selectedMaquinaria!=undefined && $scope.selectedMaquinaria != "") {
             $scope.selectedMaquinaria=JSON.parse($scope.selectedMaquinaria);
             $scope.listaSeleccionMaquinaria.push($scope.selectedMaquinaria);
 
@@ -634,6 +634,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
             //$scope.maquinaria.cleanData(undefined);
             console.log($scope.listaSeleccionMaquinaria);
             console.log($scope.maquinaria);
+            $scope.selectedMaquinaria="";
             //$scope.maquinaria.removeItem($scope.selectedMaquinaria);
         }
 
@@ -641,7 +642,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     $scope.selectedMaq1=function(){
 
 
-        if( $scope.selectedMaquinaria!=undefined) {
+        if( $scope.selectedMaquinaria!=undefined && $scope.selectedMaquinaria != "") {
             $scope.selectedMaquinaria=JSON.parse($scope.selectedMaquinaria);
             $scope.maquinaria.push($scope.selectedMaquinaria);
             // $scope.listaSeleccionMaquinaria.removeItem($scope.selectedMaquinaria._id);
@@ -657,6 +658,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
             }
             console.log(pos);
             $scope.listaSeleccionMaquinaria.splice(pos, 1);
+            $scope.selectedMaquinaria="";
             // $scope.listaSeleccionMaquinaria.cleanData(undefined);
         //    console.log($scope.maquinaria);
            // console.log($scope.listaSeleccionMaquinaria);
@@ -672,7 +674,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
         $scope.listaSeleccionHerramientas.push($scope.selectedHerramientas);
         $scope.selectedHerramientas.pop($scope.selectedHerramientas);*/
 
-        if($scope.selectedHerramientas!=undefined) {
+        if($scope.selectedHerramientas!=undefined && $scope.selectedHerramientas != "") {
             $scope.selectedHerramientas=JSON.parse($scope.selectedHerramientas);
             $scope.listaSeleccionHerramientas.push($scope.selectedHerramientas);
 
@@ -687,6 +689,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
             }
             console.log(pos);
             $scope.herramientas.splice(pos, 1);
+            $scope.selectedHerramientas="";
             //$scope.maquinaria.cleanData(undefined);
             //console.log($scope.listaSeleccionMaquinaria);
            // console.log($scope.maquinaria);
@@ -704,7 +707,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
         $scope.herramientas.push($scope.selectedHerramientas);
         $scope.listaSeleccionHerramientas.pop($scope.selectedHerramientas);*/
 
-        if($scope.selectedHerramientas!=undefined) {
+        if($scope.selectedHerramientas!=undefined && $scope.selectedHerramientas != "") {
             $scope.selectedHerramientas=JSON.parse($scope.selectedHerramientas);
             $scope.herramientas.push($scope.selectedHerramientas);
 
@@ -719,6 +722,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
             }
             console.log(pos);
             $scope.listaSeleccionHerramientas.splice(pos, 1);
+            $scope.selectedHerramientas="";
             //$scope.maquinaria.cleanData(undefined);
             //console.log($scope.listaSeleccionMaquinaria);
             // console.log($scope.maquinaria);
@@ -733,7 +737,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     $scope.selectedMateriaPr=function(){
 
 
-        if($scope.selectedMateriaPrima!=undefined) {
+        if($scope.selectedMateriaPrima!=undefined && $scope.selectedMateriaPrima != "") {
             $scope.selectedMateriaPrima = JSON.parse($scope.selectedMateriaPrima);
             $scope.listaSeleccionMateriaPrima.push($scope.selectedMateriaPrima);
 
@@ -748,6 +752,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
             }
             console.log(pos);
             $scope.materiaPrima.splice(pos, 1);
+            $scope.selectedMateriaPrima="";
         }
 
 
@@ -756,7 +761,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     $scope.selectedMateriaPr1=function() {
 
 
-        if ($scope.selectedMateriaPrima != undefined) {
+        if ($scope.selectedMateriaPrima != undefined && $scope.selectedMateriaPrima != "") {
             $scope.selectedMateriaPrima = JSON.parse($scope.selectedMateriaPrima);
             $scope.materiaPrima.push($scope.selectedMateriaPrima);
 
@@ -771,7 +776,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
             }
             console.log(pos);
             $scope.listaSeleccionMateriaPrima.splice(pos, 1);
-
+            $scope.selectedMateriaPrima="";
         }
 
     }
@@ -779,7 +784,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     $scope.selectedProteccionF=function(){
 
 
-        if ($scope.selectedProteccion != undefined) {
+        if ($scope.selectedProteccion != undefined && $scope.selectedProteccion != "" ) {
             $scope.selectedProteccion = JSON.parse($scope.selectedProteccion);
             $scope.listaSeleccionProteccion.push($scope.selectedProteccion);
 
@@ -794,7 +799,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
             }
             console.log(pos);
             $scope.proteccion.splice(pos, 1);
-
+            $scope.selectedProteccion="";
         }
 
     }
@@ -802,7 +807,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     $scope.selectedProteccionF1=function(){
 
 
-        if ($scope.selectedProteccion != undefined) {
+        if ($scope.selectedProteccion != undefined && $scope.selectedProteccion != "" ) {
             $scope.selectedProteccion = JSON.parse($scope.selectedProteccion);
             $scope.proteccion.push($scope.selectedProteccion);
 
@@ -817,7 +822,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
             }
             console.log(pos);
             $scope.listaSeleccionProteccion.splice(pos, 1);
-
+            $scope.selectedProteccion="";
         }
 
     }
@@ -840,17 +845,55 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
         $scope.puestoTrabajo.fecha=document.getElementById('datepicker2').value;
         $scope.paciente.fecha_nacimiento=document.getElementById('datepicker1').value;
 
+        $scope.puestoTrabajo.maquinaria=[];
+        $scope.puestoTrabajo.herramientas=[];
+        $scope.puestoTrabajo.materiaPrima=[];
+        $scope.puestoTrabajo.proteccion=[];
+
+
+        var n= $scope.listaSeleccionMaquinaria.length;
+        for(var i=0;i<n;i++)
+        {
+            $scope.puestoTrabajo.maquinaria.push($scope.listaSeleccionMaquinaria[i]._id);
+        }
+
+
+        var n=$scope.listaSeleccionHerramientas.length;
+
+        for(var j=0;j<n;j++)
+        {
+            $scope.puestoTrabajo.herramientas.push($scope.listaSeleccionHerramientas[j]._id);
+        }
+
+
+
+       var   n=$scope.listaSeleccionMateriaPrima.length;
+
+        for(var k=0;k<n;k++)
+        {
+            $scope.puestoTrabajo.materiaPrima.push($scope.listaSeleccionMateriaPrima[k]._id);
+        }
+
+
+
+        var n=$scope.listaSeleccionProteccion.length;
+
+        for(var l=0;l<n;l++)
+        {
+            $scope.puestoTrabajo.proteccion.push($scope.listaSeleccionProteccion[l]._id);
+        }
+
     }
 
 
     $scope.test=function(){
 
-        console.log('entro');
+        //console.log('entro');
 
-
+     //   console.log($scope.puestoTrabajo.herramientas);
+       // console.log($scope.puestoTrabajo.nombre_puesto);
         $scope.previo();
-        console.log($scope.puestoTrabajo.fecha);
-        console.log($scope.paciente.fecha_nacimiento);
+
 
       // for(var i=0;i<1000000;i++)
        // {
@@ -871,16 +914,17 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
                         jornada:$scope.puestoTrabajo.jornada,
                         descripcion_funciones:$scope.puestoTrabajo.descripcion_funciones,
                         maquinaria:$scope.puestoTrabajo.maquinaria,
-                        herramientas:$scope.puestoTrabajo.herramientas,
-                        materiaPrima:$scope.puestoTrabajo.materiaPrima,
+                        herramienta:$scope.puestoTrabajo.herramientas,
+                        materia_prima:$scope.puestoTrabajo.materiaPrima,
                         proteccion:$scope.puestoTrabajo.proteccion,
-                        protocolos:[""]
+                        protocolos:[]
                     }
 
 
                 }).then(function successCallback(response) {
+                    console.log(response.data);
+                    $scope.paciente.puesto_trabajo=response.data._id,
 
-                    console.log(data);
                                 $http({
                                     method: 'POST',
                                     url: myProvider.getPaciente(),

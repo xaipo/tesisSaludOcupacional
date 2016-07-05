@@ -207,7 +207,7 @@
                     <label > Segundo Apellido:</label>
                     <input type="text" class="form-control" placeholder="Segundo Apellido" ng-model="paciente.segundo_apellido"/>
                     <label > Fecha Nacimiento: </label><br>
-                    <input class="datepicker" type="text" id="datepicker1" name="date" ng-model="paciente.fecha_nacimiento"/><br>
+                    <input class="datepicker" type="text" id="datepicker1" name="date" /><br>
 
                 </div>
                 <div class="col-md-3 col-xs-12" >
@@ -249,7 +249,7 @@
                     <label> Nivle Estudio: </label>
 
                     <select class="form-control" name="singleSelect1" ng-model="paciente.nivel_estudios">
-                        <option ng-repeat="nivel in nivel_estudio" value="{{nive._id}}">{{nivel.descripcion_nivel_estudio}}</option>
+                        <option ng-repeat="nivel in nivel_estudio" value="{{nivel._id}}">{{nivel.descripcion_nivel_estudio}}</option>
 
                     </select>
                 </div>
@@ -272,7 +272,7 @@
                         <div class="col-md-3 col-xs-12">
                             <br><br>
                             <label>Descripcion Puesto:</label>
-                            <input type="text" class="form-control" placeholder="Descripción Puesto" ng-model="puesto_trabajo.nombre_puesto"/>
+                            <input type="text" class="form-control" placeholder="Descripción Puesto" ng-model="puestoTrabajo.nombre_puesto"/>
                             <label> Empresa: </label>
                             <select name="Provimcia" ng-model="empresaSeleccionada" class="form-control" single
                                     ng-click="buscarDependenciaPorEmpresa()">
@@ -309,7 +309,7 @@
                             <label > Fecha Cargo: </label><br>
                             <input class="datepicker" type="text" id="datepicker2" name="date" /><br>
                             <label>Descripcion Funciones:</label>
-                            <input type="text" class="form-control" placeholder="Descripción Funciones"/>
+                            <input type="text" class="form-control" placeholder="Descripción Funciones" ng-model="puestoTrabajo.descripcion_funciones"/>
 
 
                         </div>
