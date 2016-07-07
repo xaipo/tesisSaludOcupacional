@@ -30,6 +30,11 @@ app.use(cors());// permite angular interactuar
 // </editor-fold>
 
 // <editor-fold defaultstate="collapsed" desc="Routes">
+
+app.get('/', function (req, res) {
+    res.send('Hello World!');
+});
+
 app.use('/api',require('./Routes/apiUsuarios'));
 app.use('/api',require('./Routes/apiEmpresa'));
 app.use('/api',require('./Routes/apiDependencia'));

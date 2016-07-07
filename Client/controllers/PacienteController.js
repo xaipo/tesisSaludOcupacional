@@ -886,95 +886,148 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
     }
 
 
+
+    $scope.validate= function(){
+
+        $http({
+            method: 'GET',
+            url: myProvider.getPaciente()+"?cedula="+$scope.paciente.ci,
+
+            headers: {
+                'Content-Type': 'application/json'
+            }
+
+        }).then(function successCallback(response) {
+            //console.log('url');
+
+            var n = response.data.length;
+            //  console.log(n);
+
+            if(n==0){
+
+
+
+            }else {
+                alert('ya existe ese paciente ingresado');
+                 return false;
+
+
+            }
+
+
+        }, function errorCallback(response) {
+
+            //  Console.log(response);
+            $scope.mesaje = response.mensaje;
+
+        });
+
+        if(true){
+            return true;
+        }else{
+            return false;
+        }
+
+
+    }
+
+
+
+
     $scope.test=function(){
 
         //console.log('entro');
 
      //   console.log($scope.puestoTrabajo.herramientas);
        // console.log($scope.puestoTrabajo.nombre_puesto);
-        $scope.previo();
+        var  validator=false;
+        validator= $scope.validate();
+
+        if(validator) {
+
+            $scope.previo();
 
 
-      // for(var i=0;i<1000000;i++)
-       // {
-        //    $scope.mensaje = "procesando";
-        console.log( myProvider.getPuestoTrabajo());
-                $http({
-                    method: 'POST',
-                    url: myProvider.getPuestoTrabajo(),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    data: {
-                        nombre_puesto:$scope.puestoTrabajo.nombre_puesto,
-                        dependencia:$scope.puestoTrabajo.dependencia,
-                        cargo:$scope.puestoTrabajo.cargo,
-                        fecha:$scope.puestoTrabajo.fecha,
-                        estado:"1",
-                        jornada:$scope.puestoTrabajo.jornada,
-                        descripcion_funciones:$scope.puestoTrabajo.descripcion_funciones,
-                        maquinaria:$scope.puestoTrabajo.maquinaria,
-                        herramienta:$scope.puestoTrabajo.herramientas,
-                        materia_prima:$scope.puestoTrabajo.materiaPrima,
-                        proteccion:$scope.puestoTrabajo.proteccion,
-                        protocolos:[]
-                    }
+            // for(var i=0;i<1000000;i++)
+            // {
+            //    $scope.mensaje = "procesando";
+            console.log(myProvider.getPuestoTrabajo());
+            $http({
+                method: 'POST',
+                url: myProvider.getPuestoTrabajo(),
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                data: {
+                    nombre_puesto: $scope.puestoTrabajo.nombre_puesto,
+                    dependencia: $scope.puestoTrabajo.dependencia,
+                    cargo: $scope.puestoTrabajo.cargo,
+                    fecha: $scope.puestoTrabajo.fecha,
+                    estado: "1",
+                    jornada: $scope.puestoTrabajo.jornada,
+                    descripcion_funciones: $scope.puestoTrabajo.descripcion_funciones,
+                    maquinaria: $scope.puestoTrabajo.maquinaria,
+                    herramienta: $scope.puestoTrabajo.herramientas,
+                    materia_prima: $scope.puestoTrabajo.materiaPrima,
+                    proteccion: $scope.puestoTrabajo.proteccion,
+                    protocolos: []
+                }
 
 
-                }).then(function successCallback(response) {
-                    console.log(response.data);
-                    $scope.paciente.puesto_trabajo=response.data._id,
+            }).then(function successCallback(response) {
+                console.log(response.data);
+                $scope.paciente.puesto_trabajo = response.data._id,
 
-                                $http({
-                                    method: 'POST',
-                                    url: myProvider.getPaciente(),
-                                    headers: {
-                                        'Content-Type': 'application/json'
-                                    },
-                                    data: {
-                                        ci:$scope.paciente.ci,
-                                        primer_nombre:$scope.paciente.primer_nombre,
-                                        segundo_nombre:$scope.paciente.segundo_nombre,
-                                        primer_apellido:$scope.paciente.primer_apellido,
-                                        segundo_apellido:$scope.paciente.segundo_apellido,
-                                        sexo:$scope.paciente.sexo,
-                                        fecha_nacimiento:$scope.paciente.fecha_nacimiento,
-                                        ciudad:$scope.paciente.ciudad,
-                                        edad:$scope.paciente.edad,
-                                        estado_civil:$scope.paciente.estado_civil,
-                                        nivel_estudios:$scope.paciente.nivel_estudios,
-                                        puesto_trabajo:$scope.paciente.puesto_trabajo,
-                                        telefono:$scope.paciente.telefono,
-                                    }
-
-
-                                }).then(function successCallback(response) {
+                    $http({
+                        method: 'POST',
+                        url: myProvider.getPaciente(),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        data: {
+                            ci: $scope.paciente.ci,
+                            primer_nombre: $scope.paciente.primer_nombre,
+                            segundo_nombre: $scope.paciente.segundo_nombre,
+                            primer_apellido: $scope.paciente.primer_apellido,
+                            segundo_apellido: $scope.paciente.segundo_apellido,
+                            sexo: $scope.paciente.sexo,
+                            fecha_nacimiento: $scope.paciente.fecha_nacimiento,
+                            ciudad: $scope.paciente.ciudad,
+                            edad: $scope.paciente.edad,
+                            estado_civil: $scope.paciente.estado_civil,
+                            nivel_estudios: $scope.paciente.nivel_estudios,
+                            puesto_trabajo: $scope.paciente.puesto_trabajo,
+                            telefono: $scope.paciente.telefono,
+                        }
 
 
+                    }).then(function successCallback(response) {
 
-
-                                }, function errorCallback(response) {
-                                    // called asynchronously if an error occurs
-                                    // or server returns response with an error status.
-                                    // console.log(response);
-                                    //$scope.mesaje = response.mensaje;
-
-                                });
+                        alert("ingresado correctamente");
 
 
                     }, function errorCallback(response) {
                         // called asynchronously if an error occurs
                         // or server returns response with an error status.
-                       // console.log(response);
+                        // console.log(response);
                         //$scope.mesaje = response.mensaje;
 
                     });
 
-                //$scope.mensaje = "Para ingresar debe llenar el nombre de la empresa";
 
-         //  }
+            }, function errorCallback(response) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+                // console.log(response);
+                //$scope.mesaje = response.mensaje;
 
+            });
 
+            //$scope.mensaje = "Para ingresar debe llenar el nombre de la empresa";
+
+            //  }
+
+        }
 
     };
 
@@ -982,7 +1035,9 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     $scope.save=function(){
 
-        console.log('entro');
+
+
+        //console.log('entro');
         // for(var i=0;i<1000000;i++)
         // {
         //    $scope.mensaje = "procesando";
