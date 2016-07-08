@@ -8,6 +8,7 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
     $scope.tipoCie10=[];
     $scope.cie10Selected="";
     $scope.cie10Selected1="";
+    $scope.cie10SintomaSelected="";
     $scope.cie10=[];
 
     $scope.newCie10={
@@ -163,8 +164,6 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
             //$scope.cie10Selected._id=response.data.tipo_cie10.toString();
 
 
-
-
             //
             $http({
 
@@ -202,9 +201,7 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
 
                     }
 
-
                 }
-
 
             }, function errorCallback(response) {
                 console.log('entra');
@@ -225,7 +222,6 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
             // or server returns response with an error status.
             // console.log(response);
 
-
             console.log(response);
             //$scope.mesaje = response.mensaje;
 
@@ -233,7 +229,70 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
 
         //$scope.newCie10.tipo_cie10=$scope.selec._id
 
-
-
     }
-}]);
+
+    $scope.updateStatusCIE10Sintoma=function(){
+
+        if ($scope.cie10Selected1._id == undefined){
+            alert("Que haces viejo!")
+        }else{
+
+        //console.log($scope.cie10Selected1._id);
+        if ($scope.cie10Selected1.estado == "activado") {
+            $scope.newCie10.estado="0";
+            var ind = -1;
+            for(var i = 0, len = $scope.cie10.length; i < len; i++) {
+                if ($scope.cie10[i]._id === $scope.cie10Selected1._id) {
+                    ind = i;
+                    break;
+                }
+            }
+            $scope.cie10[ind].estado ="desactivado";
+
+        } else{
+            $scope.newCie10.estado="1";
+            var ind = -1;
+            for(var i = 0, len = $scope.cie10.length; i < len; i++) {
+                if ($scope.cie10[i]._id === $scope.cie10Selected1._id) {
+                    ind = i;
+                    break;
+                }
+            }
+            $scope.cie10[ind].estado ="activado";
+
+        }
+
+        var newEstadoCie10 = $scope.newCie10.estado;
+
+
+        $http({
+           method: 'PUT',
+            url: myProvider.getCie10()+"/"+$scope.cie10Selected1._id,
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: {
+
+                //codigo_cie10:$scope.cie10Selected1.codigo_cie10,
+                //tratamientos:[""],
+                //tipo_cie10:$scope.cie10Selected1._id,
+                //sintoma:$scope.cie10Selected1.sintoma,
+
+                estado:newEstadoCie10
+
+            }
+
+
+        }).then(function successCallback(response) {
+
+            //console.log(newEstadoCie10);
+
+        }, function errorCallback(response) {
+            console.log(response);
+
+        });
+
+        }
+        }
+        }
+    ]);

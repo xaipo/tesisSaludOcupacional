@@ -104,9 +104,6 @@
                             <span class="icon-bar">  </span>
                         </button>
 
-
-
-
                     </div><br>
                     <!-- Iniciar menu-->
                     <div class="collapse navbar-collapse" id="menuPrincipal-fm">
@@ -195,7 +192,6 @@
 
             <div class="row">
 
-
                 <div class="col-md-12 col-xs-12" >
                     <br>
                     <label for="TipoCie"> Tipo CIE 10: </label><br>
@@ -221,10 +217,12 @@
                     <label>Descripcion CIE 10:</label>
                     <input type="text" class="form-control" placeholder="Nueva Descrpcion CIE 10" ng-model="newCie10.sintoma"/>
                     <br>
-
-                    <input class="btn btn-info" type="submit" ng-click="guardarCie10()"
-                           value="Guardar Cie 10"/><br><br>
-
+                    <div class="form-group col-lg-1">
+                        <input class="btn btn-info" type="submit" ng-click="guardarCie10()"
+                               value="Guardar CIE 10" style=" width:150px"/><br><br>
+                        <input class="btn btn-warning" type="submit" ng-click="updateStatusCIE10Sintoma()"
+                               value="Modificar Estado" style=" width:150px" /><br><br>
+                    </div>
 
                 </div>
 
@@ -235,7 +233,7 @@
                     <br>
                     <label for="Cie10">CIE 10: </label><br>
                     Búsqueda <input type="text" ng-model="search2" class="form-control" placeholder="Busqueda"><br>
-                    <table class="table table-hover">
+                    <table class="table table-hover" >
                         <thead>
                         <tr>
                             <th>#</th>
@@ -244,16 +242,15 @@
                         </tr>
                         </thead>
                         <tbody>
-                    <tr ng-repeat="item in cie10  | filter:search2| orderBy:item.sintoma" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)" >
-                        <td>{{$index}}</td>
-                        <td>{{ item.sintoma }}</td>
-                        <td>{{ item.estado }}</td>
-                    </tr>
+                            <tr ng-repeat="item in cie10  | filter:search2| orderBy:item.sintoma" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)">
+
+                                <td>{{$index}}</td>
+                                <td>{{ item.sintoma }}</td>
+                                <td>{{ item.estado }}</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
-
-
 
             </div>
             <br>
