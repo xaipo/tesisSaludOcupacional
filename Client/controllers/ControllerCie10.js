@@ -19,6 +19,20 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
         estado:"1"
     }
 
+
+    $scope.totalItems = $scope.cie10.length;
+    $scope.currentPage = 1;
+    $scope.numPerPage = 5;
+
+    $scope.paginate = function(value) {
+        var begin, end, index;
+        begin = ($scope.currentPage - 1) * $scope.numPerPage;
+        end = begin + $scope.numPerPage;
+        index = $scope.cie10.indexOf(value);
+        return (begin <= index && index < end);
+    };
+
+
     $http({
 
         method: 'GET',
@@ -273,14 +287,15 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
 
             }).then(function successCallback(response) {
 
-            //console.log(newEstadoCie10);
+                //console.log(newEstadoCie10);
 
-        }, function errorCallback(response) {
-            console.log(response);
+            }, function errorCallback(response) {
+                console.log(response);
 
-        });
+            });
 
-        }
-        }
+            }
+            }
+
         }
     ]);

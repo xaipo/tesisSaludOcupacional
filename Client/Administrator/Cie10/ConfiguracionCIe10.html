@@ -241,14 +241,20 @@
                             <th>Estado</th>
                         </tr>
                         </thead>
+
                         <tbody>
                             <tr ng-repeat="item in cie10  | filter:search2| orderBy:item.sintoma" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)">
-
                                 <td>{{$index}}</td>
                                 <td>{{ item.sintoma }}</td>
                                 <td>{{ item.estado }}</td>
                             </tr>
                         </tbody>
+
+                        <pagination total-items="totalItems" ng-model="currentPage"
+                                    max-size="5" boundary-links="true"
+                                    items-per-page="numPerPage" class="pagination-sm">
+                        </pagination>
+
                     </table>
                 </div>
 
@@ -260,6 +266,7 @@
 </div>
 
 </form>
+
 
 </body>
 </html>
