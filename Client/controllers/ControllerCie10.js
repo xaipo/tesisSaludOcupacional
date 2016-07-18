@@ -248,7 +248,7 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
     $scope.updateStatusCIE10Sintoma=function(){
 
         if ($scope.cie10Selected1._id == undefined){
-            alert("Que haces viejo!")
+            alert("Error, seleccionar un campo!")
 
         }else{
 
@@ -298,4 +298,6 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
             }
 
         }
+
+
     ]);

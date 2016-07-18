@@ -22,7 +22,8 @@ app.controller('HistoriaClinicaController', ['$scope', '$http', '$location','myP
 
         paciente:"",
         fecha_examen:"",
-        tipo_examen:""
+        tipo_examen:"",
+        riesgosOcupacionales:[]
 
     }
 

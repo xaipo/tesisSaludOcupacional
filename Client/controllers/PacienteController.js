@@ -985,7 +985,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
                             'Content-Type': 'application/json'
                         },
                         data: {
-                            ci: $scope.paciente.ci,
+                            cedula: $scope.paciente.ci,
                             primer_nombre: $scope.paciente.primer_nombre,
                             segundo_nombre: $scope.paciente.segundo_nombre,
                             primer_apellido: $scope.paciente.primer_apellido,

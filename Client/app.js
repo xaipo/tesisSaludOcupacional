@@ -68,6 +68,18 @@ function ApiUrl(){
     this.getJornada=function(){
         return 'http://localhost:3000/api/jornada';
     }
+    this.getTipoActividad=function(){
+        return 'http://localhost:3000/api/tipoActividad';
+    }
+    this.getCualificacion=function(){
+        return 'http://localhost:3000/api/cualificaciones';
+    }
+    this.getFactoresRiesgo=function(){
+        return 'http://localhost:3000/api/factoresRiesgo';
+    }
+    this.getAlimentos=function(){
+        return 'http://localhost:3000/api/alimentos';
+    }
 }
 
 app.factory("myProvider",function(){
