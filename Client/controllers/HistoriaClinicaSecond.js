@@ -437,10 +437,11 @@ app.controller('HistoriaClinicaSecond', ['$scope', '$http', '$location','myProvi
     $scope.quitar= function (){
 
         var n=  $scope.listaRiesgosOcupacionales.length;
+        console.log(n);
         var pos;
         for(var i=0;i<n;i++ ){
 
-            if($scope.listaRiesgosOcupacionales[i].cod=$scope.riesgosOcupacionalesSelected.cod){
+            if($scope.listaRiesgosOcupacionales[i].cod==$scope.riesgosOcupacionalesSelected.cod){
 
                 pos=i;
                 break;
