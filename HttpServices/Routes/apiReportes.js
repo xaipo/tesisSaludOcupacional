@@ -9,6 +9,7 @@ var modeloReporte ;
 router.get('/reporteMorbilidad',function (req,res){
 
     res.send(req.param('hola'));
+    console.log();
 
 });
 

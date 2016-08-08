@@ -130,6 +130,7 @@ app.controller('HistoriaClinicaThird', ['$scope', '$http', '$location','myProvid
     // </editor-fold >
 
 
+
     $scope.setClickedRow = function(index,item){  //function that sets the value of selectedRow to current index
 
         console.log('entra');
@@ -140,6 +141,18 @@ app.controller('HistoriaClinicaThird', ['$scope', '$http', '$location','myProvid
 
         /*console.log($scope.selectedRow);
          console.log(item);*/
+    }
+
+
+    $scope.saveThird= function (){
+
+
+        $scope.historiaClinica.accidentesTrabajo=$scope.listaAccidentesTrabajo;
+        window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
+        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/third.html';
+
+
+
     }
 
 
