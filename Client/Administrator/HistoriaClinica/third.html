@@ -187,28 +187,125 @@
         <div class="panel-heading">
 
             <h3 class="  text-center panel-title">Historia Clínica </h3>
-            <h5 class=" text-center panel-title">Riesgos Ocupacionales </h5>
+            <h5 class=" text-center panel-title">Enfermedades Historias o Actuales </h5>
 
         </div>
         <div class="container">
 
             <div class="row">
 
-                <div class="col-md-4 col-xs-12" >
+                <div class="col-md-12 col-xs-12" >
+                    <br>
+
+
+                    <label> Tipo Cie 10: </label>
+
+                    <select name="cie10tipo"  class="form-control"   ng-model="cie10Selected" ng-click="busquedaCie10Tipo()">
+                        <option id="valor1" value={{empresaAux1}}
+                                ng-repeat="empresaAux1 in tipoCie10" >
+                            {{empresaAux1.descripcion_tipo_CIE10}}
+                        </option>
+                    </select>
+                </div>
+                <div class="col-md-12 col-xs-12"  >
+                    <label>  Cie 10: </label>
+                    <select name="cie10"  class="form-control"   ng-model="cie10Select" >
+                        <option id="valor2" value={{empresaAux2}}
+                                ng-repeat="empresaAux2 in cie10">
+                            {{empresaAux2.sintoma}}
+                        </option>
+                    </select>
 
                 </div>
 
 
+
+                <div class="col-md-11 col-xs-11" >
+                    <br>
+                   <input class="form-control" placeholder="Busqueda Por Código CIE 10" ng-model="seleccionada">
+                </div>
+                <div class="col-md-1 col-xs-1" >
+                    <br>
+                    <input  type="submit" class="form-control " value="Buscar" ng-click="busquedaPorCodigoPropio()">
+                </div>
+
+
+
+                <div class="col-md-2 col-xs-12" >
+                    <br>
+                    <p data-ng-bind="encontrada.codigo_cie10">  </p>
+                </div>
+                <div class="col-md-10 col-xs-12" >
+                    <br>
+                    <p data-ng-bind="encontrada.sintoma">  </p>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-xs-12" >
+                <br>
+                <input  type="submit" class="btn btn-submit" value="Agregar" ng-click="agregar()">
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <br>
+
+                <input class="btn btn-warning" type="submit" ng-click="quitar()"
+                       value="Quitar"/><br><br>
 
             </div>
 
 
 
 
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <br>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Codigo cie10</th>
+                        <th>Descripción</th>
+
+
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="item in listaCie10Selecionada | filter:search2| orderBy:item.sintoma" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)" >
+                        <td>{{$index}}</td>
+                        <td>{{ item.codigo_cie10 }}</td>
+                        <td>{{ item.sintoma }}</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+
+            <div class="row">
+
+
+                <div class="col-md-3 col-xs-12">
+                    <br>
+
+                    <input class="btn btn-info" type="submit" ng-click="saveFourth()"
+                           value="Siguiente"/><br><br>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
 
 
 
         </div>
+
     </div><!--div fin contaniner-->
 
 </form>
