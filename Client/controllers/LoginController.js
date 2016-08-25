@@ -40,8 +40,21 @@ app.controller('LoginController', ['$scope', '$http', '$location','myProvider','
                 $scope.mensaje="Bienvenido "+response.data[0].nombre_usuario.toString();
                // $rootScope.usuarioLogin=$scope.usuario1;
                 //$localStorage.usr=$scope.usuario1;
-               window.localStorage.setItem("usuario", JSON.stringify($scope.usuario1));
-                window.location ='/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
+                switch(response.data[0].tipo_usuario) {
+                    case 1:
+                        window.localStorage.setItem("usuario", JSON.stringify($scope.usuario1));
+                        window.location ='/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
+
+                        break;
+                    case 2:
+                        window.localStorage.setItem("usuario", JSON.stringify($scope.usuario1));
+                        window.location ='/tesisSaludOcupacional/Client/Integracion/indexIntegracion.html';
+                        break;
+                    default:
+
+                     alert('El tipo de usuario no tiene permiso para ningun sistema')
+                }
+
               //  console.log($rootScope.usuarioLogin);
              //   $location.replace();
 

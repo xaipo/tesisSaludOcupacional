@@ -9,7 +9,7 @@ var categoriaSchema = new mongoose.Schema({
 
     causa : String,
     tiempo:  String,
-    sintomasCie10:   Array,
+
 
 
 

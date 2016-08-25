@@ -7,9 +7,8 @@ var mongoose= restful.mongoose;
 var categoriaSchema = new mongoose.Schema({
 
 
-    descripcion_enfermedadesAH : String,
-    sintomas_cie10:  Array,
-    diagnostico:   String,
+
+    sintomas_cie10:  mongoose.Schema.ObjectId,
     fecha: String,
 
 
