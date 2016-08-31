@@ -80,6 +80,9 @@ function ApiUrl(){
     this.getAlimentos=function(){
         return 'http://localhost:3000/api/alimentos';
     }
+    this.getParentezco=function(){
+        return 'http://localhost:3000/api/parentezco';
+    }
 }
 
 app.factory("myProvider",function(){

@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9da37b9f-90ea-4b83-8a73-5ea0a7a78c4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSixth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HtttpServiceIntegracion/Route/routeConsultasGenericas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HtttpServiceIntegracion/Route/routeIngresoGenerico.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HtttpServiceIntegracion/Route/routeModificacionGenericas.js" />
-      <change type="MOVED" beforePath="C:\tesis\tesisSaludOcupacional\HtttpServiceIntegracion\Route\ruteTest.js" afterPath="$PROJECT_DIR$/HtttpServiceIntegracion/Route/routeCreacionGenerica.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js" afterPath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/forth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/forth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" afterPath="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HtttpServiceIntegracion/server.js" afterPath="$PROJECT_DIR$/HtttpServiceIntegracion/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSixth.js" afterPath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSixth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/app.js" afterPath="$PROJECT_DIR$/Client/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tesisSaludOcupacional.iws" />
@@ -34,51 +26,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="forth.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/forth.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-154.53847">
-              <caret line="265" column="0" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HistoriaClinicaFiveth.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37639552">
-              <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="fiveth.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="3.6923077">
+              <caret line="244" column="46" selection-start-line="244" selection-start-column="46" selection-end-line="244" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HistoriaClinicaControllerSixth.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="third.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/third.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.961538">
+              <caret line="251" column="47" selection-start-line="248" selection-start-column="14" selection-end-line="251" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoriaClinicaControllerSixth.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSixth.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.53907496">
+              <caret line="104" column="29" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoriaClinicaFiveth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="70" column="0" selection-start-line="59" selection-start-column="3" selection-end-line="70" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HistoriaClinicaFourth.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaFourth.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="257" column="5" selection-start-line="251" selection-start-column="4" selection-end-line="257" selection-end-column="5" />
+              <caret line="83" column="54" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -129,7 +123,6 @@
         <option value="$PROJECT_DIR$/Client/Administrator/Reportes/reporteMorbilidad.html" />
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiHistoriaClinica.js" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloHistoriaClinica.js" />
-        <option value="$PROJECT_DIR$/Client/app.js" />
         <option value="$PROJECT_DIR$/Client/controllers/PacienteController.js" />
         <option value="$PROJECT_DIR$/Client/scripts/script" />
         <option value="$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html" />
@@ -158,10 +151,11 @@
         <option value="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaFourth.js" />
-        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html" />
-        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSixth.js" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/forth.html" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js" />
+        <option value="$PROJECT_DIR$/Client/app.js" />
+        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html" />
+        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSixth.js" />
       </list>
     </option>
   </component>
@@ -597,13 +591,7 @@
       <recent name="C:\tesis\tesisSaludOcupacional\Client\Administrator" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.forth.html">
-    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/HttpServices">
-      <method />
-    </configuration>
-    <configuration default="false" name="newClinicHistory.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/newClinicHistory.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.fiveth.html">
     <configuration default="false" name="forth.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/forth.html">
       <method />
     </configuration>
@@ -611,6 +599,12 @@
       <method />
     </configuration>
     <configuration default="false" name="HistoriaClinicaFiveth.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="HistoriaClinicaFiveth.js" working-dir="$PROJECT_DIR$/Client/controllers">
+      <method />
+    </configuration>
+    <configuration default="false" name="fiveth.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/fiveth.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="HistoriaClinicaControllerSixth.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="HistoriaClinicaControllerSixth.js" working-dir="$PROJECT_DIR$/Client/controllers">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -652,19 +646,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.newClinicHistory.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.forth.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.third.html" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaFiveth.js" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.forth.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.third.html" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaFiveth.js" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.fiveth.html" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaControllerSixth.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.forth.html" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaFiveth.js" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.third.html" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.server.js" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.newClinicHistory.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.fiveth.html" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaControllerSixth.js" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.forth.html" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaFiveth.js" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.third.html" />
       </list>
     </recent_temporary>
   </component>
@@ -907,7 +901,13 @@
       <option name="project" value="LOCAL" />
       <updated>1472147841356</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="agrego la final hc inicial">
+      <created>1472663506150</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1472663506150</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView">
@@ -926,6 +926,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22057264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32622603" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28463203" sideWeight="0.5479452" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1480315" sideWeight="0.48682284" order="8" side_tool="false" content_ui="tabs" />
@@ -935,7 +936,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39125684" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32622603" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -976,7 +976,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cmabios en ingreso empresa" />
     <MESSAGE value="cambios en el back generacion de apis" />
     <MESSAGE value="agrego mas modelos y api para la creacion de la base" />
     <MESSAGE value="agrego mas modelos y apis" />
@@ -1001,7 +1000,8 @@
     <MESSAGE value="agrego finalizacion de riesgos ocupacionales" />
     <MESSAGE value="finalizo enfermedades actuales e historicas" />
     <MESSAGE value="agergo modulo de integracion" />
-    <option name="LAST_COMMIT_MESSAGE" value="agergo modulo de integracion" />
+    <MESSAGE value="agrego la final hc inicial" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrego la final hc inicial" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1181,13 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/third.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="313" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloAusentismo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1275,13 +1268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="19" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -1300,6 +1286,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1326,7 +1313,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
           <folding>
-            <element signature="e#861#928#0" expanded="true" />
+            <element signature="e#861#928#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1344,8 +1331,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="459" column="49" selection-start-line="459" selection-start-column="49" selection-end-line="459" selection-end-column="49" />
           <folding>
-            <element signature="e#1416#1479#0" expanded="true" />
-            <element signature="e#3503#3561#0" expanded="true" />
+            <element signature="e#1416#1479#0" expanded="false" />
+            <element signature="e#3503#3561#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1390,43 +1377,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaFourth.js">
+    <entry file="file://$PROJECT_DIR$/Client/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="257" column="5" selection-start-line="251" selection-start-column="4" selection-end-line="257" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="83" column="54" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/forth.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-154.53847">
-          <caret line="265" column="0" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.307693">
+          <caret line="209" column="116" selection-start-line="209" selection-start-column="19" selection-end-line="209" selection-end-column="116" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSixth.js">
+    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaFourth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="213" column="5" selection-start-line="189" selection-start-column="1" selection-end-line="213" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/third.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.961538">
+          <caret line="251" column="47" selection-start-line="248" selection-start-column="14" selection-end-line="251" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37639552">
-          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="0" selection-start-line="59" selection-start-column="3" selection-end-line="70" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.6923077">
+          <caret line="244" column="46" selection-start-line="244" selection-start-column="46" selection-end-line="244" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSixth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53907496">
+          <caret line="104" column="29" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
