@@ -26,6 +26,15 @@ app.controller('HistoriaClinicaSixth', ['$scope', '$http', '$location','myProvid
     $scope.tipo=[];
     $scope.personal_selected;
 
+
+    $scope.getHistoria= function(){
+
+        $scope.historiaClinica=JSON.parse(window.localStorage.getItem('hC'));
+        console.log($scope.historiaClinica);
+
+    }
+
+
     $http({
 
         method: 'GET',
@@ -225,5 +234,17 @@ app.controller('HistoriaClinicaSixth', ['$scope', '$http', '$location','myProvid
     }
 
 
+
+    $scope.saveFiveth = function (){
+
+
+        $scope.historiaClinica.antescedentes_familiares=$scope.listaAntescedentesFamiliares;
+        $scope.historiaClinica.antescedentes_personales=$scope.listaAntescedentesPersonales;
+
+        window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
+        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/forth.html';
+
+
+    }
 
 }]);
