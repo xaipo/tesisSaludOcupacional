@@ -36,7 +36,7 @@ app.get('/', function (req, res) {
 });
 
 
-app.use('/api',require('./Route/ruteTest'));
+app.use('/api',require('./Route/routeCreacionGenerica'));
 
 
 // </editor-fold >

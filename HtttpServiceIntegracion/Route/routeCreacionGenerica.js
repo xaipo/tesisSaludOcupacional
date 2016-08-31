@@ -26,5 +26,25 @@ router.get('/productos',function(req,res){
 
  });
 
+router.post('/productos1',function(req,res){
+
+    console.log(req.param('hola'));
+    MongoClient.connect('mongodb://localhost:27017/IntegrationTest', function(err, db) {
+        if (err) {
+            throw err;
+        }
+        db.collection('coleccion2').update({campo:req.param('hola')})(function(err, result) {
+            if (err) {
+                throw err;
+            }
+            console.log(result);
+            res.send(result);
+
+        });
+        db.close();
+    });
+
+
+});
 
 module.exports=router;

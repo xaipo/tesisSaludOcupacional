@@ -199,6 +199,7 @@
 
                 <div class="col-md-3 col-xs-11" >
                     <br>
+                    <label > Causa Ausentismo </label><br>
                     <input class="form-control" placeholder="Causa" ng-model="ausentismo.causa">
 
 
@@ -215,10 +216,13 @@
 
             <div class="col-md-3 col-xs-12" >
                 <br>
+                <br>
                 <input  type="submit" class="btn btn-submit" value="Agregar" ng-click="agregar()">
             </div>
             <div class="col-md-3 col-xs-12">
                 <br>
+                <br>
+
 
                 <input class="btn btn-warning" type="submit" ng-click="quitar()"
                        value="Quitar"/><br><br>
@@ -235,18 +239,18 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Codigo cie10</th>
-                            <th>Descripción</th>
+                            <th>Causa</th>
+                            <th>Tiempo</th>
 
 
 
                         </tr>
                         </thead>
                         <tbody>
-                        <tr ng-repeat="item in listaCie10Selecionada | filter:search2| orderBy:item.sintoma" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)" >
+                        <tr ng-repeat="item in listaAusentismo | filter:search2| orderBy:item.sintoma" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)" >
                             <td>{{$index}}</td>
-                            <td>{{ item.codigo_cie10 }}</td>
-                            <td>{{ item.sintoma }}</td>
+                            <td>{{ item.causa }}</td>
+                            <td>{{ item.tiempo }}</td>
 
                         </tr>
                         </tbody>
@@ -263,7 +267,7 @@
                     <div class="col-md-3 col-xs-12">
                         <br>
 
-                        <input class="btn btn-info" type="submit" ng-click="saveFourth()"
+                        <input class="btn btn-info" type="submit" ng-click="saveFive()"
                                value="Siguiente"/><br><br>
 
                     </div>
@@ -278,6 +282,7 @@
 
         </div>
 
+    </div><!--div fin contaniner-->
     </div><!--div fin contaniner-->
 
 </form>
