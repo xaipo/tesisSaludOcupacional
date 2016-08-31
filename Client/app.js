@@ -83,6 +83,10 @@ function ApiUrl(){
     this.getParentezco=function(){
         return 'http://localhost:3000/api/parentezco';
     }
+    this.getTipoPersonales=function(){
+        return '  http://localhost:3000/api/tipoPersonales';
+    }
+
 }
 
 app.factory("myProvider",function(){
