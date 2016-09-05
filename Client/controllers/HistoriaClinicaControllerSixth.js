@@ -242,7 +242,7 @@ app.controller('HistoriaClinicaSixth', ['$scope', '$http', '$location','myProvid
         $scope.historiaClinica.antescedentes_personales=$scope.listaAntescedentesPersonales;
 
         window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
-        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/forth.html';
+        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/sixth.html';
 
 
     }

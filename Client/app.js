@@ -86,6 +86,9 @@ function ApiUrl(){
     this.getTipoPersonales=function(){
         return '  http://localhost:3000/api/tipoPersonales';
     }
+    this.getMetodosPlanifiacionFamiliar=function(){
+        return ' http://localhost:3000/api/metodosPlanificacionFamiliar';
+    }
 
 }
 
