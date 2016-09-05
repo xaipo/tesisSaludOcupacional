@@ -280,7 +280,7 @@
                     <select name="Alimentos" ng-model="selectedMetodo" class="form-control" multiple
                             style="height: 150px;" ng-click="agregar()">
                         <option value={{al}}
-                                ng-repeat="al in metodos_planificacion | filter:search3| orderBy:al.nombre_metodo">
+                                ng-repeat="al in metodos_planificacion | filter:search1| orderBy:al.nombre_metodo">
                             {{al.nombre_metodo}}
                         </option>
                     </select><br>
@@ -295,7 +295,7 @@
                     <select name="AlimentosSelect" ng-model="selectedMetodo" class="form-control" multiple
                             style="height: 150px;" ng-click="quitar()">
                         <option value={{al1}}
-                                ng-repeat="al1 in metodos_seleccionados | filter:search4| orderBy:al1.nombre_metodo">
+                                ng-repeat="al1 in metodos_seleccionados | filter:search2| orderBy:al1.nombre_metodo">
                             {{al1.nombre_metodo}}
                         </option>
                     </select><br>

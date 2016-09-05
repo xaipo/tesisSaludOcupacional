@@ -89,6 +89,12 @@ function ApiUrl(){
     this.getMetodosPlanifiacionFamiliar=function(){
         return ' http://localhost:3000/api/metodosPlanificacionFamiliar';
     }
+    this.getTipoRevisionSistemas=function(){
+        return 'http://localhost:3000/api/tipoRevisionSistemas';
+    }
+    this.RevisionSistemas=function(){
+        return 'http://localhost:3000/api/revisionSistemas';
+    }
 
 }
 

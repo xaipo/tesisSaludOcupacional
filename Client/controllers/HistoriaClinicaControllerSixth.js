@@ -3,6 +3,7 @@
  */
 app.controller('HistoriaClinicaSixth', ['$scope', '$http', '$location','myProvider','$localStorage',  function ($scope,$http,$location,myProvider,$localStorage) {
 
+
     $scope.anstecedentes_salud;
     $scope.antescedentes_familiares={
         codigo:'',
