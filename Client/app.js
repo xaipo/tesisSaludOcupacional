@@ -95,7 +95,9 @@ function ApiUrl(){
     this.RevisionSistemas=function(){
         return 'http://localhost:3000/api/revisionSistemas';
     }
-
+    this.getVacunas=function(){
+        return 'http://localhost:3000/api/vacuna';
+    }
 }
 
 app.factory("myProvider",function(){
