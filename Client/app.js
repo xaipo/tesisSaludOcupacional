@@ -98,6 +98,13 @@ function ApiUrl(){
     this.getVacunas=function(){
         return 'http://localhost:3000/api/vacuna';
     }
+    this.getTipoHabitoToxico=function(){
+        return 'http://localhost:3000/api/tipoHabitoToxico';
+    }
+    this.getTipoConsumidor=function(){
+        return 'http://localhost:3000/api/tipoConsumidor';
+    }
+
 }
 
 app.factory("myProvider",function(){
