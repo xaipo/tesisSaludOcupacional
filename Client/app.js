@@ -104,6 +104,9 @@ function ApiUrl(){
     this.getTipoConsumidor=function(){
         return 'http://localhost:3000/api/tipoConsumidor';
     }
+    this.getDetalleFactoresRiesgo=function(){
+        return 'http://localhost:3000/api/detallefactorriesgo';
+    }
 
 }
 

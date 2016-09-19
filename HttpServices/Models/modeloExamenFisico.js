@@ -6,7 +6,8 @@ var mongoose= restful.mongoose;
 
 var categoriaSchema = new mongoose.Schema({
 
-    tension_arterial:Number,
+    tension_arterial_numerador:Number,
+    tension_arterial_denominador:Number,
     frecuencia_cardiaca: Number,
     frecuencia_respiratoria:Number,
     dieztro: Boolean,

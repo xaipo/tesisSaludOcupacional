@@ -6,7 +6,7 @@ app.controller('HistoriaClinicaThird', ['$scope', '$http', '$location','myProvid
 
 
     $scope.listaAccidentesTrabajo=[];
-
+    $scope.listaDetalleFactorRiesgo=[];
     $scope.accidentesTrabajo={
         codigo:"",
         fecha_ocurrencia:"" ,
@@ -154,6 +154,8 @@ app.controller('HistoriaClinicaThird', ['$scope', '$http', '$location','myProvid
 
 
     }
+
+
 
 
 }]);

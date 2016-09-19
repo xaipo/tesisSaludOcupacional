@@ -16,7 +16,7 @@ app.controller('HistoriaClinicaSecond', ['$scope', '$http', '$location','myProvi
     $scope.listaFactoresRiesgoSeleccionado=[];
     $scope.alimentos=[];
     $scope.listaAlimentosSeleccionados=[];
-
+    $scope.listaDetalleFactorRiesgo=[];
     $scope.alimentoSeleccionado;
     $scope.empresaSeleccionada;
     $scope.tipoActividadSeleccionada;
@@ -26,7 +26,7 @@ app.controller('HistoriaClinicaSecond', ['$scope', '$http', '$location','myProvi
     $scope.selectedRow ;
     $scope.riesgosOcupacionalesSelected;
     $scope.listaRiesgosOcupacionales=[];
-
+    $scope.factorRiesgoSeleccionado='';
     $scope.contador=0;
 
     $scope.riesgosOcupacionales={
@@ -298,17 +298,17 @@ app.controller('HistoriaClinicaSecond', ['$scope', '$http', '$location','myProvi
             $scope.selectedFactorRiesgo=JSON.parse($scope.selectedFactorRiesgo);
             $scope.listaFactoresRiesgoSeleccionado.push($scope.selectedFactorRiesgo);
 
-            var n = $scope.factoresRiesgo.length;
+            var n = $scope.listaDetalleFactorRiesgo.length;
             var pos = "";
             for (var i = 0; i < n; i++) {
 
-                if ($scope.factoresRiesgo[i]._id == $scope.selectedFactorRiesgo._id) {
+                if ($scope.listaDetalleFactorRiesgo[i]._id == $scope.selectedFactorRiesgo._id) {
                     pos = i;
                     break;
                 }
             }
         //    console.log(pos);
-            $scope.factoresRiesgo.splice(pos, 1);
+            $scope.listaDetalleFactorRiesgo.splice(pos, 1);
             //$scope.maquinaria.cleanData(undefined);
           //  console.log($scope.listaSeleccionMaquinaria);
            // console.log($scope.maquinaria);
@@ -322,7 +322,7 @@ app.controller('HistoriaClinicaSecond', ['$scope', '$http', '$location','myProvi
 
         if( $scope.selectedFactorRiesgo!=undefined && $scope.selectedFactorRiesgo != "") {
             $scope.selectedFactorRiesgo=JSON.parse($scope.selectedFactorRiesgo);
-            $scope.factoresRiesgo.push($scope.selectedFactorRiesgo);
+            $scope.listaDetalleFactorRiesgo.push($scope.selectedFactorRiesgo);
             // $scope.listaSeleccionMaquinaria.removeItem($scope.selectedMaquinaria._id);
 
             var n = $scope.listaFactoresRiesgoSeleccionado.length;
@@ -472,6 +472,61 @@ app.controller('HistoriaClinicaSecond', ['$scope', '$http', '$location','myProvi
         console.log($scope.historiaClinica.riesgosOcupacionales);
         window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
         window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/second.html';
+    }
+
+
+
+    $scope.changeDetalleFactorRiesgo=function(){
+    console.log(myProvider.getDetalleFactoresRiesgo()+'?id_factor_riesgo='+$scope.factorRiesgoSeleccionado);
+       if( $scope.factorRiesgoSeleccionado!= undefined && $scope.factorRiesgoSeleccionado!=''){
+
+            $scope.listaDetalleFactorRiesgo=[];
+           $http({
+
+               method: 'GET',
+               url: myProvider.getDetalleFactoresRiesgo()+'?id_factor_riesgo='+$scope.factorRiesgoSeleccionado,
+
+               headers: {
+                   'Content-Type': 'application/json'
+               }
+
+           }).then(function successCallback(response) {
+               //console.log('entra url');
+               //console.log(url);
+
+               var n = response.data.length;
+               // console.log(n);
+
+               if(n==0){
+
+                   alert('no se encontro provincias');
+
+               }else {
+                   //$scope.factoresRiesgo=[];
+
+                   for(var i=0;i<n;i++){
+
+                       $scope.listaDetalleFactorRiesgo.push(response.data[i]);
+
+                       // console.log($scope.empresas);
+                   }
+                   //    $scope.fac=$scope.empresas[0]._id;
+                   //console.log($scope.factoresRiesgo);
+                   // console.log($scope.empresas);
+
+
+               }
+
+
+           }, function errorCallback(response) {
+               console.log('entra');
+               //  Console.log(response);
+               //  $scope.selectedFactorRiesgo = response.mensaje;
+
+           });
+
+       }
+
     }
 
 }]);

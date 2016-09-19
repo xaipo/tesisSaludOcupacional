@@ -214,7 +214,14 @@
                     <input type="text" class="form-control" placeholder="Cargo" ng-model="riesgosOcupacionales.cargo_empresa"/>
                     <label> Actividades: </label>
                     <input type="text" class="form-control" placeholder="Actividades" ng-model="riesgosOcupacionales.actividades"/>
-
+                    <br>
+                    <label> Factor Riesgo: </label>
+                    <select name="Provimcia"  class="form-control"  ng-model="factorRiesgoSeleccionado" ng-click="changeDetalleFactorRiesgo()" >
+                        <option id="valor11" value={{fac._id}}
+                                ng-repeat="fac in factoresRiesgo">
+                            {{fac.descripcion_factor_riesgo}}
+                        </option>
+                    </select>
 
 
                 </div>
@@ -279,8 +286,8 @@
                     <select name="FactorRiesgo" ng-model="selectedFactorRiesgo" class="form-control" multiple
                             style="height: 150px;" ng-click="FactorRiesgo()">
                         <option value={{empresaAux3}}
-                                ng-repeat="empresaAux3 in factoresRiesgo | filter:search1| orderBy:empresaAux3.descripcion_factor_riesgo">
-                            {{empresaAux3.descripcion_factor_riesgo}}
+                                ng-repeat="empresaAux3 in listaDetalleFactorRiesgo | filter:search1| orderBy:empresaAux3.detalle_factor_riesgo">
+                            {{empresaAux3.detalle_factor_riesgo}}
                         </option>
                     </select><br>
 
@@ -296,7 +303,7 @@
                             style="height: 150px;" ng-click="FactorRiesgoSeleccionado()">
                         <option value={{empresaAux4}}
                                 ng-repeat="empresaAux4 in listaFactoresRiesgoSeleccionado | filter:search2| orderBy:empresaAux4.descripcion_factor_riesgo">
-                            {{empresaAux4.descripcion_factor_riesgo}}
+                            {{empresaAux4.detalle_factor_riesgo}}
                         </option>
                     </select><br>
 
