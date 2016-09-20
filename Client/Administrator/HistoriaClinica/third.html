@@ -240,6 +240,11 @@
                     <p data-ng-bind="encontrada.sintoma">  </p>
                 </div>
 
+                <div class="col-md-12 col-xs-12" >
+                    <label> Fecha Ocurrencia: </label><br>
+                    <input class=" from-control datepicker" type="text" id="datepicker" name="date" /><br>
+                </div>
+
             </div>
             <div class="col-md-3 col-xs-12" >
                 <br>
@@ -263,8 +268,11 @@
                     <thead>
                     <tr>
                         <th>#</th>
+                        <th>Codigo </th>
                         <th>Codigo cie10</th>
+
                         <th>Descripción</th>
+                        <th>Fecha</th>
 
 
 
@@ -273,8 +281,10 @@
                     <tbody>
                     <tr ng-repeat="item in listaCie10Selecionada | filter:search2| orderBy:item.sintoma" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)" >
                         <td>{{$index}}</td>
-                        <td>{{ item.codigo_cie10 }}</td>
-                        <td>{{ item.sintoma }}</td>
+                        <td>{{ item.sintoma_cie10.codigo }}</td>
+                        <td>{{ item.sintoma_cie10.codigo_cie10 }}</td>
+                        <td>{{ item.sintoma_cie10.sintoma }}</td>
+                        <td>{{ item.fecha }}</td>
 
                     </tr>
                     </tbody>
