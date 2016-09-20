@@ -4,17 +4,22 @@
 app.controller('HistoriaClinicaSeventh', ['$scope', '$http', '$location','myProvider','$localStorage',  function ($scope,$http,$location,myProvider,$localStorage) {
 
 
+    $scope.listaGinecoObstetra=[];
+    $scope.contador=0;
+    $scope.ginecoQuitar='';
+
     $scope.ginecoObstetra={
+        codigo:'',
         normal_anormal:'',
         fecha_ultima_regla:'',
-        gestaciones:'',
+
         partos:'',
         abortos:'',
         hijos_vivos:'',
         embarazos:'',
         fecha_ultima_citologia:'',
         resultados_citologia:'',
-        planificacion_familiar:'',
+
         observaciones:'',
         metodos_planificacion_familiar:[]
     }
@@ -138,14 +143,80 @@ app.controller('HistoriaClinicaSeventh', ['$scope', '$http', '$location','myProv
 
     $scope.nextSeventh=function(){
 
-        $scope.ginecoObstetra.fecha_ultima_citologia=document.getElementById('datepicker1').value;
-        $scope.ginecoObstetra.fecha_ultima_regla=document.getElementById('datepicker').value;
-        $scope.ginecoObstetra.metodos_planificacion_familiar=$scope.metodos_seleccionados;
-        $scope.historiaClinica.ginecoObstetra=$scope.ginecoObstetra;
+
+
+        $scope.historiaClinica.ginecoObstetra=$scope.listaGinecoObstetra;
 
 
         window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
         window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/eigth.html';
     }
+
+
+
+    $scope.agregarP1 = function(){
+        //  console.log($scope.antescedentes_familiares)
+
+        $scope.ginecoObstetra.fecha_ultima_citologia=document.getElementById('datepicker1').value;
+        $scope.ginecoObstetra.fecha_ultima_regla=document.getElementById('datepicker').value;
+        $scope.ginecoObstetra.metodos_planificacion_familiar=$scope.metodos_seleccionados;
+        $scope.ginecoObstetra.codigo=$scope.contador++;
+
+            $scope.listaGinecoObstetra.push($scope.ginecoObstetra);
+        $scope.ginecoObstetra={
+            codigo:'',
+            normal_anormal:'',
+            fecha_ultima_regla:'',
+
+            partos:'',
+            abortos:'',
+            hijos_vivos:'',
+            embarazos:'',
+            fecha_ultima_citologia:'',
+            resultados_citologia:'',
+
+            observaciones:'',
+            metodos_planificacion_familiar:[]
+        }
+
+
+    }
+
+
+    $scope.quitar1= function (){
+        // console.log($scope.accidentesTrabajoSelected);
+        var n=  $scope.listaGinecoObstetra.length;
+        console.log(n);
+        var pos;
+        for(var i=0;i<n;i++ ){
+
+            if($scope.listaGinecoObstetra[i].codigo==$scope.ginecoQuitar.codigo){
+
+
+                pos=i;
+                break;
+            }
+        }
+        console.log(pos);
+        $scope.listaGinecoObstetra.splice(pos,1);
+        //  console.log($scope.listaRiesgosOcupacionales);
+        //  console.log($scope.contador);
+    }
+
+    $scope.setClickedRow1 = function(index,item){  //function that sets the value of selectedRow to current index
+
+        console.log('entra');
+        $scope.selectedRow = index;
+        $scope.ginecoQuitar=item;
+        // console.log(item);
+        // console.log($scope.accidentesTrabajoSelected);
+
+        /*console.log($scope.selectedRow);
+         console.log(item);*/
+    }
+
+
+
+
 
 }]);

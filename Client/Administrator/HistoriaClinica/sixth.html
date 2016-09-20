@@ -217,8 +217,7 @@
                         <option value="si">si </option>
                         <option value="no">no </option>
                     </select><br>
-                    <label>Resultado Ultima Citologia</label>
-                    <input type="text" class="form-control" placeholder="Resultado Ultima Citologia" ng-model="ginecoObstetra.resultados_citologia">
+
                 </div>
 
                 <div class="col-md-3 col-xs-12">
@@ -231,27 +230,18 @@
                         <option value="si">si </option>
                         <option value="no">no </option>
                     </select><br>
-                    <label > Planificacion Familiar: </label><br>
 
-                    <select class="form-control" name="singleSelect" ng-model="ginecoObstetra.planificacion_familiar">
-                        <option value="si">si </option>
-                        <option value="no">no </option>
-                    </select><br>
                 </div>
 
                 <div class="col-md-3 col-xs-12">
                     <br>
-                    <label > Gestaciones: </label><br>
-                    <select class="form-control" name="singleSelect" ng-model="ginecoObstetra.gestaciones">
-                        <option value="si">si </option>
-                        <option value="no">no </option>
-                    </select><br>
-                    <label > Embarazos: </label><br>
-                    <select class="form-control" name="singleSelect" ng-model="ginecoObstetra.embarazos">
-                        <option value="si">si </option>
-                        <option value="no">no </option>
-                    </select><br>
 
+                    <label > Embarazos: </label><br>
+                    <input class="form-control" type="number" ng-model="ginecoObstetra.embarazos">
+
+                   <br>
+                    <label>Resultado Ultima Citologia</label>
+                    <input type="text" class="form-control" placeholder="Resultado Ultima Citologia" ng-model="ginecoObstetra.resultados_citologia">
 
 
                 </div>
@@ -310,7 +300,63 @@
 
 
                 </div>
+
+                <div class="col-md-6 col-xs-11" >
+                    <br>
+                    <input  type="submit" class="btn btn-submit" value="Agregar" ng-click="agregarP1()">
+
+                </div>
+
+                <div class="col-md-6 col-xs-11" >
+
+                    <br>
+
+                    <input class="btn btn-warning" type="submit" ng-click="quitar1()"
+                           value="Quitar"/><br><br>
+                </div>
             </div>
+
+
+
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <br>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ciclo Menstrual</th>
+                            <th>Fecha ultima Regla</th>
+                            <th>Partos</th>
+                            <th>Hijos Vivos</th>
+                            <th>Embarazos</th>
+                            <th>Abortos</th>
+
+
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in listaGinecoObstetra | filter:search2| orderBy:item.codigo" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow1($index,item)" >
+                            <td>{{$index}}</td>
+                            <td>{{ item.codigo }}</td>
+                            <td>{{ item.normal_anormal }}</td>
+                            <td>{{ item.fecha_ultima_regla }}</td>
+                            <td>{{ item.partos }}</td>
+                            <td>{{ item.hijos_vivos }}</td>
+                            <td>{{ item.embarazos }}</td>
+                            <td>{{ item.abortos }}</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+
 
             <div class="row">
 
@@ -326,6 +372,7 @@
 
 
             </div>
+
 
         </div><!--div fin contaniner-->
         </div><!--div fin contaniner-->
