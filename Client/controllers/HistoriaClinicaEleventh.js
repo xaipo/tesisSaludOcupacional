@@ -166,8 +166,14 @@ app.controller('HistoriaClinicaEleventh', ['$scope', '$http', '$location','myPro
         //  console.log($scope.contador);
     }
 
-    
 
 
+
+    $scope.saveEleven= function(){
+
+        $scope.historiaClinica.examen_fisico=$scope.listaHabitosToxicos;
+        window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
+        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/twelveth.html';
+    }
 
 }]);
