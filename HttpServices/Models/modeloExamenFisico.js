@@ -16,8 +16,8 @@ var categoriaSchema = new mongoose.Schema({
     talla: Number,
     peso:Number,
     indiceMasaCorporal:Number,
-    interpretacion_imc: mongoose.Schema.Types.ObjectId
-
+    interpretacion_imc: mongoose.Schema.Types.ObjectId,
+    fecha:''
 
 
 

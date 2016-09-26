@@ -17,6 +17,10 @@ app.controller('HistoriaClinicaFiveth', ['$scope', '$http', '$location','myProvi
         $scope.selectedQuitar;
 
 
+
+
+
+
     $scope.agregar = function(){
 
         if($scope.ausentismo.causa!=''&&$scope.ausentismo.causa!=undefined&&$scope.ausentismo.tiempo!=''&&$scope.ausentismo.tiempo!=undefined){
@@ -67,6 +71,12 @@ app.controller('HistoriaClinicaFiveth', ['$scope', '$http', '$location','myProvi
 
         /*console.log($scope.selectedRow);
          console.log(item);*/
+    }
+    $scope.getHistoria= function(){
+
+        $scope.historiaClinica=JSON.parse(window.localStorage.getItem('hC'));
+        console.log($scope.historiaClinica);
+
     }
 
     $scope.saveFive=function(){

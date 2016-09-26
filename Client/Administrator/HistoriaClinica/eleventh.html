@@ -226,7 +226,7 @@
             <div class="row">
                 <div class="col-md-3 col-xs-12">
                     <br>
-                    <label>Tension Arterial Numerador:</label>
+                    <label>Tension Arterial Diastolica:</label>
                     <input type="number" class="form-control" placeholder="1" ng-model="examen_fisico.tension_arterial_numerador">
                     <label>Talla:</label>
                     <input type="number" class="form-control" placeholder="1" ng-model="examen_fisico.talla">
@@ -235,7 +235,7 @@
                 </div>
                 <div class="col-md-3 col-xs-12">
                     <br>
-                    <label>Tension Arterial Denominador:</label>
+                    <label>Tension Arterial Sistolica:</label>
                     <input type="number" class="form-control" placeholder="1" ng-model="examen_fisico.tension_arterial_denominador">
                     <label>Peso:</label>
                     <input type="number" class="form-control" placeholder="1" ng-model="examen_fisico.peso">
@@ -254,15 +254,103 @@
                 <div class="col-md-3 col-xs-12">
                     <br>
                     <label>Lateralidad Cerebral:</label>
-                    <select class="form-control" name="singleSelect" ng-model="selectLateralidadCerebral">
+                    <select class="form-control" name="singleSelect" ng-model="selectLateralidadCerebral" ng-click="changeLateralidad()">
                         <option value="D">Dieztro </option>
                         <option value="Z">Zurdo </option>
                         <option value="A">Ambidiestro </option>
                     </select>
                     <label>Interpretacion IMC:</label>
-                    <input type="number" class="form-control" placeholder="1" ng-model="examen_fisico.interpretacion_imc">
+                    <select name="Alimentos" ng-model="examen_fisico.interpretacion_imc" class="form-control" simple  >
+                        <option value={{al}}
+                                ng-repeat="al in listaImc | filter:search1| orderBy:al.descripcion_interpretacion_IMC">
+                            {{al.descripcion_interpretacion_IMC}}
+                        </option>
+                    </select><br><br>
                 </div>
             </div>
+
+
+
+
+
+            <div class="row">
+
+
+                <div class="col-md-3 col-xs-12" >
+                    <br>
+                    <br>
+                    <input  type="submit" class="btn btn-submit" value="Agregar" ng-click="agregar()">
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <br>
+                    <br>
+
+
+                    <input class="btn btn-warning" type="submit" ng-click="quitar()"
+                           value="Quitar"/><br><br>
+
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <br>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Interpretacion IMC</th>
+                            <th>Tensión Diastólica</th>
+                            <th>Tensión Sistólica</th>
+                            <th>Frecuencia</th>
+                            <th>Talla</th>
+                            <th>Peso</th>
+
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in listaExamenFisico " ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)" >
+                            <td>{{$index}}</td>
+                            <td>{{ item.interpretacion_imc.descripcion_interpretacion_IMC }}</td>
+                            <td>{{ item.tension_arterial_numerador }}</td>
+                            <td>{{ item.tension_arterial_denominador }}</td>
+                            <td>{{ item.frecuencia_cardiaca }}</td>
+                            <td>{{ item.talla }}</td>
+                            <td>{{ item.peso }}</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="row">
+
+
+                    <div class="col-md-3 col-xs-12">
+                        <br>
+
+                        <input class="btn btn-info" type="submit" ng-click="saveTen()"
+                               value="Siguiente"/><br><br>
+
+                    </div>
+
+
+
+
+
+                </div><!--div fin contaniner-->
+            </div><!--div fin contaniner-->
+
+
+
+
+
+
+
         </div>
     </div>
 

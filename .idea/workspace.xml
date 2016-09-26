@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9da37b9f-90ea-4b83-8a73-5ea0a7a78c4d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerTwelve.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/twelveth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js" afterPath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSeventh.js" afterPath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSeventh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaEleventh.js" afterPath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaEleventh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js" afterPath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaTenth.js" afterPath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaTenth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/app.js" afterPath="$PROJECT_DIR$/Client/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eleventh.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eleventh.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HttpServices/Models/modeloExamenFisico.js" afterPath="$PROJECT_DIR$/HttpServices/Models/modeloExamenFisico.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/sixth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/sixth.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -25,21 +34,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sixth.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/sixth.html">
+      <file leaf-file-name="eleventh.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eleventh.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.836364">
-              <caret line="305" column="91" selection-start-line="305" selection-start-column="91" selection-end-line="305" selection-end-column="91" />
+            <state vertical-scroll-proportion="-12.846154">
+              <caret line="335" column="78" selection-start-line="335" selection-start-column="78" selection-end-line="335" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HistoriaClinicaControllerSeventh.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSeventh.js">
+      <file leaf-file-name="HistoriaClinicaEleventh.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaEleventh.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36380598">
-              <caret line="157" column="56" selection-start-line="157" selection-start-column="56" selection-end-line="157" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="151" column="30" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="109" column="29" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modeloExamenFisico.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloExamenFisico.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoriaClinicaTenth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaTenth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="187" column="94" selection-start-line="187" selection-start-column="94" selection-end-line="187" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twelveth.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/twelveth.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoriaClinicaControllerTwelve.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerTwelve.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tenth.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/tenth.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.076923">
+              <caret line="196" column="48" selection-start-line="196" selection-start-column="48" selection-end-line="196" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -72,8 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Client/Administrator/Reportes/reporteAusentiemos.html" />
-        <option value="$PROJECT_DIR$/Client/Administrator/Reportes/reporteMorbilidad.html" />
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiHistoriaClinica.js" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloHistoriaClinica.js" />
         <option value="$PROJECT_DIR$/Client/controllers/PacienteController.js" />
@@ -81,7 +148,6 @@
         <option value="$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html" />
         <option value="$PROJECT_DIR$/Client/controllers/ControllerCie10.js" />
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiReportes.js" />
-        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaForth.js" />
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiEnfermedadesHistoricasActuales.js" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloEnfermedadesActualesHistoricas.js" />
@@ -98,31 +164,34 @@
         <option value="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/forth.html" />
-        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSixth.js" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaEigth.js" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eigth.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/nineth.html" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerNine.js" />
-        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaTenth.js" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/tenth.html" />
-        <option value="$PROJECT_DIR$/HttpServices/Models/modeloExamenFisico.js" />
-        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaEleventh.js" />
-        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eleventh.html" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloDetalleFactoresRiesgo.js" />
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiDetalleFactorRiesgo.js" />
         <option value="$PROJECT_DIR$/HttpServices/server.js" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaThird.js" />
-        <option value="$PROJECT_DIR$/Client/app.js" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaSecond.js" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/first.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/second.html" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloEnfermedadesHistoricasSeleccionadas.js" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/third.html" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaFourth.js" />
-        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/sixth.html" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSeventh.js" />
+        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/sixth.html" />
+        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js" />
+        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js" />
+        <option value="$PROJECT_DIR$/HttpServices/Models/modeloExamenFisico.js" />
+        <option value="$PROJECT_DIR$/Client/app.js" />
+        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eleventh.html" />
+        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaEleventh.js" />
+        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaTenth.js" />
+        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/twelveth.html" />
+        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerTwelve.js" />
       </list>
     </option>
   </component>
@@ -135,7 +204,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1932" />
+    <option name="y" value="-8" />
+    <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -161,174 +231,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="HtttpServiceIntegracion">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="HtttpServiceIntegracion">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Route">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="HttpServices">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="HttpServices">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Routes">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="HttpServices">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Models">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Client">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Client">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="controllers">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Client">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Administrator">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Client">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Administrator">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Cie10">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -595,11 +497,165 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="HtttpServiceIntegracion">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="HtttpServiceIntegracion">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Route">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="HttpServices">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Client">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Client">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controllers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Client">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Administrator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Client">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Administrator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="HistoriaClinica">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Client">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Administrator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Cie10">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_284a859b0e6deba86edc624fef1e4db2aa8241a9/cmd/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -626,20 +682,20 @@
       <recent name="C:\tesis\tesisSaludOcupacional\Client\Administrator" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.sixth.html">
-    <configuration default="false" name="third.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/third.html">
+  <component name="RunManager" selected="JavaScript Debug.eleventh.html">
+    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/HttpServices">
       <method />
     </configuration>
-    <configuration default="false" name="HistoriaClinicaFourth.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="HistoriaClinicaFourth.js" working-dir="$PROJECT_DIR$/Client/controllers">
+    <configuration default="false" name="forth.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/forth.html">
       <method />
     </configuration>
-    <configuration default="false" name="eigth.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/eigth.html">
+    <configuration default="false" name="eleventh.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/eleventh.html">
       <method />
     </configuration>
-    <configuration default="false" name="sixth.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/sixth.html">
+    <configuration default="false" name="HistoriaClinicaEleventh.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="HistoriaClinicaEleventh.js" working-dir="$PROJECT_DIR$/Client/controllers">
       <method />
     </configuration>
-    <configuration default="false" name="HistoriaClinicaControllerSixth.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="HistoriaClinicaControllerSixth.js" working-dir="$PROJECT_DIR$/Client/controllers">
+    <configuration default="false" name="tenth.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/tenth.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -681,19 +737,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.third.html" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaFourth.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.eigth.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.sixth.html" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaControllerSixth.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.forth.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.eleventh.html" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaEleventh.js" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.tenth.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.sixth.html" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaControllerSixth.js" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.eigth.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.third.html" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaFourth.js" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.eleventh.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.tenth.html" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.server.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaEleventh.js" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.forth.html" />
       </list>
     </recent_temporary>
   </component>
@@ -996,7 +1052,13 @@
       <option name="project" value="LOCAL" />
       <updated>1474386760331</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="AGREGO CAMBIOS en ginecologia">
+      <created>1474389206924</created>
+      <option name="number" value="00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1474389206924</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1010,21 +1072,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2159451" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21420997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32622603" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28463203" sideWeight="0.5479452" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14702703" sideWeight="0.48682284" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2857143" sideWeight="0.4520548" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28648648" sideWeight="0.4520548" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.034944236" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264865" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243243" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38961038" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38486487" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32622603" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1065,7 +1127,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login terminado con localstorage" />
     <MESSAGE value="terminada primera interfaz historia clinica" />
     <MESSAGE value="navegacion corregida" />
     <MESSAGE value="agrego ingresar paciente" />
@@ -1090,7 +1151,8 @@
     <MESSAGE value="habitos toxitos terminado" />
     <MESSAGE value="AGREGO CAMBIOS EN TIPO FACTOR RIESGO" />
     <MESSAGE value="AGREGO CAMBIOS en sintomas del cie 10 completos" />
-    <option name="LAST_COMMIT_MESSAGE" value="AGREGO CAMBIOS en sintomas del cie 10 completos" />
+    <MESSAGE value="AGREGO CAMBIOS en ginecologia" />
+    <option name="LAST_COMMIT_MESSAGE" value="AGREGO CAMBIOS en ginecologia" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1131,23 +1193,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaSecond.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="323" column="80" selection-start-line="323" selection-start-column="80" selection-end-line="323" selection-end-column="80" />
-          <folding>
-            <element signature="e#5678#5742#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/controllers/PacienteController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1221,20 +1266,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="560" column="0" selection-start-line="560" selection-start-column="0" selection-end-line="560" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43898574">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiVacuna.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1277,38 +1308,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/tenth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="312" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloExamenFisico.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2845982">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiExamenFisico.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaEleventh.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaTenth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="116" column="5" selection-start-line="111" selection-start-column="4" selection-end-line="116" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1323,13 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="7" selection-start-line="31" selection-start-column="4" selection-end-line="44" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eleventh.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1408,7 +1404,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="323" column="80" selection-start-line="323" selection-start-column="80" selection-end-line="323" selection-end-column="80" />
           <folding>
-            <element signature="e#5678#5742#0" expanded="true" />
+            <element signature="e#5678#5742#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1417,7 +1413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="313" column="78" selection-start-line="313" selection-start-column="20" selection-end-line="313" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1425,7 +1420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="199" column="92" selection-start-line="199" selection-start-column="20" selection-end-line="199" selection-end-column="92" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1433,15 +1427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21518987">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="1" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1449,7 +1434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6787975">
           <caret line="264" column="22" selection-start-line="264" selection-start-column="22" selection-end-line="264" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1457,15 +1441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.384615">
           <caret line="281" column="104" selection-start-line="281" selection-start-column="104" selection-end-line="281" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/forth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1473,7 +1448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4438944">
           <caret line="279" column="0" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1481,7 +1455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.923077">
           <caret line="314" column="26" selection-start-line="302" selection-start-column="20" selection-end-line="314" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1489,22 +1462,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1007463">
           <caret line="214" column="22" selection-start-line="214" selection-start-column="22" selection-end-line="214" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/sixth.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.836364">
-          <caret line="305" column="91" selection-start-line="305" selection-start-column="91" selection-end-line="305" selection-end-column="91" />
+        <state vertical-scroll-proportion="-6.3846154">
+          <caret line="184" column="67" selection-start-line="184" selection-start-column="67" selection-end-line="184" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/forth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.653846">
+          <caret line="249" column="54" selection-start-line="249" selection-start-column="54" selection-end-line="249" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSeventh.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36380598">
-          <caret line="157" column="56" selection-start-line="157" selection-start-column="56" selection-end-line="157" selection-end-column="56" />
+        <state vertical-scroll-proportion="-8.689655">
+          <caret line="37" column="5" selection-start-line="32" selection-start-column="3" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42544731">
+          <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="109" column="29" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/Models/modeloExamenFisico.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/tenth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.076923">
+          <caret line="196" column="48" selection-start-line="196" selection-start-column="48" selection-end-line="196" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaEleventh.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="151" column="30" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eleventh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.846154">
+          <caret line="335" column="78" selection-start-line="335" selection-start-column="78" selection-end-line="335" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaTenth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="187" column="94" selection-start-line="187" selection-start-column="94" selection-end-line="187" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/twelveth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerTwelve.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -107,7 +107,9 @@ function ApiUrl(){
     this.getDetalleFactoresRiesgo=function(){
         return 'http://localhost:3000/api/detallefactorriesgo';
     }
-
+    this.getInterpretacionIMC=function(){
+        return 'http://localhost:3000/api/interpretacionIMC';
+    }
 }
 
 app.factory("myProvider",function(){

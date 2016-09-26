@@ -181,11 +181,11 @@ app.controller('HistoriaClinicaTenth', ['$scope', '$http', '$location','myProvid
 
 
 
-    $scope.saveTen= function(){
+    $scope.saveEleven= function(){
 
-        $scope.historiaClinica.habitos_toxicos=$scope.listaHabitosToxicos;
+        $scope.historiaClinica.examen_fisico=$scope.listaHabitosToxicos;
         window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
-        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/eleventh.html';
+        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/twelveth.html';
     }
 
 

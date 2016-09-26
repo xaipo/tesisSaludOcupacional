@@ -216,6 +216,14 @@ app.controller('HistoriaClinicaSeventh', ['$scope', '$http', '$location','myProv
     }
 
 
+    $scope.skipt=function(){
+
+
+
+        $scope.historiaClinica.ginecoObstetra=[];
+        window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
+        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/eigth.html';
+    }
 
 
 
