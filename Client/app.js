@@ -110,6 +110,12 @@ function ApiUrl(){
     this.getInterpretacionIMC=function(){
         return 'http://localhost:3000/api/interpretacionIMC';
     }
+    this.getTipoOrgano=function(){
+        return 'http://localhost:3000/api/tipoOrgano';
+    }
+    this.getOrganos=function(){
+        return 'http://localhost:3000/api/Organos';
+    }
 }
 
 app.factory("myProvider",function(){
