@@ -116,6 +116,10 @@ function ApiUrl(){
     this.getOrganos=function(){
         return 'http://localhost:3000/api/Organos';
     }
+    this.getExamenesLaboratorio=function(){
+        return 'http://localhost:3000/api/examenLaboratorio';
+    }
+
 }
 
 app.factory("myProvider",function(){
