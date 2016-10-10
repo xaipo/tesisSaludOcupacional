@@ -95,6 +95,8 @@ app.use('/api',require('./Routes/apiParaclinicoSeleccionado'));
 app.use('/api',require('./Routes/apiHistoriaClinica'));
 app.use('/api',require('./Routes/apiReportes'));
 app.use('/api',require('./Routes/apiDetalleFactorRiesgo'));
+app.use('/api',require('./Routes/apiAusentismoCompleto'));
+app.use('/api',require('./Routes/apiMedico'));
 
 // </editor-fold >
 

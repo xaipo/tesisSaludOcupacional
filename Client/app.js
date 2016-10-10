@@ -119,7 +119,18 @@ function ApiUrl(){
     this.getExamenesLaboratorio=function(){
         return 'http://localhost:3000/api/examenLaboratorio';
     }
-
+    this.getExamenesParclinicos=function(){
+        return 'http://localhost:3000/api/examenParaclinico';
+    }
+    this.getResultadoExamenesParclinicos=function(){
+        return 'http://localhost:3000/api/resultadoParaclinico';
+    }
+    this.getMedico=function(){
+        return 'http://localhost:3000/api/medico';
+    }
+    this.getAusentismo=function(){
+        return 'http://localhost:3000/api/ausentismoCompleto';
+    }
 }
 
 app.factory("myProvider",function(){

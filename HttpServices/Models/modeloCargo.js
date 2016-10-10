@@ -9,7 +9,7 @@ var categoriaSchema = new mongoose.Schema({
 
 
     nombre_cargo: String,
-
+    dependencia: mongoose.Schema.ObjectId,
 
 
 });
