@@ -5,23 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da37b9f-90ea-4b83-8a73-5ea0a7a78c4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html" afterPath="$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eigth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eigth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eleventh.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eleventh.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/first.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/first.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/forth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/forth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fourteenth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fourteenth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/indexAdmin.html" afterPath="$PROJECT_DIR$/Client/Administrator/indexAdmin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/Ausentismo/ingresoAusentismo.html" afterPath="$PROJECT_DIR$/Client/Administrator/Ausentismo/ingresoAusentismo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/nineth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/nineth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/second.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/second.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/sixth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/sixth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/tenth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/tenth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/third.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/third.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/thirteenth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/thirteenth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/twelveth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/twelveth.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tesisSaludOcupacional.iws" />
@@ -126,7 +109,7 @@
       <file leaf-file-name="twelveth.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/twelveth.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.3797855">
+            <state vertical-scroll-proportion="2.1142857">
               <caret line="195" column="37" selection-start-line="195" selection-start-column="37" selection-end-line="195" selection-end-column="37" />
               <folding />
             </state>
@@ -819,12 +802,6 @@
       <option name="number" value="Default" />
       <updated>1443577939989</updated>
     </task>
-    <task id="LOCAL-00006" summary="agrego estructura y navegacion con bugs del cliente">
-      <created>1448377023127</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1448377023127</updated>
-    </task>
     <task id="LOCAL-00007" summary="agrego estructura y navegacion con bugs del cliente">
       <created>1448378606945</created>
       <option name="number" value="00007" />
@@ -1113,7 +1090,13 @@
       <option name="project" value="LOCAL" />
       <updated>1476122916948</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="cambios en menu">
+      <created>1476183251699</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1476183251699</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1130,18 +1113,18 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21074815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21074815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32622603" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28463203" sideWeight="0.5479452" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14702703" sideWeight="0.48682284" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23484848" sideWeight="0.4520548" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14610389" sideWeight="0.48682284" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23484848" sideWeight="0.4520548" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.034944236" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38486487" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32622603" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1162,7 +1145,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="previo al ingresar paciente" />
     <MESSAGE value="antes confuguracion CIE10" />
     <MESSAGE value="antes guardar cie10" />
     <MESSAGE value="previo paginar tablas" />
@@ -1187,7 +1169,8 @@
     <MESSAGE value="sistemas y organos" />
     <MESSAGE value="examenes laboratorio" />
     <MESSAGE value="modulo ausentismo ingreso terminado" />
-    <option name="LAST_COMMIT_MESSAGE" value="modulo ausentismo ingreso terminado" />
+    <MESSAGE value="cambios en menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios en menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1669,7 +1652,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/twelveth.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3797855">
+        <state vertical-scroll-proportion="2.1142857">
           <caret line="195" column="37" selection-start-line="195" selection-start-column="37" selection-end-line="195" selection-end-column="37" />
           <folding />
         </state>
