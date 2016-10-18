@@ -24,7 +24,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     $scope.puestoTrabajo={
 
-        nombre_puesto:"",
+
         dependencia:"",
         cargo:"",
         fecha:"",
@@ -289,7 +289,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
     // </editor-fold >
     // <editor-fold defaultstate="collapsed" desc="Cargar cargo">
-    $http({
+  /*  $http({
 
         method: 'GET',
         url: myProvider.getCargo(),
@@ -331,7 +331,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
         //  Console.log(response);
         $scope.mesaje = response.mensaje;
 
-    });
+    });*/
     // </editor-fold>
     // <editor-fold defaultstate="collapsed" desc="Maquinaria">
     $http({
@@ -934,12 +934,14 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
 
 
+
+
     $scope.test=function(){
 
         //console.log('entro');
 
      //   console.log($scope.puestoTrabajo.herramientas);
-       // console.log($scope.puestoTrabajo.nombre_puesto);
+
         var  validator=false;
         validator= $scope.validate();
 
@@ -959,7 +961,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
                     'Content-Type': 'application/json'
                 },
                 data: {
-                    nombre_puesto: $scope.puestoTrabajo.nombre_puesto,
+
                     dependencia: $scope.puestoTrabajo.dependencia,
                     cargo: $scope.puestoTrabajo.cargo,
                     fecha: $scope.puestoTrabajo.fecha,
@@ -1087,4 +1089,63 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
 
     };
+
+
+    $scope.changePuesto = function () {
+        console.log('entra');
+        console.log($scope.puestoTrabajo.dependencia);
+        if ($scope.puestoTrabajo.dependencia != '' && $scope.puestoTrabajo.dependencia != undefined) {
+
+           // $scope.puestoTrabajo.dependencia = JSON.parse($scope.puestoTrabajo.dependencia);
+            console.log(myProvider.getCargo() + '?dependencia=' + $scope.puestoTrabajo.dependencia);
+            $http({
+
+                method: 'GET',
+                url: myProvider.getCargo() + '?dependencia=' + $scope.puestoTrabajo.dependencia,
+
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+
+            }).then(function successCallback(response) {
+                //console.log('entra url');
+                //console.log(url);
+
+                var n = response.data.length;
+                // console.log(n);
+
+                if (n == 0) {
+
+                    alert('no se encontro provincias');
+
+                } else {
+                    $scope.cargo = [];
+
+                    for (var i = 0; i < n; i++) {
+
+                        $scope.aux = response.data[i];
+                        //$scope.aux.primer_apellido+=' '+$scope.aux.segundo_apellido+' '+$scope.aux.primer_nombre+' '+$scope.aux.segundo_nombre
+                        $scope.cargo.push($scope.aux);
+
+                        // console.log($scope.empresas);
+                    }
+                    //  $scope.tipoActividadSeleccionada=$scope.empresas[0]._id;
+                    //console.log($scope.empresaSeleccionada);
+                    console.log($scope.cargo);
+
+
+                }
+
+
+            }, function errorCallback(response) {
+                console.log('entra');
+                //  Console.log(response);
+                $scope.mesaje = response.mensaje;
+
+            });
+
+
+        }
+
+    }
 }]);

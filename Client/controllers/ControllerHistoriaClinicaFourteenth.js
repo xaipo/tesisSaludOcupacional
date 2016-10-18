@@ -16,7 +16,7 @@ app.controller('HistoriaClinicaControllerFourteenth', ['$scope', '$http', '$loca
 
     }
     $scope.selectedExamen='';
-
+    $scope.observacion_paraclinicos;
     $scope.getHistoria = function () {
 
         $scope.historiaClinica = JSON.parse(window.localStorage.getItem('hC'));
@@ -186,6 +186,7 @@ app.controller('HistoriaClinicaControllerFourteenth', ['$scope', '$http', '$loca
     $scope.saveFourteen= function(){
       //  console.log($scope.lista_paraclinicos_seleccionados);
         $scope.historiaClinica.examenes_paraclinicos=$scope.lista_paraclinicos_seleccionados;
+        $scope.historiaClinica.observacion_paraclinicos=$scope.observacion_paraclinicos
         window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
        // console.log($scope.historiaClinica);
        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/fiveteenth.html';

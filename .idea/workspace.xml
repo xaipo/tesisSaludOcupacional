@@ -4,7 +4,16 @@
     <bookmark url="file://$PROJECT_DIR$/Client/controllers/ControllerAusentismo.js" line="501" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9da37b9f-90ea-4b83-8a73-5ea0a7a78c4d" name="Default" comment="">
+    <list default="true" id="9da37b9f-90ea-4b83-8a73-5ea0a7a78c4d" name="Default" comment="cambios en menu">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/Administrator/ConsultaExterna/ConsultaExterna.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveteenController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html" afterPath="$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/ControllerCie10.js" afterPath="$PROJECT_DIR$/Client/controllers/ControllerCie10.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/ControllerHistoriaClinicaFourteenth.js" afterPath="$PROJECT_DIR$/Client/controllers/ControllerHistoriaClinicaFourteenth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/controllers/PacienteController.js" afterPath="$PROJECT_DIR$/Client/controllers/PacienteController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveteenth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveteenth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fourteenth.html" afterPath="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fourteenth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" afterPath="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tesisSaludOcupacional.iws" />
@@ -26,102 +35,133 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="newClinicHistory.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html">
+      <file leaf-file-name="fiveteenth.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveteenth.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.538462">
-              <caret line="180" column="26" selection-start-line="180" selection-start-column="26" selection-end-line="180" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="329" column="51" selection-start-line="329" selection-start-column="51" selection-end-line="329" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nineth.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/nineth.html">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HttpServices/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.153847">
-              <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PacienteController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/controllers/PacienteController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.689655">
+              <caret line="935" column="0" selection-start-line="935" selection-start-column="0" selection-end-line="935" selection-end-column="0" />
+              <folding>
+                <element signature="e#1828#1893#0" expanded="true" />
+                <element signature="e#6901#6962#0" expanded="true" />
+                <element signature="e#7977#8036#0" expanded="true" />
+                <element signature="e#9067#9128#0" expanded="true" />
+                <element signature="e#10165#10227#0" expanded="true" />
+                <element signature="e#11264#11323#0" expanded="true" />
+                <element signature="e#12354#12435#0" expanded="true" />
+                <element signature="e#13597#13675#0" expanded="true" />
+                <element signature="e#14931#15026#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ingresoPaciente.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.6545453">
+              <caret line="274" column="53" selection-start-line="274" selection-start-column="53" selection-end-line="274" selection-end-column="53" />
+              <folding>
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoriaClinicaFiveteenController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveteenController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="266" column="17" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+                <element signature="e#4938#5998#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsultaExterna.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/Administrator/ConsultaExterna/ConsultaExterna.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oldhistory.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/oldhistory.html">
+      <file leaf-file-name="ConfiguracionCIe10.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9615384">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.36899224">
+              <caret line="128" column="70" selection-start-line="128" selection-start-column="70" selection-end-line="128" selection-end-column="70" />
+              <folding>
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerHistoriaClinicaFourteenth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/controllers/ControllerHistoriaClinicaFourteenth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="185" column="36" selection-start-line="185" selection-start-column="36" selection-end-line="185" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="second.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/second.html">
+      <file leaf-file-name="ingresoAusentismo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/Administrator/Ausentismo/ingresoAusentismo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.538462">
-              <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="210" column="125" selection-start-line="210" selection-start-column="125" selection-end-line="210" selection-end-column="125" />
+              <folding>
+                <element signature="n#style#0;n#select#0;n#div#4;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sixth.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/sixth.html">
+      <file leaf-file-name="ControllerAusentismo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/controllers/ControllerAusentismo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.846153">
-              <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tenth.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/tenth.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.192308">
-              <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="third.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/third.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.884615">
-              <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thirteenth.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/thirteenth.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.384615">
-              <caret line="187" column="26" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twelveth.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/twelveth.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.1142857">
-              <caret line="195" column="37" selection-start-line="195" selection-start-column="37" selection-end-line="195" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modificarHistoriaClinica.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/modificarHistoriaClinica.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="554" column="5" selection-start-line="499" selection-start-column="4" selection-end-line="554" selection-end-column="5" />
+              <folding>
+                <element signature="e#2670#2697#0" expanded="false" />
+                <element signature="e#2813#2876#0" expanded="false" />
+                <element signature="e#2882#3469#0" expanded="false" />
+                <element signature="e#2965#3281#0" expanded="false" />
+                <element signature="e#3294#3354#0" expanded="false" />
+                <element signature="e#8763#10224#0" expanded="false" />
+                <element signature="e#10276#11984#0" expanded="false" />
+                <element signature="e#13114#13901#0" expanded="false" />
+                <element signature="e#15739#18183#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,8 +172,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Html5" />
         <option value="JavaScript File" />
+        <option value="Html5" />
       </list>
     </option>
   </component>
@@ -153,12 +193,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HtttpServiceIntegracion/Route/routeIngresoGenerico.js" />
-        <option value="$PROJECT_DIR$/HtttpServiceIntegracion/Route/routeConsultasGenericas.js" />
-        <option value="$PROJECT_DIR$/HtttpServiceIntegracion/Route/routeModificacionGenericas.js" />
-        <option value="$PROJECT_DIR$/HtttpServiceIntegracion/Route/routeCreacionGenerica.js" />
         <option value="$PROJECT_DIR$/Client/hola.html" />
-        <option value="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerSixth.js" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaEigth.js" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerNine.js" />
@@ -176,8 +211,6 @@
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaTenth.js" />
         <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerTwelve.js" />
         <option value="$PROJECT_DIR$/Client/controllers/ControllerHistoriaClinicaThirteenth.js" />
-        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveteenth.html" />
-        <option value="$PROJECT_DIR$/Client/controllers/ControllerHistoriaClinicaFourteenth.js" />
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiAusentismoCompleto.js" />
         <option value="$PROJECT_DIR$/HttpServices/Routes/apiMedico.js" />
         <option value="$PROJECT_DIR$/HttpServices/server.js" />
@@ -186,16 +219,13 @@
         <option value="$PROJECT_DIR$/Client/Administrator/Reportes/reporteMorbilidad.html" />
         <option value="$PROJECT_DIR$/HttpServices/Models/modeloAusentismoCompleto.js" />
         <option value="$PROJECT_DIR$/Client/app.js" />
-        <option value="$PROJECT_DIR$/Client/controllers/ControllerAusentismo.js" />
         <option value="$PROJECT_DIR$/Client/Administrator/indexAdmin.html" />
-        <option value="$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/Ausentismo/ingresoAusentismo.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eigth.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/eleventh.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/first.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveth.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/forth.html" />
-        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fourteenth.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/newClinicHistory.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/nineth.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/second.html" />
@@ -204,6 +234,16 @@
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/third.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/thirteenth.html" />
         <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/twelveth.html" />
+        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fourteenth.html" />
+        <option value="$PROJECT_DIR$/Client/controllers/ControllerHistoriaClinicaFourteenth.js" />
+        <option value="$PROJECT_DIR$/Client/controllers/ControllerAusentismo.js" />
+        <option value="$PROJECT_DIR$/Client/Administrator/ConsultaExterna/ConsultaExterna.html" />
+        <option value="$PROJECT_DIR$/Client/controllers/ControllerCie10.js" />
+        <option value="$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveteenController.js" />
+        <option value="$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveteenth.html" />
+        <option value="$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html" />
+        <option value="$PROJECT_DIR$/Client/controllers/PacienteController.js" />
+        <option value="$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html" />
       </list>
     </option>
   </component>
@@ -215,10 +255,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1924" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -598,6 +638,42 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="scripts">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Client">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="css">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Client">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="controllers">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -638,7 +714,29 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="HistoriaClinica">
+            <PATH_ELEMENT USER_OBJECT="Paciente">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="tesisSaludOcupacional">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Client">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Administrator">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ConsultaExterna">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -693,7 +791,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/example" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -720,20 +818,20 @@
       <recent name="C:\tesis\tesisSaludOcupacional\Client\Administrator" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.twelveth.html">
+  <component name="RunManager" selected="JavaScript Debug.ingresoPaciente.html">
+    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/HttpServices">
+      <method />
+    </configuration>
     <configuration default="false" name="fiveteenth.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/fiveteenth.html">
       <method />
     </configuration>
-    <configuration default="false" name="eigth.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/eigth.html">
+    <configuration default="false" name="ConfiguracionCIe10.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/Cie10/ConfiguracionCIe10.html">
       <method />
     </configuration>
-    <configuration default="false" name="eleventh.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/eleventh.html">
+    <configuration default="false" name="HistoriaClinicaFiveteenController.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="HistoriaClinicaFiveteenController.js" working-dir="$PROJECT_DIR$/Client/controllers">
       <method />
     </configuration>
-    <configuration default="false" name="first.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/first.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="twelveth.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/twelveth.html">
+    <configuration default="false" name="ingresoPaciente.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tesisSaludOcupacional/Client/Administrator/Paciente/ingresoPaciente.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -775,19 +873,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.fiveteenth.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.eigth.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.eleventh.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.first.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.twelveth.html" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.server.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.fiveteenth.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.ConfiguracionCIe10.html" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaFiveteenController.js" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.ingresoPaciente.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.twelveth.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.first.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.eleventh.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.eigth.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.fiveteenth.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.ingresoPaciente.html" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.server.js" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.fiveteenth.html" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.HistoriaClinicaFiveteenController.js" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.ConfiguracionCIe10.html" />
       </list>
     </recent_temporary>
   </component>
@@ -801,12 +899,6 @@
       <created>1443577939989</created>
       <option name="number" value="Default" />
       <updated>1443577939989</updated>
-    </task>
-    <task id="LOCAL-00007" summary="agrego estructura y navegacion con bugs del cliente">
-      <created>1448378606945</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1448378606945</updated>
     </task>
     <task id="LOCAL-00008" summary="agrego estructura y navegacion con bugs del cliente">
       <created>1448382612649</created>
@@ -1096,7 +1188,13 @@
       <option name="project" value="LOCAL" />
       <updated>1476183251699</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="cambios en menu">
+      <created>1476183277554</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1476183277554</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1110,21 +1208,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="2" width="1924" height="1045" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21074815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21102864" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32622603" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28463203" sideWeight="0.5479452" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14610389" sideWeight="0.48682284" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23484848" sideWeight="0.4520548" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14610389" sideWeight="0.48682284" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2343921" sideWeight="0.4520548" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.034944236" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32092005" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38486487" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38992333" sideWeight="0.49789253" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32622603" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1235,33 +1333,12 @@
           <line>21</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Client/controllers/ControllerAusentismo.js</url>
-          <line>144</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiResultadoParaclinico.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40117994">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/Routes/apiExamenParaclinico.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35103244">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaControllerTwelve.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1318,28 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.7533633">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.23077">
-          <caret line="314" column="30" selection-start-line="191" selection-start-column="14" selection-end-line="314" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/PacienteController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1014" column="23" selection-start-line="980" selection-start-column="18" selection-end-line="1014" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/ControllerHistoriaClinicaFourteenth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="182" column="5" selection-start-line="142" selection-start-column="2" selection-end-line="182" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1402,13 +1457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HttpServices/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="46" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/angular-1.4.6/angular-chart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1420,7 +1468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1428,7 +1475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="13" selection-start-line="8" selection-start-column="0" selection-end-line="22" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1437,7 +1483,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding>
-            <element signature="e#316#382#0" expanded="true" />
+            <element signature="e#316#382#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1446,15 +1492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="45" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="36" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1462,37 +1499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="19" selection-start-line="8" selection-start-column="0" selection-end-line="21" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/ControllerCie10.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/controllers/ControllerAusentismo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="670" column="45" selection-start-line="670" selection-start-column="45" selection-end-line="670" selection-end-column="45" />
-          <folding>
-            <element signature="e#2470#2618#0" expanded="false" />
-            <element signature="e#2670#2697#0" expanded="false" />
-            <element signature="e#2813#2876#0" expanded="false" />
-            <element signature="e#2882#3469#0" expanded="false" />
-            <element signature="e#2965#3281#0" expanded="false" />
-            <element signature="e#3294#3354#0" expanded="false" />
-            <element signature="e#3665#4848#0" expanded="false" />
-            <element signature="e#8763#10224#0" expanded="false" />
-            <element signature="e#10276#11984#0" expanded="false" />
-            <element signature="e#12020#13080#0" expanded="false" />
-            <element signature="e#13114#13901#0" expanded="false" />
-            <element signature="e#13942#15702#0" expanded="false" />
-            <element signature="e#15739#18183#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1500,25 +1506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.115385">
           <caret line="102" column="100" selection-start-line="102" selection-start-column="100" selection-end-line="102" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5">
-          <caret line="228" column="73" selection-start-line="228" selection-start-column="73" selection-end-line="228" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/Ausentismo/ingresoAusentismo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.23077">
-          <caret line="185" column="22" selection-start-line="109" selection-start-column="20" selection-end-line="185" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#select#0;n#div#4;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1526,7 +1513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.346154">
           <caret line="206" column="31" selection-start-line="206" selection-start-column="31" selection-end-line="206" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1534,7 +1520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.423077">
           <caret line="293" column="31" selection-start-line="293" selection-start-column="31" selection-end-line="293" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1542,15 +1527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.8076925">
           <caret line="172" column="82" selection-start-line="172" selection-start-column="82" selection-end-line="172" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveteenth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1558,7 +1534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.846153">
           <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1566,15 +1541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.846153">
           <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fourteenth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5769231">
-          <caret line="187" column="26" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1582,7 +1548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1590,7 +1555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.538462">
           <caret line="180" column="26" selection-start-line="180" selection-start-column="26" selection-end-line="180" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1598,7 +1562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.153847">
           <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1606,7 +1569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.9615384">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1614,7 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.538462">
           <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1622,7 +1583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.846153">
           <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1630,7 +1590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.192308">
           <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1638,7 +1597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.884615">
           <caret line="185" column="26" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1646,15 +1604,145 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.384615">
           <caret line="187" column="26" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/twelveth.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1142857">
-          <caret line="195" column="37" selection-start-line="195" selection-start-column="37" selection-end-line="195" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.9768708">
+          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="1" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/ControllerCie10.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/ConsultaExterna/ConsultaExterna.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/HistoriaClinicaFiveteenController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="266" column="17" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+            <element signature="e#4938#5998#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fourteenth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.0573645">
+          <caret line="316" column="80" selection-start-line="316" selection-start-column="80" selection-end-line="316" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/ControllerHistoriaClinicaFourteenth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="185" column="36" selection-start-line="185" selection-start-column="36" selection-end-line="185" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/HistoriaClinica/fiveteenth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="329" column="51" selection-start-line="329" selection-start-column="51" selection-end-line="329" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HttpServices/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/Ausentismo/ingresoAusentismo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="210" column="125" selection-start-line="210" selection-start-column="125" selection-end-line="210" selection-end-column="125" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#div#4;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/ControllerAusentismo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="554" column="5" selection-start-line="499" selection-start-column="4" selection-end-line="554" selection-end-column="5" />
+          <folding>
+            <element signature="e#2670#2697#0" expanded="false" />
+            <element signature="e#2813#2876#0" expanded="false" />
+            <element signature="e#2882#3469#0" expanded="false" />
+            <element signature="e#2965#3281#0" expanded="false" />
+            <element signature="e#3294#3354#0" expanded="false" />
+            <element signature="e#8763#10224#0" expanded="false" />
+            <element signature="e#10276#11984#0" expanded="false" />
+            <element signature="e#13114#13901#0" expanded="false" />
+            <element signature="e#15739#18183#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/Paciente/ingresoPaciente.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6545453">
+          <caret line="274" column="53" selection-start-line="274" selection-start-column="53" selection-end-line="274" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/controllers/PacienteController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.689655">
+          <caret line="935" column="0" selection-start-line="935" selection-start-column="0" selection-end-line="935" selection-end-column="0" />
+          <folding>
+            <element signature="e#1828#1893#0" expanded="true" />
+            <element signature="e#6901#6962#0" expanded="true" />
+            <element signature="e#7977#8036#0" expanded="true" />
+            <element signature="e#9067#9128#0" expanded="true" />
+            <element signature="e#10165#10227#0" expanded="true" />
+            <element signature="e#11264#11323#0" expanded="true" />
+            <element signature="e#12354#12435#0" expanded="true" />
+            <element signature="e#13597#13675#0" expanded="true" />
+            <element signature="e#14931#15026#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/Administrator/Cie10/ConfiguracionCIe10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36899224">
+          <caret line="128" column="70" selection-start-line="128" selection-start-column="70" selection-end-line="128" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

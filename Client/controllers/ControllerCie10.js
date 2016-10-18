@@ -98,7 +98,7 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
 
                 if (n == 0) {
 
-                    alert('no se encontro el paciente');
+                    $scope.cie10 = [];
 
                 } else {
                     $scope.cie10 = [];
