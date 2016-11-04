@@ -154,7 +154,28 @@ app.controller('HistoriaClinicaThird', ['$scope', '$http', '$location','myProvid
 
 
     }
+    $scope.skipt2= function (){
 
+
+        $scope.accidentesTrabajo={
+            codigo:"",
+            fecha_ocurrencia:"" ,
+            nombre_empresa:"",
+            naturaleza_lesion:"no aplica",
+            parte_cuerpo_afectada:"",
+            dias_incapacidad:"",
+            secuelas:""
+        };
+
+        $scope.listaAccidentesTrabajo=[];
+        $scope.listaAccidentesTrabajo.push($scope.accidentesTrabajo);
+        $scope.historiaClinica.accidentesTrabajo=$scope.listaAccidentesTrabajo;
+        window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
+        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/third.html';
+
+
+
+    }
 
 
 

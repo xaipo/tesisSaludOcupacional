@@ -949,7 +949,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
 
             $scope.previo();
 
-
+            console.log($scope.cargo);
             // for(var i=0;i<1000000;i++)
             // {
             //    $scope.mensaje = "procesando";
@@ -997,7 +997,7 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
                             ciudad: $scope.paciente.ciudad,
                             edad: $scope.paciente.edad,
                             estado_civil: $scope.paciente.estado_civil,
-                            nivel_estudios: $scope.paciente.nivel_estudios,
+                            nivel_estudio   : $scope.paciente.nivel_estudios,
                             puesto_trabajo: $scope.paciente.puesto_trabajo,
                             telefono: $scope.paciente.telefono,
                         }
@@ -1006,7 +1006,39 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
                     }).then(function successCallback(response) {
 
                         alert("ingresado correctamente");
+                        $scope.paciente={
+                            ci:"",
+                            primer_nombre:"",
+                            segundo_nombre:"",
+                            primer_apellido:"",
+                            segundo_apellido:"",
+                            sexo:"",
+                            fecha_nacimiento:"",
+                            ciudad:"",
+                            edad:"",
+                            estado_civil:"",
+                            nivel_estudios:"",
+                            puesto_trabajo:"",
+                            telefono:"",
 
+                        };
+
+                        $scope.puestoTrabajo={
+
+
+                            dependencia:"",
+                            cargo:"",
+                            fecha:"",
+                            estado:"",
+                            jornada:"",
+                            descripcion_funciones:"",
+                            maquinaria:[],
+                            herramientas:[],
+                            materiaPrima:[],
+                            proteccion:[],
+                            protocolos:[]
+
+                        }
 
                     }, function errorCallback(response) {
                         // called asynchronously if an error occurs
@@ -1148,4 +1180,8 @@ app.controller('PacienteController', ['$scope', '$http', '$location','myProvider
         }
 
     }
+
+
+
+
 }]);

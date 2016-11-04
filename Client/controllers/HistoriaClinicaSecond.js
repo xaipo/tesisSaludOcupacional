@@ -421,9 +421,9 @@ app.controller('HistoriaClinicaSecond', ['$scope', '$http', '$location','myProvi
             actividades:  "",
             tipo_actividad: "",
             tiempo_anios_exposicion: "",
-            factores_riesgo:  "",
-            cualificacion: "",
-            alimentos: "",
+            factores_riesgo:  [],
+            cualificacion: [],
+            alimentos: [],
             sintomatologia_individual: "",
             sintomatologia_grupal: "",
             epp: "",
@@ -466,7 +466,7 @@ app.controller('HistoriaClinicaSecond', ['$scope', '$http', '$location','myProvi
 
     $scope.nextSecond= function(){
 
-        console.log($scope.historiaClinica);
+       // console.log($scope.historiaClinica);
 
         $scope.historiaClinica.riesgosOcupacionales=$scope.listaRiesgosOcupacionales;
         console.log($scope.historiaClinica.riesgosOcupacionales);
@@ -474,7 +474,31 @@ app.controller('HistoriaClinicaSecond', ['$scope', '$http', '$location','myProvi
         window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/second.html';
     }
 
+    $scope.skipt= function(){
 
+        console.log($scope.historiaClinica);
+        $scope.riesgosOcupacionales={
+
+            nombre_empresa : "no aplica",
+            cargo_empresa:  "",
+            actividades:  "",
+            tipo_actividad: "",
+            tiempo_anios_exposicion: "",
+            factores_riesgo:  [],
+            cualificacion: [],
+            alimentos: [],
+            sintomatologia_individual: "",
+            sintomatologia_grupal: "",
+            epp: "",
+
+        }
+        $scope.listaRiesgosOcupacionales=[];
+        $scope.listaRiesgosOcupacionales.push($scope.riesgosOcupacionales);
+        $scope.historiaClinica.riesgosOcupacionales=$scope.listaRiesgosOcupacionales;
+        console.log($scope.historiaClinica.riesgosOcupacionales);
+        window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
+        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/second.html';
+    }
 
     $scope.changeDetalleFactorRiesgo=function(){
     console.log(myProvider.getDetalleFactoresRiesgo()+'?id_factor_riesgo='+$scope.factorRiesgoSeleccionado);

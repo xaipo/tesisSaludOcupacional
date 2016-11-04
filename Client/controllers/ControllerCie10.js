@@ -74,62 +74,61 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
 
     });
 
-    $scope.busquedaCie10Tipo=function()
-    {
-        console.log($scope.cie10Selected);
-        if($scope.cie10Selected!=undefined) {
+    $scope.busquedaCie10Tipo=function() {
 
-            $scope.cie10Selected =JSON.parse($scope.cie10Selected);
-            $http({
+            if ($scope.cie10Selected != undefined &&$scope.cie10Selected != '' ) {
 
-                method: 'GET',
-                url: myProvider.getCie10() + "?tipo_cie10=" + $scope.cie10Selected._id,
+                $scope.new = JSON.parse($scope.cie10Selected);
 
-                headers: {
-                    'Content-Type': 'application/json'
-                }
+                $http({
 
-            }).then(function successCallback(response) {
-                //console.log('entra url');
-                //console.log(url);
+                    method: 'GET',
+                    url: myProvider.getCie10() + "?tipo_cie10=" + $scope.new._id,
 
-                var n = response.data.length;
-                // console.log(n);
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
 
-                if (n == 0) {
+                }).then(function successCallback(response) {
+                    //console.log('entra url');
+                    //console.log(url);
 
-                    $scope.cie10 = [];
+                    var n = response.data.length;
+                    // console.log(n);
 
-                } else {
-                    $scope.cie10 = [];
-                    for (var i = 0; i < n; i++) {
+                    if (n == 0) {
+
+                        $scope.cie10 = [];
+
+                    } else {
+                        $scope.cie10 = [];
+                        for (var i = 0; i < n; i++) {
 
 
-                        $scope.cie10.push(response.data[i]);
-                        if($scope.cie10[i].estado==1){
-                            $scope.cie10[i].estado="activado";
-                        }else{
+                            $scope.cie10.push(response.data[i]);
+                            if ($scope.cie10[i].estado == 1) {
+                                $scope.cie10[i].estado = "activado";
+                            } else {
 
-                            $scope.cie10[i].estado="desactivado";
+                                $scope.cie10[i].estado = "desactivado";
+                            }
+                            //  console.log($scope.tipoCie10);
+
                         }
-                      //  console.log($scope.tipoCie10);
+
 
                     }
 
 
-                }
+                }, function errorCallback(response) {
+                    console.log('entra');
+                    //  Console.log(response);
+                    $scope.mesaje = response.mensaje;
 
+                });
+            }
 
-            }, function errorCallback(response) {
-                console.log('entra');
-                //  Console.log(response);
-                $scope.mesaje = response.mensaje;
-
-            });
-        }
     }
-
-
 
 
 
@@ -151,8 +150,8 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
         console.log($scope.newCie10.codigo_cie10);
         console.log($scope.cie10Selected._id);
         console.log($scope.newCie10.sintoma);
-
-
+        $scope.newCie10.codigo_cie10=$scope.newCie10.codigo_cie10.toUpperCase();
+        $scope.new1=JSON.parse($scope.cie10Selected);
 
         $http({
             method: 'POST',
@@ -164,7 +163,7 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
 
                 codigo_cie10:$scope.newCie10.codigo_cie10,
                 tratamientos:[""],
-                tipo_cie10:$scope.cie10Selected._id,
+                tipo_cie10:$scope.new1._id,
                 sintoma:$scope.newCie10.sintoma,
                 estado:"1"
 
@@ -182,7 +181,7 @@ app.controller('ControllerCie10', ['$scope', '$http', '$location','myProvider','
             $http({
 
                 method: 'GET',
-                url: myProvider.getCie10() + "?tipo_cie10=" + $scope.cie10Selected._id,
+                url: myProvider.getCie10() + "?tipo_cie10=" + $scope.new1._id,
 
                 headers: {
                     'Content-Type': 'application/json'

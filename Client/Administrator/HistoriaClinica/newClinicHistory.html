@@ -255,7 +255,7 @@
 
 
                         <select class="form-control" name="singleSelect" ng-model="historiaClinica.tipo_examen">
-                            <option value="option-1" ng-repeat="th in tipoHistoria" value="{{th}}">{{th.descripcion_tipo_historia}}</option>
+                            <option ng-repeat="th in tipoHistoria" value="{{th}}">{{th.descripcion_tipo_historia}}</option>
 
                         </select><br>
 

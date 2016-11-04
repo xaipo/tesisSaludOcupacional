@@ -50,6 +50,10 @@ app.controller('LoginController', ['$scope', '$http', '$location','myProvider','
                         window.localStorage.setItem("usuario", JSON.stringify($scope.usuario1));
                         window.location ='/tesisSaludOcupacional/Client/Integracion/indexIntegracion.html';
                         break;
+                    case 3:
+                        window.localStorage.setItem("usuario", JSON.stringify($scope.usuario1));
+                        window.location ='/tesisSaludOcupacional/Client/Administrator/CieUser/ConfiguracionCIe10.html';
+                        break;
                     default:
 
                      alert('El tipo de usuario no tiene permiso para ningun sistema')

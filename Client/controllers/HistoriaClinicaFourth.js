@@ -280,4 +280,14 @@ app.controller('HistoriaClinicaFourth', ['$scope', '$http', '$location','myProvi
         window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
         window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/forth.html';
     }
+
+    $scope.skipt3=function(){
+
+
+
+        $scope.historiaClinica.enfermedades_actuales_historicas=$scope.listaCie10Selecionada;
+        window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
+        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/forth.html';
+    }
+
 }]);
