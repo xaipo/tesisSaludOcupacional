@@ -1032,6 +1032,7 @@ app.controller('HistoriaClinicaControllerFiveteenth', ['$scope', '$http', '$loca
                         remision_especialista:$scope.finalHistoria.remision_especialista,
                         nombre_especialista:$scope.finalHistoria.nombre_especialista,
                         reubicacion:$scope.finalHistoria.reubicacion,
+                        estado:'1',
                     }
 
 
@@ -1040,7 +1041,9 @@ app.controller('HistoriaClinicaControllerFiveteenth', ['$scope', '$http', '$loca
                     console.log(response.data._id);
                     // window.localStorage.setItem("hci", JSON.stringify($scope.historiaClinicaIngreso));
                     // console.log($scope.historiaClinicaIngreso.gineco_obstetra);
-
+                    localStorage.removeItem('hci');
+                    localStorage.removeItem('hC');
+                    window.location = '/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
 
                 }, function errorCallback(response) {
                     // called asynchronously if an error occurs
@@ -1071,12 +1074,9 @@ app.controller('HistoriaClinicaControllerFiveteenth', ['$scope', '$http', '$loca
 
 
         //console.log('final');
-       $scope.finalHc();
+      // $scope.finalHc();
     }
 
-    $scope.finalHc=function() {
-
-    }
 
 
 

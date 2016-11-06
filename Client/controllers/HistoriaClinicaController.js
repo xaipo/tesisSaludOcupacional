@@ -507,7 +507,7 @@ app.controller('HistoriaClinicaController', ['$scope', '$http', '$location','myP
 
         $scope.historiaClinica.fecha_examen=document.getElementById('datepicker').value;
        // console.log($scope.historiaClinica.fecha_examen);
-        if($scope.historiaClinica.tipo_examen!="" && $scope.pacienteEncontrado!=""&&$scope.historiaClinica.fecha_examen!="") {
+        if( $scope.pacienteEncontrado!=""&&$scope.historiaClinica.fecha_examen!="") {
 
 
            // var dd=$scope.historiaClinica.fecha_examen;

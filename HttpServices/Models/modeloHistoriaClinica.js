@@ -30,6 +30,7 @@ var categoriaSchema = new mongoose.Schema({
     remision_especialista:String,
     nombre_especialista:String,
     reubicacion:String,
+    estado:Number,
 
 
 
