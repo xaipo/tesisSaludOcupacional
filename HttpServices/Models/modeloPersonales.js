@@ -10,7 +10,7 @@ var mongoose= restful.mongoose;
 var categoriaSchema = new mongoose.Schema({
 
     tipo_presonales:mongoose.Schema.ObjectId,
-    enfermedad_cie10: Array,
+    enfermedad_cie10: String,
     observacion: String
 });
 

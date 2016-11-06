@@ -9,7 +9,10 @@ app.controller('HistoriaClinicaControllerFiveteenth', ['$scope', '$http', '$loca
         accidentesTrabajo:[],
         gineco_obstetra:[],
         ausentismo:[],
-        enfermedades_actuales_historicas:[]
+        enfermedades_actuales_historicas:[],
+        antescedentes_familiares:[],
+        antescedentes_personales:[],
+        inmunizacion:[]
     };
 
     $scope.getHistoria = function () {
@@ -286,6 +289,26 @@ app.controller('HistoriaClinicaControllerFiveteenth', ['$scope', '$http', '$loca
     $scope.ingresarHistoriaClinica=function(){
 
         console.log('ejecuta');
+
+      //  $scope.historiaClinicIngreso = JSON.parse(window.localStorage.getItem('hci'));
+       /* var n = $scope.historiaClinica.revision_sistemas.length;
+        // console.log($scope.historiaClinica.ginecoObstetra);
+        // console.log($scope.historiaClinica);
+        var aux=[];
+        for (var i = 0; i < n; i++) {
+
+            // console.log( $scope.historiaClinica.ginecoObstetra[i].metodos_planificacion_familiar);
+            aux.push($scope.historiaClinica.revision_sistemas[i]._id);
+
+            // console.log($scope.historiaClinicaIngreso.gineco_obstetra);
+
+            //$scope.mensaje = "Para ingresar debe llenar el nombre de la empresa";
+
+            //
+
+        }
+        $scope.historiaClinicaIngreso.revision_sistemas=aux;
+        window.localStorage.setItem("hci", JSON.stringify($scope.historiaClinicaIngreso));*/
 
         var n=$scope.historiaClinica.riesgosOcupacionales.length;
 
@@ -593,10 +616,148 @@ app.controller('HistoriaClinicaControllerFiveteenth', ['$scope', '$http', '$loca
 
         }
 
-       // $scope.fiveth();
+        $scope.sixth();
     }
 
+    $scope.sixth=function(){
 
+        $scope.historiaClinicIngreso = JSON.parse(window.localStorage.getItem('hci'));
+        var n = $scope.historiaClinica.antescedentes_familiares.length;
+        // console.log($scope.historiaClinica.ginecoObstetra);
+        // console.log($scope.historiaClinica);
+        for (var i = 0; i < n; i++) {
+
+            // console.log( $scope.historiaClinica.ginecoObstetra[i].metodos_planificacion_familiar);
+
+
+
+            $http({
+                method: 'POST',
+                url: myProvider.getFamiliares(),
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                data: {
+
+                    patologia_cie10:  $scope.historiaClinica.antescedentes_familiares[i].patologia,
+                    parentezco: $scope.historiaClinica.antescedentes_familiares[i].parentezco._id,
+                }
+
+
+            }).then(function successCallback(response) {
+                //console.log(response.data);
+                $scope.historiaClinicaIngreso.antescedentes_familiares.push(response.data._id);
+                window.localStorage.setItem("hci", JSON.stringify($scope.historiaClinicaIngreso));
+                // console.log($scope.historiaClinicaIngreso.gineco_obstetra);
+
+
+
+
+
+            }, function errorCallback(response) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+                // console.log(response);
+                //$scope.mesaje = response.mensaje;
+
+            });
+
+            //$scope.mensaje = "Para ingresar debe llenar el nombre de la empresa";
+
+            //
+
+        }
+
+        $scope.seventh();
+    }
+    $scope.seventh=function(){
+        $scope.historiaClinicIngreso = JSON.parse(window.localStorage.getItem('hci'));
+        var n = $scope.historiaClinica.antescedentes_personales.length;
+        // console.log($scope.historiaClinica.ginecoObstetra);
+        // console.log($scope.historiaClinica);
+        for (var i = 0; i < n; i++) {
+
+            // console.log( $scope.historiaClinica.ginecoObstetra[i].metodos_planificacion_familiar);
+
+
+
+            $http({
+                method: 'POST',
+                url: myProvider.getPersonales(),
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                data: {
+
+                    tipo_presonales:$scope.historiaClinica.antescedentes_personales[i].tipo._id,
+                    enfermedad_cie10: $scope.historiaClinica.antescedentes_personales[i].enfermedad,
+                    observacion: $scope.historiaClinica.antescedentes_personales[i].observacion
+                }
+
+
+            }).then(function successCallback(response) {
+                //console.log(response.data);
+                $scope.historiaClinicaIngreso.antescedentes_personales.push(response.data._id);
+                window.localStorage.setItem("hci", JSON.stringify($scope.historiaClinicaIngreso));
+                // console.log($scope.historiaClinicaIngreso.gineco_obstetra);
+
+
+
+
+
+            }, function errorCallback(response) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+                // console.log(response);
+                //$scope.mesaje = response.mensaje;
+
+            });
+
+            //$scope.mensaje = "Para ingresar debe llenar el nombre de la empresa";
+
+            //
+
+        }
+        $scope.eigth();
+    }
+
+    $scope.eigth=function() {
+
+        $scope.historiaClinicIngreso = JSON.parse(window.localStorage.getItem('hci'));
+        var n = $scope.historiaClinica.inmunizacion.length;
+        // console.log($scope.historiaClinica.ginecoObstetra);
+        // console.log($scope.historiaClinica);
+        for (var i = 0; i < n; i++) {
+            $http({
+                method: 'POST',
+                url: myProvider.getImnunizacion(),
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                data: {
+
+                    fecha_inmunizacion: $scope.historiaClinica.inmunizacion[i].fecha_inmunizacion,
+                    vacuna: $scope.historiaClinica.inmunizacion[i].vacuna._id,
+                    dosis_inmunizacion: $scope.historiaClinica.inmunizacion[i].dosis_inmunizacion,
+                }
+
+
+            }).then(function successCallback(response) {
+                //console.log(response.data);
+                $scope.historiaClinicaIngreso.inmunizacion.push(response.data._id);
+                window.localStorage.setItem("hci", JSON.stringify($scope.historiaClinicaIngreso));
+                // console.log($scope.historiaClinicaIngreso.gineco_obstetra);
+
+
+            }, function errorCallback(response) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+                // console.log(response);
+                //$scope.mesaje = response.mensaje;
+
+            });
+        }
+    }
 
 
 }]);

@@ -6,8 +6,8 @@ var mongoose= restful.mongoose;
 
 var categoriaSchema = new mongoose.Schema({
 
-    patologia_cie10: Array,
-    parentezco: Array,
+    patologia_cie10: String,
+    parentezco: mongoose.Schema.ObjectId,
 
 });
 

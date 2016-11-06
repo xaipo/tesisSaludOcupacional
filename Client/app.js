@@ -146,6 +146,15 @@ function ApiUrl(){
     this.getEnfermedadesActualesHistoricas=function(){
         return 'http://localhost:3000/api/enfermedadesActualesHistoricas';
     }
+    this.getFamiliares=function(){
+        return 'http://localhost:3000/api/familiares';
+    }
+    this.getPersonales=function(){
+        return 'http://localhost:3000/api/personales';
+    }
+    this.getImnunizacion=function(){
+        return 'http://localhost:3000/api/inmunizacion';
+    }
 }
 
 app.factory("myProvider",function(){
