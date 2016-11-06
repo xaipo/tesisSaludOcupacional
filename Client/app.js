@@ -131,6 +131,21 @@ function ApiUrl(){
     this.getAusentismo=function(){
         return 'http://localhost:3000/api/ausentismoCompleto';
     }
+    this.getRiesgosOcupacionales=function(){
+        return 'http://localhost:3000/api/riegosOcupacionales';
+    }
+    this.getAccidentesTrabajo=function(){
+        return 'http://localhost:3000/api/accidentesTrabajo';
+    }
+    this.getGinecoObstetra=function(){
+        return 'http://localhost:3000/api/ginecoObstetra';
+    }
+    this.getAusentismo1=function(){
+        return 'http://localhost:3000/api/ausentismo';
+    }
+    this.getEnfermedadesActualesHistoricas=function(){
+        return 'http://localhost:3000/api/enfermedadesActualesHistoricas';
+    }
 }
 
 app.factory("myProvider",function(){

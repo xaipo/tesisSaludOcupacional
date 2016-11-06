@@ -221,13 +221,8 @@
                         <label > Segundo Apellido: {{pacienteEncontrado.segundo_apellido}} </label><br>
                         <label > Edad: {{pacienteEncontrado.edad}} </label><br>
                         <label > Lugar Nacimiento: {{pacienteEncontrado.ciudad.nombre_ciudad}} </label><br>
-                        <label > Herramientas:  </label><br>
-                        <select name="Herramienta"  class="form-control" multiple   style="height: 150px;" >
-                            <option value={{herramienta}}
-                                    ng-repeat="herramienta in pacienteEncontrado.puesto_trabajo.herramienta ">
-                                {{herramienta.nombre_herramienta}}
-                            </option>
-                        </select><br>
+
+
 
                     </div>
                     <div class="col-md-3 col-xs-12" >
@@ -239,11 +234,8 @@
                         <label >Estado Civil: {{pacienteEncontrado.estado_civil.descripcion_estado_civil}} </label><br>
                         <label >Nivel Estudio: {{pacienteEncontrado.nivel_estudio.descripcion_nivel_estudio}} </label><br>
                         <label >Telefono: {{pacienteEncontrado.telefono}} </label><br>
-                        <label> Materia Prima:  </label><br>
-                         <select class="form-control" name="multipleSelect" multiple>
-                            <option  ng-repeat="mp in pacienteEncontrado.puesto_trabajo.materia_prima" value="{{mp}}">{{mp.descripcion_materia_prima}}</option>
 
-                        </select><br>
+
                     </div>
 
                     <div class="col-md-3 col-xs-12" >
