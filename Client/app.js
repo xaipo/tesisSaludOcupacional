@@ -155,6 +155,24 @@ function ApiUrl(){
     this.getImnunizacion=function(){
         return 'http://localhost:3000/api/inmunizacion';
     }
+    this.gethabitosToxicos=function(){
+        return 'http://localhost:3000/api/habitosToxicos';
+    }
+    this.getOrganoSelected=function(){
+        return 'http://localhost:3000/api/organosSelected';
+    }
+    this.getExamenesPracticados=function(){
+        return 'http://localhost:3000/api/examenesPracticados';
+    }
+    this.getParaclinico=function(){
+        return 'http://localhost:3000/api/paraclinicoSeleccionado';
+    }
+    this.getExamenFisico=function(){
+        return 'http://localhost:3000/api/examenFisico';
+    }
+    this.getHistoriaClinica=function(){
+        return 'http://localhost:3000/api/historiaClinica';
+    }
 }
 
 app.factory("myProvider",function(){

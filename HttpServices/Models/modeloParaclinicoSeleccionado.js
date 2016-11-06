@@ -10,7 +10,7 @@ var categoriaSchema = new mongoose.Schema({
 
     observacion:String,
     respuesta_examen_paraclinico: mongoose.Schema.Types.ObjectId,
-    sintomas_cie_10:Array
+    fecha:String
 
 
 

@@ -171,7 +171,7 @@ app.controller('HistoriaClinicaEleventh', ['$scope', '$http', '$location','myPro
 
     $scope.saveEleven= function(){
 
-        $scope.historiaClinica.examen_fisico=$scope.listaHabitosToxicos;
+        $scope.historiaClinica.examen_fisico=$scope.listaExamenFisico;
         window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
         window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/twelveth.html';
     }

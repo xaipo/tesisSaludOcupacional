@@ -313,7 +313,7 @@
                 <div class="col-md-4 col-xs-12" >
                     <br>
                     <label>Concepto:</label>
-                    <select class="form-control" name="singleSelect" ng-model="ausentismo.mes" >
+                    <select class="form-control" name="singleSelect" ng-model="finalHistoria.concepto" >
                         <option value="A">Apto Para el Cargo </option>
                         <option value="AL">Apto con Limitaciones para el Cargo </option>
                         <option value="D">No Apto para el cargo </option>
@@ -323,19 +323,19 @@
                 <div class="col-md-4 col-xs-12" >
                     <br>
                     <label>Tipo de Restricciones o Limitaciones:</label>
-                    <input class="form-control" type="text" >
+                    <input class="form-control" type="text" ng-model="finalHistoria.restricciones_limitaciones" >
                 </div>
                 <div class="col-md-4 col-xs-12" >
                     <br>
                     <label>Recomendaciones:</label>
-                    <input class="form-control" type="text" >
+                    <input class="form-control" type="text" ng-model="finalHistoria.recomendaciones" >
                 </div>
             </div>
                 <div class="row">
                 <div class="col-md-4 col-xs-12" >
                     <br>
                     <label>Remision Especialista:</label>
-                    <select class="form-control" name="singleSelect" ng-model="ausentismo.mes" >
+                    <select class="form-control" name="singleSelect" ng-model="finalHistoria.remision_especialista" >
                         <option value="S">SI </option>
                         <option value="N">NO </option>
 
@@ -345,12 +345,12 @@
                 <div class="col-md-4 col-xs-12" >
                     <br>
                     <label>Nombre:</label>
-                    <input class="form-control" type="text" >
+                    <input class="form-control" type="text" ng-model="finalHistoria.nombre_especialista" >
                     </div>
                     <div class="col-md-4 col-xs-12" >
                         <br>
                         <label>Necesita Reubicacion:</label>
-                        <select class="form-control" name="singleSelect" ng-model="ausentismo.mes" >
+                        <select class="form-control" name="singleSelect" ng-model="finalHistoria.reubicacion" >
                             <option value="S">Si</option>
                             <option value="N">No </option>
 
