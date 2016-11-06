@@ -21,6 +21,7 @@ var categoriaSchema = new mongoose.Schema({
     telefono:String,
     estado_civil:  mongoose.Schema.ObjectId,
     nivel_estudio: mongoose.Schema.ObjectId,
+    historias_clinicas: Array,
 
 
 

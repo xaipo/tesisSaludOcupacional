@@ -1041,9 +1041,49 @@ app.controller('HistoriaClinicaControllerFiveteenth', ['$scope', '$http', '$loca
                     console.log(response.data._id);
                     // window.localStorage.setItem("hci", JSON.stringify($scope.historiaClinicaIngreso));
                     // console.log($scope.historiaClinicaIngreso.gineco_obstetra);
-                    localStorage.removeItem('hci');
-                    localStorage.removeItem('hC');
-                    window.location = '/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
+
+
+                    $scope.historiaClinica.paciente.historias_clinicas.push(response.data._id);
+
+                    $http({
+                        method: 'PUT',
+                        url: myProvider.getPaciente() + '/' + $scope.historiaClinica.paciente._id,
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        data: {
+                            historias_clinicas:  $scope.historiaClinica.paciente.historias_clinicas,
+
+                        }
+
+
+                    }).then(function successCallback(response) {
+
+
+
+                        localStorage.removeItem('hci');
+                        localStorage.removeItem('hC');
+                        window.location = '/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
+
+
+                    }, function errorCallback(response) {
+                        // called asynchronously if an error occurs
+                        // or server returns response with an error status.
+                        // console.log(response);
+                        //$scope.mesaje = response.mensaje;
+
+                    });
+
+
+
+
+
+
+
+
+
+
+
 
                 }, function errorCallback(response) {
                     // called asynchronously if an error occurs

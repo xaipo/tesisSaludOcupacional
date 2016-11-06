@@ -518,9 +518,10 @@ app.controller('HistoriaClinicaController', ['$scope', '$http', '$location','myP
             var a=confirm("Esta seguro que los datos estan correctos presione si para continuar");
             //console.log(a);
             if(a){
-
-                    $scope.historiaClinica.paciente = $scope.pacienteEncontrado.id;
-
+                console.log('entra la ptm');
+                    $scope.historiaClinica.paciente = $scope.pacienteEncontrado;
+               //console.log('entra la ptm');
+                  //  console.log($scope.pacienteEncontrado);
                     window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
                 window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/first.html';
                 }
