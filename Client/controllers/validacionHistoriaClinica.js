@@ -8,6 +8,8 @@ app.controller('ControllerValidacionHistoria', ['$scope', '$http', '$location', 
     $scope.pacienteEncontrado;
     $scope.historiaClinica;
 
+    $scope.urlSeleccionada='';
+
     $scope.searchUser = function () {
 
         console.log(myProvider.getUser()+'?cedula='+$scope.cedula);
@@ -236,12 +238,43 @@ app.controller('ControllerValidacionHistoria', ['$scope', '$http', '$location', 
 
         });
 
-        $scope.validateFirst();
+      //  $scope.validateFirst();
     }
 
 
-    $scope.validateFirst=function(){
+    $scope.redireccion=function(){
 
+        console.log('entra');
+        console.log($scope.urlSeleccionada);
+        if($scope.urlSeleccionada!=''&& $scope.urlSeleccionada!=undefined){
+
+
+        switch ($scope.urlSeleccionada){
+
+            case '1':
+
+                window.location = '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarAccidenteTrabajo.html';
+                break;
+            case '2':
+
+                window.location = '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarGineciObstetra.html';
+                break;
+            case '3':
+
+                window.location = '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarInmunizacion.html';
+                break;
+            case '4':
+
+                window.location = '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificacionHabitosToxicos.html';
+                break;
+            case '5':
+
+                window.location = '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificacionExamenLaboratorio.html';
+                break;
+           ;
+
+        }
+        }
       //  $//scope.pacienteEncontrado = JSON.parse(window.localStorage.getItem('pe'));
      //   console.log($scope.pacienteEncontrado);
 
