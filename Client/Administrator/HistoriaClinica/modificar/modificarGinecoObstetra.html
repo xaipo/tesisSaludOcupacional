@@ -18,7 +18,7 @@
     <script src="/tesisSaludOcupacional/Client/app.js"></script>
 
     <script src="/tesisSaludOcupacional/Client/controllers/CargasController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/ControllerModificarAccidentesTrabajo.js"></script>
+    <script src="/tesisSaludOcupacional/Client/controllers/ControllerModificarGinecoObstetra.js"></script>
 
 
     <script src="/tesisSaludOcupacional/Client/controllers/LoginController.js"></script>
@@ -186,9 +186,180 @@
 </header>
 <!-----main -->
 
-<form class="form" role="form" ng-controller="ControllerModificarAccidentes as hcController" ng-init="iniciar()">
+<form class="form" role="form" ng-controller="ControllerModificarGineco as hcController" ng-init="iniciar()">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+
+            <h3 class="  text-center panel-title">Historia Clínica </h3>
+            <h5 class=" text-center panel-title">Gineco Obstetricos</h5>
+
+        </div>
+        <div class="container">
+
+            <div class="row">
 
 
+                <div class="col-md-3 col-xs-12">
+                    <br>
+                    <label>Ciclo Menstrual:</label><br>
+                    <label>
+                        <input class="from-control" type="radio" ng-model="ginecoObstetra.normal_anormal" value="normal">
+                        Normal
+                        <br>
+
+                    </label>
+                    <br>
+                    <label>
+                        <input class="from-control" type="radio" ng-model="ginecoObstetra.normal_anormal" value="anomral">
+                        Anormal
+                        <br>
+
+                    </label>
+                    <br>
+                    <label > Abortos: </label><br>
+                    <select class="form-control" name="singleSelect" ng-model="ginecoObstetra.abortos">
+                        <option value="si">si </option>
+                        <option value="no">no </option>
+                    </select><br>
+
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                    <br>
+                    <label > Fecha Ultima Regla: </label><br>
+                    <input class="datepicker" type="text" id="datepicker" name="date"/><br><br>
+                    <label > Hijos Vivos: </label><br>
+
+                    <select class="form-control" name="singleSelect" ng-model="ginecoObstetra.hijos_vivos">
+                        <option value="si">si </option>
+                        <option value="no">no </option>
+                    </select><br>
+
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                    <br>
+
+                    <label > Embarazos: </label><br>
+                    <input class="form-control" type="number" ng-model="ginecoObstetra.embarazos">
+
+                    <br>
+                    <label>Resultado Ultima Citologia</label>
+                    <input type="text" class="form-control" placeholder="Resultado Ultima Citologia" ng-model="ginecoObstetra.resultados_citologia">
+
+
+                </div>
+
+                <div class="col-md-3 col-xs-12">
+                    <br>
+                    <label > Partos: </label><br>
+                    <select class="form-control" name="singleSelect" ng-model="ginecoObstetra.partos">
+                        <option value="si">si </option>
+                        <option value="no">no </option>
+                    </select><br>
+                    <label > Fecha Ultima Citologia: </label><br>
+                    <input class="datepicker" type="text" id="datepicker1" name="date"/><br><br>
+
+                </div>
+
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 col-xs-12">
+                    <br>
+                    <label for="Alimentos"> Metodos Planifiacion Familiar: </label><br>
+                    Búsqueda <input type="text" ng-model="search1" class="form-control" placeholder="Busqueda"><br>
+                    <select name="Alimentos" ng-model="selectedMetodo" class="form-control" multiple
+                            style="height: 150px;" ng-click="agregar()">
+                        <option value={{al}}
+                                ng-repeat="al in metodos_planificacion | filter:search1| orderBy:al.nombre_metodo">
+                            {{al.nombre_metodo}}
+                        </option>
+                    </select><br>
+
+                </div>
+
+                <div class="col-md-6 col-xs-12">
+                    <br>
+
+                    <label for="AlimentosSelect"> Metodos de Planifiacion Familiar Seleccionados: </label><br>
+                    Búsqueda <input type="text" ng-model="search2" class="form-control" placeholder="Busqueda"><br>
+                    <select name="AlimentosSelect" ng-model="selectedMetodo" class="form-control" multiple
+                            style="height: 150px;" ng-click="quitar()">
+                        <option value={{al1}}
+                                ng-repeat="al1 in metodos_seleccionados | filter:search2| orderBy:al1.nombre_metodo">
+                            {{al1.nombre_metodo}}
+                        </option>
+                    </select><br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <br>
+                    <label>Observaciones:</label>
+                    <textarea class="form-control" rows="2" cols="12" ng-model="ginecoObstetra.observacion"></textarea><br>
+
+
+                </div>
+
+                <div class="col-md-6 col-xs-11" >
+                    <br>
+                    <input  type="submit" class="btn btn-submit" value="Agregar" ng-click="agregarP1()">
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <br>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ciclo Menstrual</th>
+                            <th>Fecha ultima Regla</th>
+                            <th>Partos</th>
+                            <th>Hijos Vivos</th>
+                            <th>Embarazos</th>
+                            <th>Abortos</th>
+
+
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in listaGinecoObstetra | filter:search2| orderBy:item.codigo" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow1($index,item)" >
+                            <td>{{$index}}</td>
+                            <td>{{ item.codigo }}</td>
+                            <td>{{ item.normal_anormal }}</td>
+                            <td>{{ item.fecha_ultima_regla }}</td>
+                            <td>{{ item.hijos_vivos }}</td>
+                            <td>{{ item.embarazos }}</td>
+                            <td>{{ item.abortos }}</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </div><!--div fin contaniner-->
+    </div><!--div fin contaniner-->
 
 </form>
 </body>

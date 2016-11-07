@@ -238,19 +238,19 @@ app.controller('ControllerValidacionHistoria', ['$scope', '$http', '$location', 
                 break;
             case '2':
 
-                window.location = '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarGineciObstetra.html';
+                window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarGinecoObstetra.html','_blank'); ;
                 break;
             case '3':
 
-                window.location = '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarInmunizacion.html';
+                window.open( '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarInmunizacion.html','_blank'); ;;
                 break;
             case '4':
 
-                window.location = '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificacionHabitosToxicos.html';
+                window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificacionHabitosToxicos.html','_blank'); ;;
                 break;
             case '5':
 
-                window.location = '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificacionExamenLaboratorio.html';
+                window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificacionExamenLaboratorio.html','_blank'); ;;
                 break;
            ;
 
