@@ -234,7 +234,7 @@ app.controller('ControllerValidacionHistoria', ['$scope', '$http', '$location', 
 
             case '1':
 
-                window.location = '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarAccidenteTrabajo.html';
+                window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarAccidenteTrabajo.html','_blank'); ;
                 break;
             case '2':
 

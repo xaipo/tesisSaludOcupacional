@@ -347,4 +347,10 @@ app.controller('ControllerModificarAccidentes', ['$scope', '$http', '$location',
 
 
     }
+
+
+    $scope.volver=function(){
+
+        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/inicioModificar.html'
+    }
 } ]);
