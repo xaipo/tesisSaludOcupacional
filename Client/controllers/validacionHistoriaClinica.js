@@ -181,7 +181,7 @@ app.controller('ControllerValidacionHistoria', ['$scope', '$http', '$location', 
                             // for (var i = 0; i < n; i++) {
 
                             console.log(response.data);
-                            $scope.historiaClinica = response.data;
+                            $scope.historiaClinica = response.data[0];
                             window.localStorage.setItem("pe", JSON.stringify($scope.pacienteEncontrado));
                             window.localStorage.setItem("hm", JSON.stringify($scope.historiaClinica));
                             // console.log($scope.tipoCie10);

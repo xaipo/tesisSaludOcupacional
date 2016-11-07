@@ -43,7 +43,7 @@ app.controller('ControllerModificarAccidentes', ['$scope', '$http', '$location',
                         var aux=response.data[i]
                         aux.nombre_empresa={'nombre_empresa':aux.nombre_empresa};
                         $scope.listaAccidentesTrabajo.push(aux);
-                        // console.log($scope.tipoCie10);
+                         console.log($scope.listaAccidentesTrabajo);
 
                     }
                     //$scope.cie10Selected=response.data[0];
@@ -132,6 +132,9 @@ app.controller('ControllerModificarAccidentes', ['$scope', '$http', '$location',
         $scope.accidentesTrabajo.codigo=$scope.contador;
         $scope.contador++;
 
+        //$scope.mensaje = "Para ingresar debe llenar el nombre de la empresa";
+
+        //
         $http({
             method: 'POST',
             url: myProvider.getAccidentesTrabajo(),
@@ -150,48 +153,51 @@ app.controller('ControllerModificarAccidentes', ['$scope', '$http', '$location',
 
 
         }).then(function successCallback(response) {
-            //console.log(response.data);
-          //  $scope.listaAccidentesTrabajo.push($scope.accidentesTrabajo);
+            console.log(response.data);
             $scope.historiaClinica.accidentesTrabajo.push(response.data._id);
+            var aux2=response.data;
+            aux2.nombre_empresa={"nombre_empresa":aux2.nombre_empresa};
+            $scope.listaAccidentesTrabajo.push(aux2);
+
+            console.log( $scope.historiaClinica.accidentesTrabajo);
+            window.localStorage.setItem("hm", JSON.stringify( $scope.historiaClinica));
+
+            $http({
+                method: 'PUT',
+                url: myProvider.getHistoriaClinica() + '/' + $scope.historiaClinica._id,
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                data: {
+                    accidentesTrabajo:  $scope.historiaClinica.accidentesTrabajo
+
+                }
 
 
-                $http({
-                    method: 'PUT',
-                    url: myProvider.getHistoriaClinica() + '/' + $scope.historiaClinica._id,
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    data: {
-                        accidentesTrabajo:  $scope.historiaClinica.accidentesTrabajo
+            }).then(function successCallback(response) {
 
-                    }
+                console.log(response.data);
+               // window.localStorage.setItem("hm", JSON.stringify(response.data));
+                // alert('seleccione que desea agregar a la historia clinica');
+                //localStorage.removeItem('hci');
+                //localStorage.removeItem('hC');
+                //window.location = '/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
 
 
-                }).then(function successCallback(response) {
+            }, function errorCallback(response) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+                // console.log(response);
+                //$scope.mesaje = response.mensaje;
 
-                    console.log(response.data);
-                    window.localStorage.setItem("hm", JSON.stringify(response.data));
-                    // alert('seleccione que desea agregar a la historia clinica');
-                    //localStorage.removeItem('hci');
-                    //localStorage.removeItem('hC');
-                    //window.location = '/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
-
-
-                }, function errorCallback(response) {
-                    // called asynchronously if an error occurs
-                    // or server returns response with an error status.
-                    // console.log(response);
-                    //$scope.mesaje = response.mensaje;
-
-                });
+            });
 
 
 
 
 
 
-            window.localStorage.setItem("hci", JSON.stringify($scope.historiaClinicaIngreso));
-            // console.log($scope.historiaClinicaIngreso.accidentesTrabajo);
+
 
 
 
@@ -204,22 +210,7 @@ app.controller('ControllerModificarAccidentes', ['$scope', '$http', '$location',
             //$scope.mesaje = response.mensaje;
 
         });
-
-        //$scope.mensaje = "Para ingresar debe llenar el nombre de la empresa";
-
-        //  }
-
-
-
-
-
-
-
-
-
-
-
-        console.log($scope.listaAccidentesTrabajo);
+       // console.log($scope.listaAccidentesTrabajo);
         //$scope.mapAccidentesTrabajo.set($scope.accidentesTrabajo.codigo,$scope.accidentesTrabajo);
         // console.log($scope.mapAccidentesTrabajo.entries());
         $scope.accidentesTrabajo={
