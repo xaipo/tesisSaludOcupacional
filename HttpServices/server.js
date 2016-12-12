@@ -97,6 +97,7 @@ app.use('/api',require('./Routes/apiReportes'));
 app.use('/api',require('./Routes/apiDetalleFactorRiesgo'));
 app.use('/api',require('./Routes/apiAusentismoCompleto'));
 app.use('/api',require('./Routes/apiMedico'));
+app.use('/api',require('./Routes/apiMorbilidad'));
 
 // </editor-fold >
 

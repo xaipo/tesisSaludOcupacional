@@ -28,7 +28,7 @@
 
     <script src="/tesisSaludOcupacional/Client/controllers/CargasController.js"></script>
     <script src="/tesisSaludOcupacional/Client/controllers/EmpresaController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/ControllerAusentismo.js"></script>
+    <script src="/tesisSaludOcupacional/Client/controllers/ControllerMorbilidad.js"></script>
 
     <script src="/tesisSaludOcupacional/Client/controllers/LoginController.js"></script>
     <script src="/tesisSaludOcupacional/Client/angular-1.4.6/angular-local-storage.min.js"></script>
@@ -137,7 +137,7 @@
                             <li class="dropdown">
                                 <a  class="dropdown-toggle" data-toggle="dropdown" role="button">Evoluciones <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Morbilidad/IngresoMorbilidad.html">Ingreso Evoluciones</a> </li>
+                                    <li ><a href="/tesisSaludOcupacional/Client/Administrator/Ausentismo/ingresoAusentismo.html">Ingreso Ausentismo</a> </li>
 
                                 </ul>
                             </li>
@@ -167,11 +167,11 @@
     </nav>
 </header>
 
-<form class="form" role="form" ng-controller="ControllerAusentismo" ng-init="getHistoria()">
+<form class="form" role="form" ng-controller="ControllerMorbilidad" ng-init="getHistoria()">
     <div class="panel panel-primary">
         <div class="panel-heading">
 
-            <h3 class="  text-center panel-title">Ausentismo </h3>
+            <h3 class="  text-center panel-title">Evoluciones </h3>
 
 
         </div>
@@ -179,139 +179,175 @@
             <div class="row">
 
 
-
                 <div class="col-md-3 col-xs-12">
                     <br>
-                    <laberl>Primer Nombre</laberl>
-                    <input type="text" placeholder="Apellidos" class="form-control" ng-model="paciente.primer_nombre"><br>
-                    <label>Departamento:</label>
-
-                    <select name="cie10tipo"  class="form-control"   ng-model="selectedDependencia"  single  ng-click="changePuesto()">
-                        <option id="valor12" value={{empresaAux1}}
-                                ng-repeat="empresaAux1 in listaDependencias" >
-                            {{empresaAux1.nombre_dependencia}}
-                        </option>
-                    </select>
-
+                    <label> Ingrese la Cedula del Paciente: </label><br><br>
+                    <input name="Paciente" ng-model="cedula" class="form-control"/><br>
+                    <input class="btn btn-default" type="submit" ng-click="searchUser()"
+                           value="Buscar Paciente"/><br>
+                    <br>
                 </div>
 
                 <div class="col-md-3 col-xs-12">
-                <br>
-                <laberl>Segundo Nombre</laberl>
-                <input type="text" placeholder="Nombres" class="form-control" ng-model="paciente.segundo_nombre"><br>
+                    <br>
+                    <label> Datos Paciente </label><br>
+                    <label> Primer Nombre: {{pacienteEncontrado.primer_nombre}} </label><br>
+                    <label> Segundo Nombre: {{pacienteEncontrado.segundo_nombre}} </label><br>
+                    <label> Primer Apellido: {{pacienteEncontrado.primer_apellido}} </label><br>
+                    <label> Segundo Apellido: {{pacienteEncontrado.segundo_apellido}} </label><br>
+                    <label> Edad: {{pacienteEncontrado.edad}} </label><br>
 
 
-                    <label>Puesto:</label>
-                    <select name="cie10tipo"  class="form-control"   ng-model="paciente.cargo"  single>
-                        <option id="valor13" value={{empresaAux1}}
-                                ng-repeat="empresaAux1 in listaCargo" >
-                            {{empresaAux1.nombre_cargo}}
-                        </option>
-                    </select>
+                </div>
+
+                <div class="col-md-6 col-xs-12">
+                    <br>
+                    <label>Motivo Consulta</label>
+                    <input type="text" class="form-control" placeholder="Motivo Consulta" >
+
+                </div>
+
+                <div class="col-md-6 col-xs-12">
+                    <br>
+                    <label>Enfermedad Actual</label>
+                    <input type="text" class="form-control" placeholder="Enferemedad Actual">
+                </div>
+
+
             </div>
+            <div class="row">
                 <div class="col-md-3 col-xs-12">
                     <br>
-                    <laberl>Primer Apellido</laberl>
-                    <input type="text" placeholder="Nombres" class="form-control" ng-model="paciente.primer_apellido"><br>
-                    <laberl>Edad</laberl>
-                    <input type="number" placeholder="1" class="form-control" ng-model="paciente.edad" min="1">
+                    <label>Tension Arterial Diastolica:</label>
+                    <input type="number" class="form-control" placeholder="1" ng-model="examen_fisico.tension_arterial_numerador">
+                    <label>Talla:</label>
+                    <input type="number" class="form-control" placeholder="1" ng-model="examen_fisico.talla">
+
 
                 </div>
                 <div class="col-md-3 col-xs-12">
                     <br>
-                    <laberl>Segundo Apellido</laberl>
-                    <input type="text" placeholder="Nombres" class="form-control" ng-model="paciente.segundo_apellido">
+                    <label>Tension Arterial Sistolica:</label>
+                    <input type="number" class="form-control" placeholder="1" ng-model="examen_fisico.tension_arterial_denominador">
+                    <label>Peso:</label>
+                    <input type="number" class="form-control" placeholder="1" ng-model="examen_fisico.peso">
+
+
+                </div>
+                <div class="col-md-3 col-xs-12">
                     <br>
+                    <label>Frecuencia Respiratoria Por Minuto:</label>
+                    <input type="number" class="form-control" placeholder="1" ng-model="examen_fisico.frecuencia_cardiaca">
+                    <label>Indice Masa Corporal:</label>
+                    <input type="number" class="form-control" placeholder="1" ng-model="examen_fisico.indice_masa_corporal">
+
+
+                </div>
+                <div class="col-md-3 col-xs-12">
                     <br>
-                    <input type="submit" value="Ingresar" class=" submit form-control" ng-click="ingresarPaciente()">
+                    <label>Lateralidad Cerebral:</label>
+                    <select class="form-control" name="singleSelect" ng-model="selectLateralidadCerebral" ng-click="changeLateralidad()">
+                        <option value="D">Dieztro </option>
+                        <option value="Z">Zurdo </option>
+                        <option value="A">Ambidiestro </option>
+                    </select>
+                    <label>Interpretacion IMC:</label>
+                    <select name="Alimentos" ng-model="examen_fisico.interpretacion_imc" class="form-control" simple  >
+                        <option value={{al}}
+                                ng-repeat="al in listaImc | filter:search1| orderBy:al.descripcion_interpretacion_IMC">
+                            {{al.descripcion_interpretacion_IMC}}
+                        </option>
+                    </select><br><br>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+
+
+
+                <div class="col-md-4 col-xs-11" >
+                    <br>
+                    <label > Patología </label><br>
+                    <input type="text" class="form-control" placeholder="Patología" min="1" ng-model="antescedetnes_personales.enfermedad"/>
+
+
                 </div>
 
 
+
+                <div class="col-md-4 col-xs-11" >
+                    <br>
+                    <label > Tipo Antescedente Personal </label><br>
+                    <select name="cie10tipo"  class="form-control"   ng-model="antescedetnes_personales.tipo">
+                        <option id="valor4" value={{empresaAux1}}
+                                ng-repeat="empresaAux1 in tipo" >
+                            {{empresaAux1.descripcion_tipo_presonales}}
+                        </option>
+                    </select>
+
+                </div>
+
+                <div class="col-md-4 col-xs-11" >
+                    <br>
+                    <label > Observacion </label><br>
+                    <input type="text" class="form-control" placeholder="Observacion" min="1" ng-model="antescedetnes_personales.observacion"/>
+                </div>
+
+                <div class="col-md-6 col-xs-11" >
+                    <br>
+                    <input  type="submit" class="btn btn-submit" value="Agregar" ng-click="agregarP1()">
+
+                </div>
+
+                <div class="col-md-6 col-xs-11" >
+
+                    <br>
+
+                    <input class="btn btn-warning" type="submit" ng-click="quitar1()"
+                           value="Quitar"/><br><br>
+                </div>
+
+            </div>
+
+
+            <div class="row">
                 <div class="col-md-12 col-xs-12">
                     <br>
-                    <label > Pacientes: </label><br>
-                    Búsqueda <input type="text" ng-model="search" class="form-control" placeholder="Busqueda"><br>
-                    <select name="TipoCie" ng-model="ausentismo.paciente" class="form-control" multiple
-                            style="height: 150px;" >
-                        <option value={{aux}}
-                                ng-repeat="aux in listaPacientes | filter:search">
-                            {{aux.primer_apellido}}
-                        </option>
-                    </select><br>
-                </div>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Patologia</th>
+                            <th>Parentezco</th>
+                            <th>Observacion</th>
 
+
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in listaAntescedentesPersonales | filter:search2| orderBy:item.sintoma" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow1($index,item)" >
+                            <td>{{$index}}</td>
+                            <td>{{ item.tipo.descripcion_tipo_presonales }}</td>
+                            <td>{{ item.enfermedad }}</td>
+                            <td>{{ item.observacion }}</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
 
             </div>
 
             <div class="row">
-
-
-                <div class="col-md-3 col-xs-12">
-
-                    <br>
-                    <label>Desde:</label>
-                    <input type="number" placeholder="1" max="31" class="form-control" min="1" max="31" ng-model="ausentismo.desde"><br>
-                    <label>Horas:</label>
-                    <input type="number" placeholder="1" class="form-control" min="0" ng-model="ausentismo.horas">
-
-                </div>
-
-                <div class="col-md-3 col-xs-12">
-                    <br>
-                    <label>Hasta:</label>
-                    <input type="number" placeholder="1" max="31" class="form-control" min="0" max="31" ng-model="ausentismo.hasta"><br>
-                    <label>Minutos:</label>
-
-                    <input type="number" placeholder="1" class="form-control" max="59" min="0" ng-model="ausentismo.minutos">
-
-                </div>
-                <div class="col-md-3 col-xs-12">
-                    <br>
-                    <label>Mes:</label>
-                    <select class="form-control" name="singleSelect" ng-model="ausentismo.mes" >
-                        <option value="Enero">Enero </option>
-                        <option value="Febrero">Febreo </option>
-                        <option value="Marzo">Marzo </option>
-                        <option value="Abril">Abril </option>
-                        <option value="Mayo">Mayo </option>
-                        <option value="Junio">Junio </option>
-                        <option value="Julio">Julio </option>
-                        <option value="Agosto">Agosto </option>
-                        <option value="Septiembre">Septiembre </option>
-                        <option value="Octubre">Octubre </option>
-                        <option value="Noviembre">Noviembre </option>
-                        <option value="Diciembre">Diciembre </option>
-                    </select><br>
-                    <label>Dias:</label>
-                    <input type="number" placeholder="1" class="form-control" min="0" ng-model="ausentismo.dias">
-
-                </div>
-
-
-                <div class="col-md-3 col-xs-12">
-                    <br>
-                    <label>Regimen:</label>
-                    <select class="form-control" name="singleSelec1"  ng-model="ausentismo.regimen">
-                        <option value="LOSEP">LOSEP </option>
-                        <option value="COD.TRABAJO">COD.TRABAJO </option>
-                        <option value="LOES">LOES </option>
-
-                    </select><br>
-                    <label>laboral/NoLaboral:</label>
-                    <select class="form-control" name="singleSelect" ng-model="ausentismo.laboral_nolaboral">
-                        <option value="L">Laboral </option>
-                        <option value="NL">No Laboral </option>
-
-                    </select><br>
-                </div>
-
-        </div><!--div fin contaniner-->
-            <div class="row">
-
                 <div class="col-md-12 col-xs-12" >
                     <br>
 
 
+                    <label> IMPRESION DIAGNOSTICA </label><br>
                     <label> Tipo Cie 10: </label>
 
                     <select name="cie10tipo"  class="form-control"   ng-model="cie10Selected" ng-click="busquedaCie10Tipo()">
@@ -385,47 +421,26 @@
                 </div>
 
 
-                <div class="col-md-4 col-xs-12" >
+
+                <div class="col-md-12 col-xs-12" >
                     <br>
-
-
-                    <label> Especialista: </label>
-                    <select name="cie10tipo"  class="form-control"    single ng-model="ausentismo.medico">
-                        <option id="valor3" value={{empresaAux1}}
-                                ng-repeat="empresaAux1 in medicos" >
-                            {{empresaAux1.nombre_medico}}
-                        </option>s
-                    </select>
-
+                    <br>
+                <input type="submit" class="btn btn-submit" value="Ingresar">
                 </div>
-                <div class="col-md-4 col-xs-12" >
-                    <br>
-                    <label>Institucion:</label>
-                    <select class="form-control" name="singleSelect"  ng-model="ausentismo.tipo_certificado">
-                        <option value="UNACH">UNACH </option>
-                        <option value="IESS">IESS </option>
-                        <option value="OTROS">OTROS </option>
-
-                    </select><br>
-
                 </div>
-                <div class="col-md-4 col-xs-12" >
-                    <br>
 
 
-                    <label> Observaciones: </label>
-                <textarea class="form-control"  ng-model="ausentismo.observaciones">
 
-                </textarea>
 
-                </div>
-                <div class="col-md-3 col-xs-12" >
-                    <input type="submit" class="form-control" value="Guardar" ng-click="ingresarAusentismo()">
-                    <br>
-                    <br>
-                    </div>
+
+
+
+
+
+        </div><!--div fin contaniner-->
             </div><!--div fin contaniner-->
-    </div><!--div fin contaniner-->
+
+        </div><!--div fin contaniner-->
     </div><!--div fin contaniner-->
 </form>
 

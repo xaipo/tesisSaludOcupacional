@@ -278,7 +278,7 @@ app.controller('HistoriaClinicaFourth', ['$scope', '$http', '$location','myProvi
 
         $scope.historiaClinica.enfermedades_actuales_historicas=$scope.listaCie10Selecionada;
         window.localStorage.setItem("hC", JSON.stringify($scope.historiaClinica));
-        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/forth.html';
+        window.location ='/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/fiveth.html';
     }
 
     $scope.skipt3=function(){
