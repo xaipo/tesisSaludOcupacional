@@ -173,6 +173,9 @@ function ApiUrl(){
     this.getHistoriaClinica=function(){
         return 'http://localhost:3000/api/historiaClinica';
     }
+    this.getDate=function(){
+        return 'http://localhost:3000/api/getDate';
+    }
 }
 
 app.factory("myProvider",function(){

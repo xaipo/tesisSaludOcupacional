@@ -31,6 +31,22 @@ $scope.morbilidad={
     $scope.encontrada = "";
     $scope.cie10 = [];
     $scope.listaCie10Selecionada = [];
+    $scope.search1="";
+    $scope.search2="";
+
+$scope.now='';
+
+    $scope.morbilidad={
+
+        antescedentes_personales : '',
+        motivo_consulta: '',
+        enfermedad_actual: '',
+        examen_fisico: '',
+        diagnostico: '',
+        paciente: '',
+        fecha:''
+    }
+
     $scope.searchUser = function () {
         console.log(myProvider.getUser()+'?cedula='+$scope.cedula);
         $http({
@@ -103,6 +119,47 @@ $scope.morbilidad={
 
                 // console.log($scope.empresas);
             }
+            //  $scope.tipoActividadSeleccionada=$scope.empresas[0]._id;
+            //console.log($scope.empresaSeleccionada);
+            // console.log($scope.empresas);
+
+
+        }
+
+
+    }, function errorCallback(response) {
+        console.log('entra');
+        //  Console.log(response);
+        $scope.mesaje = response.mensaje;
+
+    });
+    $http({
+
+        method: 'GET',
+        url: myProvider.getDate(),
+
+        headers: {
+            'Content-Type': 'application/json'
+        }
+
+    }).then(function successCallback(response) {
+        //console.log('entra url');
+        //console.log(url);
+
+        var n = response.data.length;
+        // console.log(n);
+
+        if(n==0){
+
+            alert('no se encontro provincias');
+
+        }else {
+
+            console.log(response.data);
+                $scope.now=response.data;
+                  console.log($scope.now);
+                // ;
+
             //  $scope.tipoActividadSeleccionada=$scope.empresas[0]._id;
             //console.log($scope.empresaSeleccionada);
             // console.log($scope.empresas);
