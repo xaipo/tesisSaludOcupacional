@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia Clinica</title>
+    <title>Evoluciones</title>
     <!-----estilos -->
     <link rel="stylesheet" type="text/css" href="/tesisSaludOcupacional/Client/css/bootstrap.css" id="pagesheet"/>
     <link rel="stylesheet" type="text/css" href="/tesisSaludOcupacional/Client/css/OverrideComponents.css" id="pageshee1"/>
@@ -170,14 +170,14 @@
 
 <form class="form" role="form" ng-controller="ControllerMorbilidad" ng-init="getHistoria()">
     <div class="panel panel-primary">
-        <div class="panel-heading">
+        <div class="panel-heading hidden-print">
 
             <h3 class="  text-center panel-title">Evoluciones </h3>
 
 
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row hidden-print">
 
                 <h2> DATOS AFILIACIÓN </h2><br>
                 <div class="col-md-3 col-xs-12">
@@ -216,7 +216,7 @@
 
 
             </div>
-            <div class="row">
+            <div class="row hidden-print">
                 <h1>Signos Vitales</h1>
                 <div class="col-md-3 col-xs-12">
                     <br>
@@ -264,7 +264,7 @@
             </div>
 
 
-            <div class="row">
+            <div class="row hidden-print">
                 <h2> ANTESCEDENTES PERSONALES</h2><br>
                 <div class="col-md-4 col-xs-11" >
                     <br>
@@ -314,7 +314,7 @@
             </div>
 
 
-            <div class="row">
+            <div class="row hidden-print">
                 <div class="col-md-12 col-xs-12">
                     <br>
                     <table class="table table-hover">
@@ -343,12 +343,107 @@
                 </div>
 
             </div>
+            <div class="row hidden-print">
+                <h1>Exámenes</h1>
+                <div class="col-md-3 col-xs-12">
 
-            <div class="row">
-                <div class="col-md-12 col-xs-12" >
+                    <br>
+                    <label>Examen:</label>
+                    <select name="Alimentos" ng-model="examen.examen" class="form-control" simple ng-click="changeType()"  >
+                        <option value={{al}}
+                                ng-repeat="al in examenes">
+                            {{al.descripcion_examen_laboratorio}}
+                        </option>
+                    </select><br><br>
+
+
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <br>
+
+                    <label>Fecha:</label><br>
+                    <input class="datepicker" type="text" id="datepicker" name="date" /><br>
+                    <br><br>
+
+
+
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <br>
+                    <label>Normal/Anormal:</label>
+                    <select class="form-control" name="singleSelect" ng-model="examen.normal_anormal" ng-click="changeLateralidad()">
+                        <option value="normal">Normal </option>
+                        <option value="anormal">Anormal </option>
+
+                    </select>
+
+
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <br>
+                    <label>Observacion:</label>
+                    <input type="text" class="form-control" placeholder="Observacion" ng-model="examen.observacion">
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row hidden-print">
+
+
+                <div class="col-md-3 col-xs-12" >
+                    <br>
+                    <br>
+                    <input  type="submit" class="btn btn-submit" value="Agregar" ng-click="agregar()">
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <br>
                     <br>
 
 
+                    <input class="btn btn-warning" type="submit" ng-click="quitar()"
+                           value="Quitar"/><br><br>
+
+                </div>
+            </div>
+
+
+
+            <div class="row hidden-print">
+                <div class="col-md-12 col-xs-12">
+                    <br>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Examen</th>
+                            <th>Normal/Anormal</th>
+                            <th>Fecha</th>
+                            <th>Observacion</th>
+
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in listaExamenes " ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)" >
+                            <td>{{$index}}</td>
+                            <td>{{ item.examen.descripcion_examen_laboratorio }}</td>
+                            <td>{{ item.normal_anormal }}</td>
+                            <td>{{ item.fecha }}</td>
+                            <td>{{ item.observacion }}</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                </div>
+            <div class="row hidden-print">
+                <div class="col-md-12 col-xs-12" >
+                    <br>
                     <h2> IMPRESIÓN DIAGNÓSTICA </h2><br>
                     <label> Tipo Cie 10: </label>
                     Búsqueda <input type="text" ng-model="search1" class="form-control" placeholder="Busqueda"><br>
@@ -433,7 +528,7 @@
 
 
 
-            <div class="row" id="areaToPrint">
+            <div class="row" >
 
 
 
@@ -461,7 +556,7 @@
                     <h4>Prescripción:</h4><br><br>
                 </div>
                  </div>
-            <div class="row" id="areaToPrint2">
+            <div class="row" >
                 <div class="col-md-6 col-xs-6"  >
                     <textarea class="form-control" rows="20"></textarea>
 
@@ -472,7 +567,7 @@
                 </div>
 
            </div>
-            <div class="row">
+            <div class="row hidden-print">
             <div class="col-md-6 col-xs-12" >
                 <br>
                 <br>
@@ -495,19 +590,15 @@
         </div><!--div fin contaniner-->
     </div><!--div fin contaniner-->
 </form>
-<footer class="footer">
+<footer class="footer hidden-print">
     <center><span style="color: #ececf0"> <p>TODOS LOS DERECHOS RESERVADOS 2016</p></span></center>
 </footer>
 <script>
+
     function printDiv() {
         var divToPrint = document.getElementById('areaToPrint');
-        var divToPrint2 = document.getElementById('areaToPrint2');
-        newWin = window.open("");
-        newWin.document.write(' <link rel="stylesheet" type="text/css" href="/tesisSaludOcupacional/Client/css/bootstrap.css" id="pagesheet"/>');
-        newWin.document.write(divToPrint.outerHTML);
-        newWin.document.write(divToPrint2.outerHTML);
-        newWin.print();
-        newWin.close();
+
+        window.print();
     }
 </script>
 
