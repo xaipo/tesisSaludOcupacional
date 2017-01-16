@@ -48,7 +48,7 @@ app.controller('LoginController', ['$scope', '$http', '$location','myProvider','
                         break;
                     case 2:
                         window.localStorage.setItem("usuario", JSON.stringify($scope.usuario1));
-                        window.location ='/tesisSaludOcupacional/Client/Integracion/indexIntegracion.html';
+                        window.location ='/tesisSaludOcupacional/Client/SysAdmin/indexAdmin.html';
                         break;
                     case 3:
                         window.localStorage.setItem("usuario", JSON.stringify($scope.usuario1));

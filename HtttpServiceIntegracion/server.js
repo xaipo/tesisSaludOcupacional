@@ -3,10 +3,11 @@
  */
 // <editor-fold defaultstate="collapsed" desc="Dependencias">
 var express = require('express');
-var mongoose=  require('mongoose');
+//var mongoose=  require('mongoose');
 var bodyParser= require('body-parser');
 var cors = require('cors');
 var MongoClient = require('mongodb').MongoClient;
+var assert = require('assert');
 // </editor-fold>
 
 // <editor-fold defaultstate="collapsed" desc="MongoDb">
@@ -17,7 +18,6 @@ var MongoClient = require('mongodb').MongoClient;
 //mongoose.connect('mongodb://40.83.182.235/saludOcupacional', function(error){
 
 // </editor-fold>
-
 
 
 

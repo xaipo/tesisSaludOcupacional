@@ -28,7 +28,7 @@
 
     <script src="/tesisSaludOcupacional/Client/controllers/CargasController.js"></script>
     <script src="/tesisSaludOcupacional/Client/controllers/EmpresaController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/HistoriaClinicaThird.js"></script>
+    <script src="/tesisSaludOcupacional/Client/controllers/ControllerAusentismo.js"></script>
 
     <script src="/tesisSaludOcupacional/Client/controllers/LoginController.js"></script>
     <script src="/tesisSaludOcupacional/Client/angular-1.4.6/angular-local-storage.min.js"></script>
@@ -148,7 +148,6 @@
 
                                 </ul>
                             </li>
-
                             <li class="dropdown">
                                 <a  class="dropdown-toggle" data-toggle="dropdown" role="button"> Configuracion API <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
@@ -156,6 +155,7 @@
 
                                 </ul>
                             </li>
+
                             <li class="dropdown">
                                 <a  class="dropdown-toggle" data-toggle="dropdown" role="button"> {{usuarioLog.nombre_usuario}} <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
@@ -173,134 +173,42 @@
     </nav>
 </header>
 
-<form class="form" role="form" ng-controller="HistoriaClinicaThird" ng-init="getHistoria()">
+<form class="form" role="form" ng-controller="ControllerAusentismo" ng-init="getHistoria()">
     <div class="panel panel-primary">
         <div class="panel-heading">
 
-            <h3 class="  text-center panel-title">Historia Clínica </h3>
-            <h5 class=" text-center panel-title">Accidentes de trabajo en la empresa actual o anteriores </h5>
+            <h3 class="  text-center panel-title">Usuarios y Permisos </h3>
+
 
         </div>
         <div class="container">
-
             <div class="row">
 
-                <div class="col-md-4 col-xs-12" >
-                    <br>
-                    <label > Fecha Ocurrencia </label><br>
-                    <input class="datepicker" type="text" id="datepicker" name="date" /><br>
-                    <label> Parte del cuerpo afectada: </label>
-                    <input type="text" class="form-control" placeholder="Parte Afectada" ng-model="accidentesTrabajo.parte_cuerpo_afectada" />
-                </div>
-                <div class="col-md-4 col-xs-12" >
-                    <br>
-                    <label> Empresa: </label>
-
-                    <select name="Provimcia"  class="form-control"  ng-model="accidentesTrabajo.nombre_empresa"   >
-                        <option id="valor1" value={{empresaAux1}}
-                                ng-repeat="empresaAux1 in empresas">
-                            {{empresaAux1.nombre_empresa}}
-                        </option>
-                    </select>
-                    <label > Dias:</label>
-                    <input type="number" class="form-control" placeholder="1" min="1" ng-model="accidentesTrabajo.dias_incapacidad"/>
-                </div>
-                <div class="col-md-4 col-xs-12" >
-                    <br>
-                    <label> Naturaleza Lesion: </label>
-                    <input type="text" class="form-control" placeholder="Naturaleza Lesion" ng-model="accidentesTrabajo.naturaleza_lesion"/>
-                    <label> Secuelas: </label>
-                    <input type="text" class="form-control" placeholder="Secuelas" ng-model="accidentesTrabajo.secuelas"/>
-                </div>
-
-
-
-            </div>
-
-
-
-            <div class="row">
-                <div class="col-md-3 col-xs-12">
-                    <br>
-
-                    <input class="btn btn-info" type="submit" ng-click="agregar()"
-                           value="Agregar"/><br><br>
-
-                </div>
-                <div class="col-md-3 col-xs-12">
-                    <br>
-
-                    <input class="btn btn-warning" type="submit" ng-click="quitar()"
-                           value="Quitar"/><br><br>
-
-                </div>
-
-
-
-            </div>
-
-
-
-            <div class="row">
-                <div class="col-md-12 col-xs-12">
-                    <br>
-                    <table class="table table-hover">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Fecha Ocurrencia</th>
-                            <th>Empresa donde fue el Accidente</th>
-                            <th>Naturaleza de la lesión</th>
-                            <th>Parte del cuerpo afectada</th>
-                            <th>Días</th>
-                            <th>Secuelas</th>
-
-
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr ng-repeat="item in listaAccidentesTrabajo | filter:search2| orderBy:item.sintoma" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)" >
-                            <td>{{$index}}</td>
-                            <td>{{ item.fecha_ocurrencia }}</td>
-                            <td>{{ item.nombre_empresa.nombre_empresa }}</td>
-                            <td>{{ item.naturaleza_lesion }}</td>
-                            <td>{{ item.parte_cuerpo_afectada }}</td>
-                            <td>{{ item.dias_incapacidad }}</td>
-                            <td>{{ item.secuelas }}</td>
-
-                        </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <div class="row">
 
 
                 <div class="col-md-3 col-xs-12">
-                    <br>
 
-                    <input class="btn btn-info" type="submit" ng-click="saveThird()"
-                           value="Siguiente"/><br><br>
 
                 </div>
+
+                <div class="col-md-3 col-xs-12">
+
+                </div>
+                <div class="col-md-3 col-xs-12">
+
+
+                </div>
+                <div class="col-md-3 col-xs-12">
+
+                </div>
+
+
+
 
 
             </div>
         </div>
-    </div>
     </div><!--div fin contaniner-->
-
 </form>
 
 </body>
