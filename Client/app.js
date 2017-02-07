@@ -176,6 +176,9 @@ function ApiUrl(){
     this.getDate=function(){
         return 'http://localhost:3000/api/getDate';
     }
+    this.getToken=function(){
+        return 'http://localhost:3001/token';
+    }
 }
 
 app.factory("myProvider",function(){

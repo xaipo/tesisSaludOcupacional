@@ -15,6 +15,7 @@ var categoriaSchema = new mongoose.Schema({
     horas:Number,
     minutos:Number,
     laboral_nolaboral:String,
+
     diagnostico:Array,
     medico: mongoose.Schema.ObjectId,
     tipo_certificado:String,

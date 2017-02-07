@@ -28,7 +28,7 @@
 
     <script src="/tesisSaludOcupacional/Client/controllers/CargasController.js"></script>
     <script src="/tesisSaludOcupacional/Client/controllers/EmpresaController.js"></script>
-    <script src="/tesisSaludOcupacional/Client/controllers/ControllerAusentismo.js"></script>
+    <script src="/tesisSaludOcupacional/Client/controllers/ControllerCreacionGenerica.js"></script>
 
     <script src="/tesisSaludOcupacional/Client/controllers/LoginController.js"></script>
     <script src="/tesisSaludOcupacional/Client/angular-1.4.6/angular-local-storage.min.js"></script>
@@ -173,7 +173,7 @@
     </nav>
 </header>
 
-<form class="form" role="form" ng-controller="ControllerAusentismo" ng-init="getHistoria()">
+<form class="form" role="form" ng-controller="ControllerCreacionGenerica" ng-init="getHistoria()">
     <div class="panel panel-primary">
         <div class="panel-heading">
 
@@ -187,22 +187,91 @@
 
 
                 <div class="col-md-3 col-xs-12">
-
+                    <br>
+                    <br>
+                    <label >Nombre Tabla:</label>
+                    <input type="text" class="form-control" ng-model="tabla.nombre" >
 
                 </div>
 
                 <div class="col-md-3 col-xs-12">
+                    <br>
+                    <br>
+                    <label >Campo:</label>
+                    <input type="text" class="form-control" ng-model="campo.nombre">
 
                 </div>
                 <div class="col-md-3 col-xs-12">
+                    <br>
+                    <br>
+                    <label >Tipo Dato:</label>
+                    <select  class="form-control" ng-model="campo.tipo_dato">
+                        <option value="Numeric"> Numeric</option>
+                        <option value="Boolean"> Boolean</option>
+                        <option value="Array"> Array</option>
+                        <option value="String"> String</option>
+                        <option value="Document"> Document</option>
+                        <option value="Date"> Date</option>
 
+                    </select>
 
                 </div>
                 <div class="col-md-3 col-xs-12">
+                    <br>
+                    <br>
+                    <input type="submit" class="form-control" value="Agregar" ng-click="agregar()">  <br>
+                    <input type="submit" class="form-control" value="Quitar" ng-click="quitar()">
+
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <br>
+                    <br>
+                    <label>Generador Token Acceso</label>
+                    <input type="submit" class="form-control" value="Generar" ng-click="generar()">
+                </div>
+                <div class="col-md-9 col-xs-12">
+                    <br>
+                    <br>
+                    <label>Token</label>
+                    <textarea class="form-control" rows="4" readonly ng-model="tabla.token" ></textarea>
 
                 </div>
 
+                <div class="col-md-12 col-xs-12">
 
+                    <br>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Campo</th>
+                            <th>Tipo Dato</th>
+
+
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in tabla.campos | filter:search2| orderBy:item.sintoma" ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow($index,item)" >
+                            <td>{{$index}}</td>
+                            <td>{{ item.nombre }}</td>
+                            <td>{{ item.tipo_dato }}</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="col-md-12 col-xs-12">
+                        <br>
+                        <br>
+                        <input type="submit" class="  btn-lg btn-success" value="Generar" ng-click="ingresar()">
+                        <br>
+                        <br>
+                        <br>
+
+
+                    </div>
+                </div>
 
 
 

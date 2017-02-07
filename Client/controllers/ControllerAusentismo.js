@@ -16,6 +16,7 @@ app.controller('ControllerAusentismo', ['$scope', '$http', '$location', 'myProvi
 
 
     };
+    $scope.pacienteEncontrado ='';
     $scope.search;
     $scope.pacienteSelected = '';
     $scope.listaDependencias = [];
@@ -96,51 +97,48 @@ app.controller('ControllerAusentismo', ['$scope', '$http', '$location', 'myProvi
 
     });
 
-    $http({
+    $scope.searchUser = function () {
+        console.log(myProvider.getUser()+'?cedula='+$scope.cedula);
+        $http({
 
-        method: 'GET',
-        url: myProvider.getPaciente(),
+            method: 'GET',
+            url: myProvider.getPaciente()+'?cedula='+$scope.cedula,
 
-        headers: {
-            'Content-Type': 'application/json'
-        }
-
-    }).then(function successCallback(response) {
-        //console.log('entra url');
-        //console.log(url);
-
-        var n = response.data.length;
-        // console.log(n);
-
-        if (n == 0) {
-
-          //  alert('no se encontro provincias');
-
-        } else {
-            $scope.listaPacientes = [];
-
-            for (var i = 0; i < n; i++) {
-
-                $scope.aux = response.data[i];
-                $scope.aux.primer_apellido += ' ' + $scope.aux.segundo_apellido + ' ' + $scope.aux.primer_nombre + ' ' + $scope.aux.segundo_nombre
-                $scope.listaPacientes.push($scope.aux);
-
-                // console.log($scope.empresas);
+            headers: {
+                'Content-Type': 'application/json'
             }
-            //  $scope.tipoActividadSeleccionada=$scope.empresas[0]._id;
-            //console.log($scope.empresaSeleccionada);
-            console.log($scope.listaPacientes);
+
+        }).then(function successCallback(response) {
 
 
-        }
+            var n = response.data.length;
+            // console.log(n);
+
+            if (n == 0) {
+
+                alert('no se encontro el paciente');
+
+            } else {
+                //  $scope.tipoCie10=[];
+                // for (var i = 0; i < n; i++) {
 
 
-    }, function errorCallback(response) {
-        console.log('entra');
-        //  Console.log(response);
-        $scope.mesaje = response.mensaje;
+                $scope.pacienteEncontrado = response.data[0];
+                //  window.localStorage.setItem("pe", JSON.stringify($scope.pacienteEncontrado));
+                console.log($scope.pacienteEncontrado);
 
-    });
+
+            }
+        }, function errorCallback(response) {
+            console.log('entra');
+            //  Console.log(response);
+            $scope.mesaje = response.mensaje;
+
+        });
+
+
+        //  $scope.validateFirst();
+    }
 
     $scope.control1 = function () {
 
@@ -558,7 +556,7 @@ app.controller('ControllerAusentismo', ['$scope', '$http', '$location', 'myProvi
     $scope.control2 = function () {
 
         if ($scope.ausentismo.mes != '' && $scope.ausentismo.mes != undefined) {
-            if ($scope.ausentismo.paciente != '' && $scope.ausentismo.paciente != undefined) {
+            if ($scope.pacienteEncontrado != '' && $scope.pacienteEncontrado != undefined) {
 
                 if ($scope.ausentismo.desde != '' && $scope.ausentismo.hasta != undefined) {
 
@@ -631,7 +629,7 @@ app.controller('ControllerAusentismo', ['$scope', '$http', '$location', 'myProvi
         if($scope.control2()){
 
         $scope.ausentismo.medico=JSON.parse($scope.ausentismo.medico);
-        $scope.ausentismo.paciente=JSON.parse($scope.ausentismo.paciente);
+      //  $scope.ausentismo.paciente=JSON.parse($scope.ausentismo.paciente);
         console.log($scope.listaSelectedCie10[i]);
         var n= $scope.listaSelectedCie10.length;
             for(var i=0; i<n ;i++){
@@ -650,7 +648,7 @@ app.controller('ControllerAusentismo', ['$scope', '$http', '$location', 'myProvi
 
 
                     mes : $scope.ausentismo.mes,
-                    paciente:  $scope.ausentismo.paciente._id,
+                    paciente:  $scope.pacienteEncontrado._id,
                     desde:$scope.ausentismo.desde,
                     hasta: $scope.ausentismo.hasta,
                     dias:$scope.ausentismo.dias,

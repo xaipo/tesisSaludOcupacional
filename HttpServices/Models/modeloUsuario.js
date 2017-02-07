@@ -6,8 +6,9 @@ var categoriaSchema = new mongoose.Schema({
 
 	nombre_usuario : String,
 	contrasena: String,
-	tipo_usuario: Number
-	
+	tipo_usuario: Number,
+	nombre: String
+
 	
 });
 

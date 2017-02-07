@@ -42,6 +42,7 @@ app.controller('LoginController', ['$scope', '$http', '$location','myProvider','
                 //$localStorage.usr=$scope.usuario1;
                 switch(response.data[0].tipo_usuario) {
                     case 1:
+                        console.log($scope.usuario1);
                         window.localStorage.setItem("usuario", JSON.stringify($scope.usuario1));
                         window.location ='/tesisSaludOcupacional/Client/Administrator/indexAdmin.html';
 

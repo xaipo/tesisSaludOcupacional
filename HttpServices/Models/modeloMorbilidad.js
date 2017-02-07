@@ -10,9 +10,13 @@ var categoriaSchema = new mongoose.Schema({
     motivo_consulta: String,
     enfermedad_actual: String,
     examen_fisico: mongoose.Schema.ObjectId,
+    organos_sistemas:Array,
+    examenes:Array,
     diagnostico: Array,
     paciente: mongoose.Schema.ObjectId,
-    fecha:String
+    fecha:String,
+    receta:String,
+    indicaciones:String
 
 
 });

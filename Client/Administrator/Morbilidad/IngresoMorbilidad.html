@@ -210,14 +210,14 @@
                 <div class="col-md-6 col-xs-12">
                     <br>
                     <label>Motivo Consulta</label>
-                    <textarea type="text" class="form-control" placeholder="Motivo Consulta" cols="6" ></textarea>
+                    <textarea type="text" class="form-control" placeholder="Motivo Consulta" cols="6" ng-model="morbilidad.motivo_consulta" ></textarea>
 
                 </div>
 
                 <div class="col-md-6 col-xs-12">
                     <br>
                     <label>Enfermedad Actual</label>
-                    <textarea  class="form-control" placeholder="Enferemedad Actual" cols="6"></textarea>
+                    <textarea  class="form-control" placeholder="Enferemedad Actual" cols="6" ng-model="morbilidad.enfermedad_actual"></textarea>
                 </div>
 
 
@@ -269,6 +269,107 @@
                 </div>
             </div>
 
+
+
+            <div class="row hidden-print">
+            <h2>Organos/Sistemas</h2>
+            <div class="col-md-3 col-xs-12">
+
+                <label>Tipo de Organo o Sistema:</label>
+                <select name="Alimentos" ng-model="tipoSelected" class="form-control" simple ng-click="changeType()"  >
+                    <option value={{al}}
+                            ng-repeat="al in listaTipos">
+                        {{al.descripcion_tipo_organo}}
+                    </option>
+                </select><br><br>
+
+
+            </div>
+            <div class="col-md-3 col-xs-12">
+
+                <label>Sub Indicadores:</label>
+                <select name="Alimentos" ng-model="organo_sistema.organo" class="form-control" simple  >
+                    <option value={{al}}
+                            ng-repeat="al in listaIndicadores ">
+                        {{al.descripcion_organo}}
+                    </option>
+                </select><br><br>
+
+
+
+            </div>
+            <div class="col-md-3 col-xs-12">
+
+                <label>Normal/Anormal:</label>
+                <select class="form-control" name="singleSelect" ng-model="organo_sistema.normal_anormal" ng-click="changeLateralidad()">
+                    <option value="normal">Normal </option>
+                    <option value="anormal">Anormal </option>
+
+                </select>
+
+
+            </div>
+            <div class="col-md-3 col-xs-12">
+
+                <label>Observacion:</label>
+                <input type="text" class="form-control" placeholder="Observacion" ng-model="organo_sistema.observacion">
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row hidden-print">
+
+
+            <div class="col-md-3 col-xs-12" >
+                <br>
+                <br>
+                <input  type="submit" class="btn btn-submit" value="Agregar" ng-click="agregar12()">
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <br>
+                <br>
+
+
+                <input class="btn btn-warning" type="submit" ng-click="quitar12()"
+                       value="Quitar"/><br><br>
+
+            </div>
+        </div>
+
+
+
+        <div class="row hidden-print">
+            <div class="col-md-12 col-xs-12">
+                <br>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Organo</th>
+                        <th>Normal/Anormal</th>
+                        <th>Observacion</th>
+
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="item in listaOrganosSistemas " ng-class="{'selected':$index == selectedRow}" ng-click="setClickedRow12($index,item)" >
+                        <td>{{$index}}</td>
+                        <td>{{ item.organo.descripcion_organo }}</td>
+                        <td>{{ item.normal_anormal }}</td>
+                        <td>{{ item.observacion }}</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
 
             <div class="row hidden-print">
                 <h2> ANTESCEDENTES PERSONALES</h2><br>
@@ -446,7 +547,7 @@
                     </table>
 
                 </div>
-                </div>
+            </div>
             <div class="row hidden-print">
                 <div class="col-md-12 col-xs-12" >
                     <br>
@@ -564,11 +665,11 @@
                  </div>
             <div class="row" >
                 <div class="col-md-6 col-xs-6"  >
-                    <textarea class="form-control" rows="20"></textarea>
+                    <textarea class="form-control" rows="20" ng-model="morbilidad.receta"></textarea>
 
                 </div>
                 <div class="col-md-6 col-xs-6"  >
-                    <textarea class="form-control" rows="20"></textarea>
+                    <textarea class="form-control" rows="20"  ng-model="morbilidad.indicaciones"></textarea>
 
                 </div>
 
@@ -581,13 +682,21 @@
                 <br>
                 <br>
             </div>
+
             <div class="col-md-12 col-xs-12" >
                 <br>
                 <br>
-                <input type="submit" class="btn btn-submit" value="Ingresar">
+                <input type="submit" class="btn btn-submit" value="Certificado Convalidación" ng-click="redirect()">
                 <br>
                 <br>
             </div>
+                <div class="col-md-12 col-xs-12" >
+                    <br>
+                    <br>
+                    <input type="submit" class="btn btn-submit" value="Ingresar">
+                    <br>
+                    <br>
+                </div>
             </div>
 
 

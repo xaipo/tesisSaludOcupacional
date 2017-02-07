@@ -184,66 +184,26 @@
         <div class="container">
             <div class="row">
 
-
-
+                <h2> DATOS AFILIACIÓN </h2><br>
                 <div class="col-md-3 col-xs-12">
                     <br>
-                    <laberl>Primer Nombre</laberl>
-                    <input type="text" placeholder="Apellidos" class="form-control" ng-model="paciente.primer_nombre"><br>
-                    <label>Departamento:</label>
-
-                    <select name="cie10tipo"  class="form-control"   ng-model="selectedDependencia"  single  ng-click="changePuesto()">
-                        <option id="valor12" value={{empresaAux1}}
-                                ng-repeat="empresaAux1 in listaDependencias" >
-                            {{empresaAux1.nombre_dependencia}}
-                        </option>
-                    </select>
-
+                    <label> Ingrese la Cedula del Paciente: </label><br><br>
+                    <input name="Paciente" ng-model="cedula" class="form-control"/><br>
+                    <input class="btn btn-default" type="submit" ng-click="searchUser()"
+                           value="Buscar Paciente"/><br>
+                    <br>
                 </div>
 
                 <div class="col-md-3 col-xs-12">
-                <br>
-                <laberl>Segundo Nombre</laberl>
-                <input type="text" placeholder="Nombres" class="form-control" ng-model="paciente.segundo_nombre"><br>
+                    <br>
+                    <label> Datos Paciente </label><br>
+                    <label> Primer Nombre: {{pacienteEncontrado.primer_nombre}} </label><br>
+                    <label> Segundo Nombre: {{pacienteEncontrado.segundo_nombre}} </label><br>
+                    <label> Primer Apellido: {{pacienteEncontrado.primer_apellido}} </label><br>
+                    <label> Segundo Apellido: {{pacienteEncontrado.segundo_apellido}} </label><br>
+                    <label> Edad: {{pacienteEncontrado.edad}} </label><br>
 
 
-                    <label>Puesto:</label>
-                    <select name="cie10tipo"  class="form-control"   ng-model="paciente.cargo"  single>
-                        <option id="valor13" value={{empresaAux1}}
-                                ng-repeat="empresaAux1 in listaCargo" >
-                            {{empresaAux1.nombre_cargo}}
-                        </option>
-                    </select>
-            </div>
-                <div class="col-md-3 col-xs-12">
-                    <br>
-                    <laberl>Primer Apellido</laberl>
-                    <input type="text" placeholder="Nombres" class="form-control" ng-model="paciente.primer_apellido"><br>
-                    <laberl>Edad</laberl>
-                    <input type="number" placeholder="1" class="form-control" ng-model="paciente.edad" min="1">
-
-                </div>
-                <div class="col-md-3 col-xs-12">
-                    <br>
-                    <laberl>Segundo Apellido</laberl>
-                    <input type="text" placeholder="Nombres" class="form-control" ng-model="paciente.segundo_apellido">
-                    <br>
-                    <br>
-                    <input type="submit" value="Ingresar" class=" submit form-control" ng-click="ingresarPaciente()">
-                </div>
-
-
-                <div class="col-md-12 col-xs-12">
-                    <br>
-                    <label > Pacientes: </label><br>
-                    Búsqueda <input type="text" ng-model="search" class="form-control" placeholder="Busqueda"><br>
-                    <select name="TipoCie" ng-model="ausentismo.paciente" class="form-control" multiple
-                            style="height: 150px;" >
-                        <option value={{aux}}
-                                ng-repeat="aux in listaPacientes | filter:search">
-                            {{aux.primer_apellido}}
-                        </option>
-                    </select><br>
                 </div>
 
 

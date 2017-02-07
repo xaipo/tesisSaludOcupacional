@@ -47,6 +47,7 @@ $scope.morbilidad={
     $scope.contador=0;
     $scope.examenQuitar='';
 $scope.now='';
+$scope.certificado='';
 
     $scope.morbilidad={
 
@@ -54,9 +55,13 @@ $scope.now='';
         motivo_consulta: '',
         enfermedad_actual: '',
         examen_fisico: '',
+        organos_sistemas:[],
+        examenes:[],
         diagnostico: '',
         paciente: '',
-        fecha:''
+        fecha:'',
+        receta:'',
+        indicaciones:''
     }
 
     $scope.searchUser = function () {
@@ -88,7 +93,8 @@ $scope.now='';
                 $scope.pacienteEncontrado = response.data[0];
                 //  window.localStorage.setItem("pe", JSON.stringify($scope.pacienteEncontrado));
                 console.log($scope.pacienteEncontrado);
-
+                window.localStorage.setItem("peMor", JSON.stringify($scope.pacienteEncontrado));
+                window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarAccidenteTrabajo.html','_blank');
 
             }
         }, function errorCallback(response) {
@@ -656,4 +662,274 @@ $scope.now='';
         //  console.log($scope.contador);
     }
 
-} ]);
+
+    $scope.redirect=function(){
+        console.log('entra12');
+        $scope.aux=window.localStorage.getItem('usuario');
+        $scope.usuario=JSON.parse(window.localStorage.getItem('usuario'));
+        console.log($scope.pacienteEncontrado);
+        $scope.certificado={'now':$scope.now,
+            'nombre_usr':$scope.usuario.nombre,
+            'cedula':$scope.pacienteEncontrado.cedula,
+            'paciente':$scope.pacienteEncontrado,
+            'mmorbilidad':$scope.morbilidad.diagnostico
+    }
+        console.log($scope.certificado);
+       window.localStorage.setItem("cert", JSON.stringify($scope.certificado));
+       // window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarAccidenteTrabajo.html','_blank');
+
+    }
+
+
+
+    $scope.tipoSelected='';
+    $scope.listaTipos=[];
+    $scope.listaIndicadores=[];
+    $scope.listaOrganosSistemas=[];
+    $scope.organo_sistema={
+        codigo:'',
+        observacion:'',
+        organo:'',
+        normal_anormal:''
+    }
+    $scope.selectedQuitar;
+
+    $http({
+
+        method: 'GET',
+        url: myProvider.getTipoOrgano(),
+
+        headers: {
+            'Content-Type': 'application/json'
+        }
+
+    }).then(function successCallback(response) {
+        //console.log('entra url');
+        //console.log(url);
+
+        var n = response.data.length;
+        // console.log(n);
+
+        if(n==0){
+
+            alert('no se encontro provincias');
+
+        }else {
+            $scope.listaTipos=[];
+
+            for(var i=0;i<n;i++){
+
+                $scope.listaTipos.push(response.data[i]);
+
+                // console.log($scope.empresas);
+            }
+            //  $scope.tipoActividadSeleccionada=$scope.empresas[0]._id;
+            //console.log($scope.empresaSeleccionada);
+            // console.log($scope.empresas);
+
+
+        }
+
+
+    }, function errorCallback(response) {
+        console.log('entra');
+        //  Console.log(response);
+        $scope.mesaje = response.mensaje;
+
+    });
+
+
+
+    $scope.changeType=function(){
+
+
+        if($scope.tipoSelected!=''&&$scope.tipoSelected!=undefined){
+            //console.log($scope.tipoSelected);
+            $scope.tipoSelected=JSON.parse($scope.tipoSelected);
+            $http({
+
+                method: 'GET',
+                url: myProvider.getOrganos()+"?tipo_organo="+$scope.tipoSelected._id,
+
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+
+            }).then(function successCallback(response) {
+                //console.log('entra url');
+                //console.log(url);
+
+                var n = response.data.length;
+                // console.log(n);
+
+                if(n==0){
+
+                    alert('no se encontro provincias');
+
+                }else {
+                    $scope.listaIndicadores=[];
+
+                    for(var i=0;i<n;i++){
+
+                        $scope.listaIndicadores.push(response.data[i]);
+
+                        // console.log($scope.empresas);
+                    }
+                    //  $scope.tipoActividadSeleccionada=$scope.empresas[0]._id;
+                    //console.log($scope.empresaSeleccionada);
+                    // console.log($scope.empresas);
+
+
+                }
+
+
+            }, function errorCallback(response) {
+                console.log('entra');
+                //  Console.log(response);
+                $scope.mesaje = response.mensaje;
+
+            });
+
+
+        }
+
+
+
+    }
+
+    $scope.setClickedRow12 = function(index,item){  //function that sets the value of selectedRow to current index
+
+        console.log('entra');
+        $scope.selectedRow = index;
+        $scope.selectedQuitar=item;
+        // console.log(item);
+        // console.log($scope.accidentesTrabajoSelected);
+
+        /*console.log($scope.selectedRow);
+         console.log(item);*/
+    }
+
+
+
+    $scope.agregar12 = function(){
+
+        // $scope.inmunizacionAdd.fecha_inmunizacion=document.getElementById('datepicker').value;
+
+        //  console.log($scope.selectRevision);
+        $scope.organo_sistema.codigo=$scope.contador++;
+        $scope.organo_sistema.organo=JSON.parse($scope.organo_sistema.organo);
+        // $scope.selectRevision.codigo=$scope.contador++;
+
+        $scope.listaOrganosSistemas.push($scope.organo_sistema);
+        $scope.organo_sistema={
+            codigo:'',
+            observacion:'',
+            organo:'',
+            normal_anormal:''
+        }
+
+
+    }
+
+    $scope.quitar12= function (){
+        // console.log($scope.accidentesTrabajoSelected);
+        var n=  $scope.listaOrganosSistemas.length;
+        console.log(n);
+        var pos;
+        for(var i=0;i<n;i++ ){
+
+
+            if($scope.listaOrganosSistemas[i].codigo==$scope.selectedQuitar.codigo){
+                console.log('entra');
+
+                pos=i;
+                break;
+            }
+        }
+        console.log(pos);
+        $scope.listaOrganosSistemas.splice(pos,1);
+        //  console.log($scope.listaRiesgosOcupacionales);
+        //  console.log($scope.contador);
+    }
+
+
+
+$scope.ingresoMorbilidad=function(){
+
+  //  if($scope.control2()){
+
+        $scope.ausentismo.medico=JSON.parse($scope.ausentismo.medico);
+        //  $scope.ausentismo.paciente=JSON.parse($scope.ausentismo.paciente);
+        console.log($scope.listaSelectedCie10[i]);
+        var n= $scope.listaSelectedCie10.length;
+        for(var i=0; i<n ;i++){
+
+            $scope.ausentismo.diagnostico.push($scope.listaSelectedCie10[i]._id);
+        }
+
+
+        $http({
+            method: 'POST',
+            url: myProvider.getAusentismo(),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: {
+
+
+                mes : $scope.ausentismo.mes,
+                paciente:  $scope.pacienteEncontrado._id,
+                desde:$scope.ausentismo.desde,
+                hasta: $scope.ausentismo.hasta,
+                dias:$scope.ausentismo.dias,
+                horas:$scope.ausentismo.horas,
+                minutos:$scope.ausentismo.minutos,
+                laboral_nolaboral:$scope.ausentismo.laboral_nolaboral,
+                diagnostico:$scope.ausentismo.diagnostico,
+                medico: $scope.ausentismo.medico,
+                tipo_certificado:$scope.ausentismo.tipo_certificado,
+                observaciones:$scope.ausentismo.observaciones,
+                regimen:$scope.ausentismo.regimen,
+
+            }
+
+
+        }).then(function successCallback(response) {
+            alert('Ingresado Correctamente')
+            $scope.listaSelectedCie10=[];
+            $scope.ausentismo = {
+
+                mes: '',
+                paciente: '',
+                desde: '',
+                hasta: '',
+                dias: '',
+                horas: '',
+                minutos: '',
+                laboral_nolaboral: '',
+                diagnostico: [],
+                medico: '',
+                tipo_certificado: '',
+                observaciones: '',
+                regimen: ''
+            }
+        }, function errorCallback(response) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+            // console.log(response);
+            //$scope.mesaje = response.mensaje;
+            console.log('falla');
+        });
+
+
+  //  }else{
+        console.log($scope.ausentismo);
+        alert('Verifique que todos los datos esten ingresados')
+    }
+
+
+//}
+
+
+
+}]);
