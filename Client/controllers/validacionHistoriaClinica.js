@@ -227,34 +227,34 @@ app.controller('ControllerValidacionHistoria', ['$scope', '$http', '$location', 
 
         console.log('entra');
         console.log($scope.urlSeleccionada);
-        if($scope.urlSeleccionada!=''&& $scope.urlSeleccionada!=undefined){
+            if($scope.urlSeleccionada!=''&& $scope.urlSeleccionada!=undefined){
 
 
-        switch ($scope.urlSeleccionada){
+            switch ($scope.urlSeleccionada){
 
-            case '1':
+                case '1':
 
-                window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarAccidenteTrabajo.html','_blank'); ;
-                break;
-            case '2':
+                    window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarAccidenteTrabajo.html','_blank'); ;
+                    break;
+                case '2':
 
-                window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarGinecoObstetra.html','_blank'); ;
-                break;
-            case '3':
+                    window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarGinecoObstetra.html','_blank'); ;
+                    break;
+                case '3':
 
-                window.open( '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarInmunizacion.html','_blank'); ;;
-                break;
-            case '4':
+                    window.open( '/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificarInmunizacion.html','_blank'); ;;
+                    break;
+                case '4':
 
-                window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificacionHabitosToxicos.html','_blank'); ;;
-                break;
-            case '5':
+                    window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificacionHabitosToxicos.html','_blank'); ;;
+                    break;
+                case '5':
 
-                window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificacionExamenLaboratorio.html','_blank'); ;;
-                break;
-           ;
+                    window.open('/tesisSaludOcupacional/Client/Administrator/HistoriaClinica/modificar/modificacionExamenLaboratorio.html','_blank'); ;;
+                    break;
+               ;
 
-        }
+            }
         }
       //  $//scope.pacienteEncontrado = JSON.parse(window.localStorage.getItem('pe'));
      //   console.log($scope.pacienteEncontrado);

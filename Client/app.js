@@ -179,6 +179,9 @@ function ApiUrl(){
     this.getToken=function(){
         return 'http://localhost:3001/token';
     }
+    this.getCreacionGenerica=function(){
+        return 'http://localhost:3001/api/create';
+    }
 }
 
 app.factory("myProvider",function(){
