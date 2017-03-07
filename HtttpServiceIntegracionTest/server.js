@@ -39,6 +39,9 @@ app.get('/token', function (req, res) {
 
 
 app.use('/api',require('./Route/routeCreacionGenerica'));
+app.use('/api',require('./Route/routeIngresoGenerico'));
+//app.use('/api',require('./Route/routeConsultasGenericas'));
+app.use('/api',require('./Route/routeObtenerTabla'));
 
 
 // </editor-fold >

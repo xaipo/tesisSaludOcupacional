@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia Clinica</title>
+    <title>Acceso Genérico</title>
     <!-----estilos -->
     <link rel="stylesheet" type="text/css" href="/tesisSaludOcupacional/Client/css/bootstrap.css" id="pagesheet"/>
     <link rel="stylesheet" type="text/css" href="/tesisSaludOcupacional/Client/css/OverrideComponents.css" id="pageshee1"/>
@@ -177,23 +177,18 @@
     <div class="panel panel-primary">
         <div class="panel-heading">
 
-            <h3 class="  text-center panel-title">Usuarios y Permisos </h3>
+            <h3 class="  text-center panel-title">Acceso Genénrico </h3>
 
 
         </div>
         <div class="container">
             <div class="row">
-
-
-
                 <div class="col-md-3 col-xs-12">
                     <br>
                     <br>
                     <label >Nombre Tabla:</label>
-                    <input type="text" class="form-control" ng-model="tabla.nombre" >
-
+                    <input type="text" class="form-control" ng-model="tabla.nombre" ><br>
                 </div>
-
                 <div class="col-md-3 col-xs-12">
                     <br>
                     <br>
@@ -216,26 +211,53 @@
                     </select>
 
                 </div>
+
                 <div class="col-md-3 col-xs-12">
                     <br>
                     <br>
+                    <label >Obligatoriedad:</label>
+                    <select  class="form-control" ng-model="campo.obligatoriedad">
+                        <option value="N">Acepta Null</option>
+                        <option value="NN"> No Acepta Null</option>
+
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
                     <input type="submit" class="form-control" value="Agregar" ng-click="agregar()">  <br>
-                    <input type="submit" class="form-control" value="Quitar" ng-click="quitar()">
+                    <input type="submit" class="form-control" value="Quitar" ng-click="quitar()"><br>
+                </div>
 
-                </div>
-                <div class="col-md-3 col-xs-12">
-                    <br>
-                    <br>
-                    <label>Generador Token Acceso</label>
-                    <input type="submit" class="form-control" value="Generar" ng-click="generar()">
-                </div>
-                <div class="col-md-9 col-xs-12">
-                    <br>
-                    <br>
-                    <label>Token</label>
-                    <textarea class="form-control" rows="4" readonly ng-model="tabla.token" ></textarea>
+            </div>
 
-                </div>
+
+
+        <div class="row">
+
+
+
+            <div class="col-md-3 col-xs-12">
+                <br>
+                <br>
+                <br>
+                <br>
+                <label>Generador Token Acceso</label>
+                <input type="submit" class="form-control" value="Generar" ng-click="generar()">
+            </div>
+            <div class="col-md-9 col-xs-12">
+                <br>
+                <br>
+                <label>Token</label>
+                <textarea class="form-control" rows="4" readonly ng-model="tabla.token" ></textarea>
+
+            </div>
+        </div>
+
+
+            <div class="row">
 
                 <div class="col-md-12 col-xs-12">
 
@@ -246,6 +268,7 @@
                             <th>#</th>
                             <th>Campo</th>
                             <th>Tipo Dato</th>
+                            <th>Obligatoriedad</th>
 
 
 
@@ -256,27 +279,30 @@
                             <td>{{$index}}</td>
                             <td>{{ item.nombre }}</td>
                             <td>{{ item.tipo_dato }}</td>
+                            <td>{{ item.obligatoriedad }}</td>
 
                         </tr>
                         </tbody>
                     </table>
 
-                    <div class="col-md-12 col-xs-12">
-                        <br>
-                        <br>
-                        <input type="submit" class="  btn-lg btn-success" value="Generar" ng-click="ingresar()">
-                        <br>
-                        <br>
-                        <br>
+                </div>
+
+                <div class="col-md-12 col-xs-12">
+                    <br>
+                    <br>
+                    <input type="submit" class="  btn-lg btn-success" value="Generar" ng-click="ingresar()">
+                    <br>
+                    <br>
+                    <br>
 
 
-                    </div>
                 </div>
 
 
+                </div>
 
-            </div>
-        </div>
+     </div>
+
     </div><!--div fin contaniner-->
 </form>
 

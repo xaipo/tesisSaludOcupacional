@@ -954,6 +954,7 @@ $scope.pacienteEncontrado='';
                     $scope.paciente.fecha_nacimiento=$scope.pacienteEncontrado.fecha_nacimiento;
                     document.getElementById('datepicker1').value=$scope.paciente.fecha_nacimiento;
                     $scope.paciente.sexo=$scope.pacienteEncontrado.sexo;
+
                     $scope.paciente.ciudad=$scope.pacienteEncontrado.ciudad;
                     $scope.paciente.edad=$scope.pacienteEncontrado.edad;
                     $scope.paciente.estado_civil=$scope.pacienteEncontrado.estado_civil;

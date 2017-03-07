@@ -31,3 +31,10 @@ Productos.register(router,'/historiaClinica');
 
 //Return route
 module.exports=router;
+
+
+
+
+
+
+

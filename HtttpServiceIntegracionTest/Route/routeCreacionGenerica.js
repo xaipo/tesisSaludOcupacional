@@ -24,7 +24,8 @@ router.post('/create',function(req,res){
     }
     obj.campos.push({
             nombre:"historia_clinica",
-            tipo_dato:"ObjectId"
+            tipo_dato:"ObjectId",
+            obligatoriedad:"NN"
     })
     console.log(obj);
 
@@ -49,6 +50,7 @@ router.post('/create',function(req,res){
             // insertDocument(db, function() {
 
             db.createCollection(obj.nombre_tabla, {
+
             } );
 
             //console.log(req.param('items'));

@@ -6,7 +6,8 @@ app.controller('ControllerCreacionGenerica', ['$scope', '$http', '$location', 'm
 
     $scope.campo = {
         nombre: '',
-        tipo_dato: ''
+        tipo_dato: '',
+        obligatoriedad:''
     };
 
 
