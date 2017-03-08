@@ -41,24 +41,50 @@ router.post('/ingresar', function (req, res) {
                 var tabla=result;
 
 
-
+                var flag=true;
                 var n= obj.docum.length;
                 var m= tabla.campos.length;
                console.log(n);
                console.log(m);
-
+                var cadena='{'
                for(var i= 0;i<n;i++){
 
+                   var cont=0;
 
                     for(var j=0;j<m;j++){
 
                         if(obj.docum[i].nombre==tabla.campos[j].nombre){
 
-                            console.log('si existe');
+
+                            switch (tabla.campos[j].obligatoriedad){
+
+                                case 'NN' :
+                                            if(obj.docum[i].valor==undefined||obj.docum[i].valor==''){
+                                            res.send('error campos nulos');
+
+                                            }else{
+
+                                                cadena+='"'+obj.docum[i].nombre+'":"'+obj.docum[i].valor+'",';
+                                            }
+                                    break;
+                                case 'N':
+                                         cadena+='"'+obj.docum[i].nombre+'":"'+obj.docum[i].valor+'",';
+                                    break;
+
+                            }
+                           // console.log(cadena);
+                           /* */
+
                             break;
                         }else{
 
-                            // console.log('no existe');
+                            cont++
+                            console.log(cont +'-'+j);
+                            if(cont==m){
+                                cadena+='"'+obj.docum[i].nombre+'":"'+obj.docum[i].valor+'",';
+                            }
+
+                            console.log(cadena);
                         }
                     }
 
@@ -66,17 +92,27 @@ router.post('/ingresar', function (req, res) {
 
                }
 
+                console.log(cadena);
+               var nuevoCadena=cadena.substr(cadena,cadena.length-1);
+               console.log(nuevoCadena);
+               nuevoCadena+='}';
+               nuevoCadena=JSON.parse(nuevoCadena);
+               console.log(nuevoCadena);
+               db.collection(obj.nombre_tabla).insert(nuevoCadena, function(err, resultad) {
 
-                 //db.collection(obj.nombre_tabla).insert(obj.campos, function(err, result) {
 
 
+               });
 
-              // });
+
            }
         //  res.send('Info ingresada');
 
         db.close();
 
+
+               res.send('ingresado');
+            console.log(nuevoCadena);
        /* MongoClient.connect(url, function (err, db) {
             assert.equal(null, err);
             // insertDocument(db, function() {
@@ -88,7 +124,7 @@ router.post('/ingresar', function (req, res) {
             db.createCollection(obj.nombre_tabla, {});*/
 
             //console.log(req.param('items'));
-            res.send('ingresado');
+
             // db.collection(req.param('table')).insertOne(req.body);
             // db.close();
             //  });
