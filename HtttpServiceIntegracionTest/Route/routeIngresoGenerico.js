@@ -12,6 +12,8 @@ router.post('/ingresar', function (req, res) {
     //console.log(req.param('var1'));
     //res.send(req.param('var1'));
     // var vec= req.param('items');
+   // console.log(req.body);
+
     var obj = {
         nombre_tabla: req.body.nombre_tabla,
         token: req.body.tk,
@@ -24,27 +26,43 @@ router.post('/ingresar', function (req, res) {
      //   nombre: "historia_clinica",
       //  tipo_dato: "ObjectId"
     //})
-    console.log(obj);
+   // console.log(obj);
 
     MongoClient.connect(url, function (err, db) {
         assert.equal(null, err);
 
 
         // console.log(req.body);
-        var collection = db.collection('tabla').findOne({"token": obj.token}, function(err, result) {
+        var collection = db.collection('tabla').findOne({"token": obj.token, estado:'1'}, function(err, result) {
          var resp=assert.equal(null, err);
            if( result!=null){
 
                var flag =true;
                 var tabla=result;
-               console.log(tabla);
+
+
+
                 var n= obj.docum.length;
-               for(var i=0;i<n;i++){
+                var m= tabla.campos.length;
+               console.log(n);
+               console.log(m);
 
-                    if(tabla.campos.indexOf(obj.docum[i].nombre)){
+               for(var i= 0;i<n;i++){
 
-                        console.log('si existe');
+
+                    for(var j=0;j<m;j++){
+
+                        if(obj.docum[i].nombre==tabla.campos[j].nombre){
+
+                            console.log('si existe');
+                            break;
+                        }else{
+
+                            // console.log('no existe');
+                        }
                     }
+
+
 
                }
 
