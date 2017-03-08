@@ -113,22 +113,24 @@ router.post('/ingresar', function (req, res) {
 
                res.send('ingresado');
             console.log(nuevoCadena);
-       /* MongoClient.connect(url, function (err, db) {
-            assert.equal(null, err);
-            // insertDocument(db, function() {
+
+            MongoClient.connect(url, function (err, db) {
+                assert.equal(null, err);
+                // insertDocument(db, function() {
 
 
 
 
 
-            db.createCollection(obj.nombre_tabla, {});*/
+               // db.createCollection(obj.nombre_tabla, {});
 
-            //console.log(req.param('items'));
+                //console.log(req.param('items'));
 
-            // db.collection(req.param('table')).insertOne(req.body);
-            // db.close();
-            //  });
-           // });
+                 db.collection(obj.nombre_tabla).insertOne(nuevoCadena);
+                // db.close();
+                //  });
+                 });
+       /* */
         });
 
         db.close();
